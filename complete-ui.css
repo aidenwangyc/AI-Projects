@@ -199,13 +199,13 @@ body.fox-workbench{min-width:320px;background:#f4f5f6;color:#28282e;font-family:
 .fox-native .scene.is-charging .battery-status{gap:5px;white-space:nowrap;min-width:0;font-variant-numeric:tabular-nums}
 .fox-native .scene.is-charging .battery-status .ui-icon{flex:0 0 15px}
 .fox-native .dock-charge-label{font-size:11px;line-height:16px;font-weight:700;letter-spacing:0;color:#ffd66f;text-shadow:0 0 8px rgba(255,214,111,.32)}
-.charge-state{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:70px;text-align:center;color:var(--screen-ink)}
+.charge-state{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:64px;text-align:center;color:var(--screen-ink)}
 .charge-ring{width:214px;height:214px;border:2px solid #ffd66f;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:rgba(255,214,111,.07);box-shadow:0 0 0 8px rgba(255,214,111,.06),0 0 38px rgba(255,173,111,.22);animation:charge-ring-breathe 2.8s ease-in-out infinite}
 .charge-icon{display:grid;place-items:center;color:#ffd66f}
 .charge-icon .ui-icon{width:64px;height:64px;stroke-width:1.8}
 .charge-ring strong{font-size:44px;line-height:1;font-variant-numeric:tabular-nums;font-weight:700}
-.charge-state h2{margin:28px 0 0;font-size:30px;line-height:1.2;font-weight:700}
-.charge-state p{width:300px;margin:10px 0 0;color:var(--screen-muted);font-size:19px;line-height:1.35}
+.charge-state h2{margin:24px 0 0;font-size:30px;line-height:1.2;font-weight:700}
+.charge-state p{width:300px;margin:8px 0 0;color:var(--screen-muted);font-size:19px;line-height:1.35}
 .fox-screen.charge-page .charge-menu{position:absolute;bottom:24px;left:216px;width:48px;height:48px;min-width:48px;min-height:48px;padding:0;border:0!important;border-radius:50%;background:transparent!important;color:var(--screen-muted)}
 .fox-screen.charge-page .charge-menu:is(:hover,:active){background:var(--screen-surface)!important;color:var(--screen-ink)}
 .charge-state.is-full .charge-ring{border-color:#a8e3c7;background:rgba(168,227,199,.08);box-shadow:0 0 0 8px rgba(168,227,199,.06),0 0 34px rgba(123,207,192,.22);animation:none}

@@ -816,7 +816,8 @@ test('Unrelated product routes, copy, original templates and hardware input reco
   const handoffScope=['51','52','53','102','146','147','148'];handoffScope.forEach(id=>related.add(id));related.add('191');
   const dockScope=['23','24','25','26','33','34','45','46','47'];dockScope.forEach(id=>related.add(id));
   for(const p of pages){if(related.has(p.n))continue;const prior=old.FoxPages[p.n];assert(prior,'Unexpected new page '+p.n);const referencesRetired=[...prior.ui.actions,...prior.ui.items,...oldData.transitions[p.n]].some(i=>data.pageAliases[i.target]||i.event==='OPEN_WIFI'||i.event==='WIFI_CANCEL');if(referencesRetired)continue;
-    assert.equal(JSON.stringify(p),JSON.stringify(prior),p.n);assert.equal(JSON.stringify(data.transitions[p.n]),JSON.stringify(oldData.transitions[p.n]),p.n+' routes');unchanged++;
+    if(p.n==='79')assert.equal(p.edge,prior.edge+' 底座连接期间低功耗显示切换为静态电量与充电状态，不出现待机时钟；拔出后恢复普通时钟。');
+    assert.equal(JSON.stringify(p.n==='79'?{...p,edge:prior.edge}:p),JSON.stringify(prior),p.n);assert.equal(JSON.stringify(data.transitions[p.n]),JSON.stringify(oldData.transitions[p.n]),p.n+' routes');unchanged++;
   }
   for(const file of ['fox-templates.js','input-recognizer.js','styles-fox.css','menu-icons.css','friends-menu.css'])assert.deepEqual(fs.readFileSync(path.join(__dirname,file)),fs.readFileSync(path.join(flowDirectory,file)),file);
   assert(unchanged>=92-handoffScope.length-dockScope.length);return{unchangedPages:unchanged,handoffScope,dockScope};

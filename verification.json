@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-15T02:52:21.611Z",
+  "at": "2026-09-15T03:20:34.691Z",
   "scope": "Node state machine and DOM structure tests; no browser visual certification",
   "passed": 164,
   "total": 164,
@@ -75,7 +75,7 @@
           "120"
         ],
         "groups": 12,
-        "routes": 551
+        "routes": 552
       }
     },
     {
@@ -105,7 +105,7 @@
     {
       "name": "Every review branch opens its declared page",
       "pass": true,
-      "detail": 537
+      "detail": 538
     },
     {
       "name": "QR stays valid indefinitely; device confirmation still expires and rejects cancelled callbacks",
@@ -180,7 +180,7 @@
       "pass": true,
       "detail": {
         "renderings": 330,
-        "controls": 768,
+        "controls": 774,
         "media": [
           "boot-splash-art.png",
           "assets/setup-demo-1.png",
@@ -811,7 +811,7 @@
           "57",
           "119"
         ],
-        "routes": 551
+        "routes": 552
       }
     },
     {
@@ -1071,7 +1071,7 @@
           "24",
           "26"
         ],
-        "chargeState": "214px ring with status and swipe hint"
+        "chargeState": "214px ring with status and menu chevron"
       }
     }
   ]
