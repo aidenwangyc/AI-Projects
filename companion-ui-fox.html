@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#151214">
+  <meta name="google" content="notranslate">
+  <title>LUMIQ LG01 · 360 Fox Companion UI</title>
+  <link rel="stylesheet" href="styles-fox.css?v=voice-video-v158-20260831">
+  <link rel="stylesheet" href="gauge-reference.css?v=4-volume-icon-v87-20260829">
+  <link rel="stylesheet" href="menu-icons.css?v=flat-line-v92-20260829">
+  <link rel="stylesheet" href="voice-note-saved.css?v=2-20260828">
+  <link rel="stylesheet" href="voice-note-playback.css?v=play-icon-v82-20260829">
+  <link rel="stylesheet" href="quiet-switch-3d.css?v=flat-glow-v102-20260829">
+  <link rel="stylesheet" href="quiet-switch-flat.css?v=flat-glow-v103-20260829">
+  <link rel="stylesheet" href="controls-menu-reference.css?v=5-selected-v96-20260829">
+  <link rel="stylesheet" href="wifi-password-reference.css?v=wifi-confirm-42-all-v131-20260829">
+  <link rel="stylesheet" href="friends-menu.css?v=friends-back-position-v137-20260829">
+  <link rel="stylesheet" href="pairing-contact-marquee.css?v=contact-gaussian-v120-20260829">
+</head>
+<body>
+  <main class="prototype">
+    <section class="device-stage" aria-label="LUMIQ LG01 interactive 360 pixel prototype">
+      <div class="device-frame">
+        <div class="device-screen" id="device-screen">
+          <section class="scene is-active" data-scene="home" aria-label="Companion home">
+            <header class="home-status">
+              <span class="status-item"><i data-lucide="wifi" aria-hidden="true"></i><span>Wi-Fi</span></span>
+              <span class="status-item battery-status"><span class="battery-icon" aria-hidden="true"><span></span></span>78%</span>
+            </header>
+
+            <div class="clock" aria-label="Time 15:31">
+              <strong>15:31</strong>
+              <span class="clock-date">
+                <span class="clock-weather"><i data-lucide="sun" aria-hidden="true"></i><span>24°</span></span>
+                <span class="clock-date-copy">Mon · Aug 24</span>
+              </span>
+            </div>
+
+            <button class="character-button" type="button" data-action="chat" aria-label="Start AI chat">
+              <img data-companion-image src="lumi-ip-fox-choice.png" alt="Lumi, your star fox companion">
+              <span class="sparkle-layer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="presence-shadow" aria-hidden="true"></span>
+            </button>
+
+            <nav class="home-dock" aria-label="Home quick actions">
+              <button class="dock-button dock-menu" type="button" data-action="apps" aria-label="Open Apps" title="Apps">
+                <i data-lucide="layout-grid" aria-hidden="true"></i>
+              </button>
+              <button class="dock-button dock-notifications" type="button" data-action="notifications" aria-label="Open 2 notifications" title="Notifications">
+                <i data-lucide="bell" aria-hidden="true"></i>
+                <span class="unread-dot" aria-hidden="true"></span>
+              </button>
+            </nav>
+          </section>
+
+          <section class="scene" data-scene="apps" aria-label="Apps" aria-hidden="true">
+            <header class="scene-header">
+              <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>Apps</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+
+            <div class="app-grid">
+              <button class="app-tile tile-home" type="button" data-action="home">
+                <span class="app-icon"><i data-lucide="home" aria-hidden="true"></i></span>
+                <span>Home</span>
+              </button>
+              <button class="app-tile tile-settings" type="button" data-action="controls">
+                <span class="app-icon"><i data-lucide="settings" aria-hidden="true"></i></span>
+                <span>Settings</span>
+              </button>
+              <button class="app-tile tile-mint" type="button" data-action="voice">
+                <span class="app-icon"><i data-lucide="mic" aria-hidden="true"></i></span>
+                <span>Voice Note</span>
+              </button>
+              <button class="app-tile tile-peach" type="button" data-action="care">
+                <span class="app-icon"><i data-lucide="heart-handshake" aria-hidden="true"></i></span>
+                <span>Care</span>
+              </button>
+              <button class="app-tile tile-lavender" type="button" data-action="notifications">
+                <span class="app-icon"><i data-lucide="bell" aria-hidden="true"></i></span>
+                <span>Reminders</span>
+              </button>
+              <button class="app-tile tile-peach app-tile-chat" type="button" data-action="chat">
+                <span class="app-icon"><i data-lucide="audio-lines" aria-hidden="true"></i></span>
+                <span>AI Chat</span>
+              </button>
+              <button class="app-tile tile-friends" type="button" data-action="friends">
+                <span class="app-icon"><i data-lucide="users" aria-hidden="true"></i></span>
+                <span>Friends</span>
+              </button>
+              <span class="apps-friend-spoke-layer" aria-hidden="true">
+                <i class="apps-friend-spoke-mask"></i>
+                <i class="apps-friend-spoke apps-friend-spoke-left"></i>
+                <i class="apps-friend-spoke apps-friend-spoke-right"></i>
+              </span>
+            </div>
+            <p class="page-position" aria-hidden="true"><span class="is-current"></span><span></span></p>
+          </section>
+
+          <section class="scene friends-scene" data-scene="friends" aria-label="Friends" aria-hidden="true">
+            <header class="scene-header scene-header-compact">
+              <button class="icon-button" type="button" data-action="apps" aria-label="Back to apps" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>Friends</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+            <div class="friends-list" id="friends-list" aria-label="Friends list">
+              <button class="friend-card" type="button" data-action="friends-open-flow" aria-label="Open Milo">
+                <span class="friend-avatar"><img src="lumi-ip-fox-choice.png" alt="Milo"></span>
+                <span class="friend-copy"><strong>Milo</strong><small>Ready to say hello</small></span>
+                <i class="friend-chevron" data-lucide="chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="friends-hint" id="friends-hint">Your private friends stay on this device.</p>
+            <div class="friends-flow" id="friends-flow" aria-live="polite" hidden></div>
+            <nav class="friends-flow-nav" aria-label="Friends flow navigation" hidden>
+              <button type="button" data-action="friends-prev" aria-label="Previous Friends step" title="Previous step">
+                <i data-lucide="chevron-left" aria-hidden="true"></i>
+              </button>
+              <span class="friends-flow-progress"><strong id="friends-flow-position">1 / 3</strong><i id="friends-flow-progress-bar" aria-hidden="true"></i></span>
+              <button type="button" data-action="friends-next" aria-label="Next Friends step" title="Next step">
+                <i data-lucide="chevron-right" aria-hidden="true"></i>
+              </button>
+            </nav>
+          </section>
+
+          <section class="scene" data-scene="controls" aria-label="Settings" aria-hidden="true">
+            <header class="scene-header">
+              <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2 id="controls-title">Settings</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+
+            <div class="controls-main" id="controls-main">
+              <div class="slider-control slider-brightness">
+                <i data-lucide="sun" data-action="controls-page" data-page="brightness" aria-hidden="true"></i>
+                <label for="brightness">Brightness</label>
+                <output for="brightness" id="brightness-output">72</output>
+                <input id="brightness" type="range" min="20" max="100" value="72" aria-label="Brightness">
+              </div>
+
+              <div class="slider-control slider-volume">
+                <i data-lucide="volume-2" data-action="controls-page" data-page="volume" aria-hidden="true"></i>
+                <label for="volume">Volume</label>
+                <output for="volume" id="volume-output">46</output>
+                <input id="volume" type="range" min="0" max="100" value="46" aria-label="Volume">
+              </div>
+
+              <div class="toggle-row">
+                <button class="control-toggle" type="button" data-toggle="dnd" aria-pressed="false">
+                  <i data-lucide="moon" aria-hidden="true"></i>
+                  <span>Quiet</span>
+                </button>
+                <button class="control-toggle" type="button" data-toggle="mic" aria-pressed="false">
+                  <i data-lucide="mic" aria-hidden="true"></i>
+                  <span>Mic</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="controls-detail" id="controls-detail" hidden></div>
+          </section>
+
+          <section class="scene" data-scene="notifications" aria-label="Notifications" aria-hidden="true">
+            <header class="scene-header">
+              <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>Today</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+
+            <div class="notice-list">
+              <button class="notice-item" type="button" data-action="reminder">
+                <span class="notice-icon icon-yellow"><i data-lucide="calendar-clock" aria-hidden="true"></i></span>
+                <span class="notice-copy"><strong>Dentist · 3:30 PM</strong><small>In 30 minutes</small></span>
+                <i class="notice-chevron" data-lucide="chevron-right" aria-hidden="true"></i>
+              </button>
+              <button class="notice-item" type="button" data-action="friend">
+                <span class="notice-icon icon-lavender"><i data-lucide="hand" aria-hidden="true"></i></span>
+                <span class="notice-copy"><strong>Milo says hi</strong><small>New friend motion</small></span>
+                <i class="notice-chevron" data-lucide="chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="notice-count"><span class="status-dot" aria-hidden="true"></span>2 unread</p>
+          </section>
+
+          <section class="scene" data-scene="chat" aria-label="AI chat" aria-hidden="true">
+            <button class="icon-button chat-back" type="button" data-action="apps" aria-label="Back to Apps" title="Back">
+              <i data-lucide="arrow-left" aria-hidden="true"></i>
+            </button>
+            <header class="session-header">
+              <span class="privacy-pill"><i data-lucide="mic" aria-hidden="true"></i><span id="privacy-state">Mic on</span></span>
+              <time id="session-time">00:07</time>
+            </header>
+
+            <p class="session-state" id="session-state">Listening</p>
+            <button class="chat-character" type="button" data-action="cycle-chat" aria-label="Interrupt or continue the conversation">
+              <span class="chat-halo" aria-hidden="true"></span>
+              <video class="chat-character-video" src="animal-greeting-trimmed.mov" autoplay muted loop playsinline preload="auto" aria-label="Lumi listening"></video>
+              <span class="sparkle-layer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              <span class="expression-layer" aria-hidden="true">
+                <span class="expression-eye-glow expression-eye-glow-left"></span>
+                <span class="expression-eye-glow expression-eye-glow-right"></span>
+              </span>
+            </button>
+
+            <div class="voice-visual is-listening" id="voice-visual" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <button class="session-hint" id="session-hint" type="button" data-action="end-chat" aria-label="End chat">Swipe right to end</button>
+          </section>
+
+          <section class="scene voice-note-scene" data-scene="voice" aria-label="Voice note" aria-hidden="true">
+            <header class="scene-header scene-header-compact">
+              <button class="icon-button" type="button" data-action="apps" aria-label="Back to apps" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>Voice Note</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+
+            <p class="voice-status" id="voice-status" role="status" aria-live="polite">Ready</p>
+            <button class="record-button" id="record-button" type="button" data-action="record" aria-label="Start recording" aria-pressed="false">
+              <span class="record-ripple record-ripple-one" aria-hidden="true"></span>
+              <span class="record-ripple record-ripple-two" aria-hidden="true"></span>
+              <span class="record-ring" aria-hidden="true"></span>
+              <i class="record-mic" data-lucide="mic" aria-hidden="true"></i>
+              <span class="record-stop" aria-hidden="true"></span>
+              <i class="record-saved" data-lucide="check" aria-hidden="true"></i>
+              <span class="record-wave" id="record-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </span>
+            </button>
+            <button class="record-pause-button" id="record-pause-button" type="button" data-action="toggle-recording-pause" aria-label="Pause recording" aria-pressed="false" hidden>
+              <i data-lucide="pause" aria-hidden="true"></i>
+            </button>
+            <strong class="record-time" id="record-time">00:00</strong>
+            <section class="recording-list" id="recording-list" aria-label="Recordings" hidden>
+              <div class="recording-list-title"><strong>Recordings</strong><span id="recording-count" aria-hidden="true"></span></div>
+              <div class="recording-items" id="recording-items"></div>
+            </section>
+            <p class="record-hint" id="record-hint">Slide to the right</p>
+            <div class="voice-page-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+          </section>
+
+          <section class="scene" data-scene="care" aria-label="Care mode" aria-hidden="true">
+            <header class="session-header">
+              <span class="privacy-pill"><i data-lucide="shield-check" aria-hidden="true"></i>Care mode</span>
+              <time>29:38</time>
+            </header>
+            <p class="session-state">Breathe with me</p>
+            <div class="breathing-guide" aria-label="Breathing exercise">
+              <span class="breath-ring breath-ring-outer" aria-hidden="true"></span>
+              <span class="breath-ring breath-ring-inner" aria-hidden="true"></span>
+              <img data-companion-image src="lumi-ip-fox-choice.png" alt="Lumi breathing calmly">
+              <span class="sparkle-layer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            </div>
+            <strong class="breath-phase" id="breath-phase">Inhale · 4</strong>
+            <button class="care-toggle" type="button" data-action="toggle-care" role="switch" aria-checked="true" aria-label="Turn off care mode">
+              <span class="care-toggle-label sr-only">Care mode</span>
+              <span class="care-switch-thumb" aria-hidden="true"></span>
+            </button>
+          </section>
+
+          <section class="scene" data-scene="reminder" aria-label="Reminder details" aria-hidden="true">
+            <header class="scene-header scene-header-compact">
+              <button class="icon-button" type="button" data-action="notifications" aria-label="Back to notifications" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>Time to go</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+            <div class="reminder-glyph" aria-hidden="true"><i data-lucide="calendar-clock"></i></div>
+            <p class="reminder-title">Dentist appointment</p>
+            <strong class="reminder-time">3:30 PM</strong>
+            <div class="reminder-actions">
+              <button class="secondary-action" type="button" data-action="snooze">
+                <i data-lucide="clock-3" aria-hidden="true"></i><span>Later</span>
+              </button>
+              <button class="primary-action" type="button" data-action="done">
+                <i data-lucide="check" aria-hidden="true"></i><span>Done</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="scene states-scene" data-scene="states" data-tone="error" aria-label="UI states" aria-hidden="true">
+            <header class="state-header">
+              <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <p><span id="state-category">Connection</span><strong id="state-position">1 / 39</strong></p>
+              <span class="state-severity" id="state-severity" aria-hidden="true"></span>
+            </header>
+
+            <div class="state-visual" id="state-visual" aria-hidden="true"></div>
+            <div class="state-copy">
+              <h2 id="state-title">Request expired</h2>
+              <p id="state-subtitle">Return to the LUMIQ app and try binding again.</p>
+            </div>
+            <div class="state-actions" id="state-actions"></div>
+            <nav class="state-pager" aria-label="Browse UI states">
+              <button type="button" data-action="previous-state" aria-label="Previous UI state" title="Previous state">
+                <i data-lucide="chevron-left" aria-hidden="true"></i>
+              </button>
+              <span class="state-progress" aria-hidden="true"><i id="state-progress"></i></span>
+              <button type="button" data-action="next-state" aria-label="Next UI state" title="Next state">
+                <i data-lucide="chevron-right" aria-hidden="true"></i>
+              </button>
+            </nav>
+          </section>
+
+          <section class="scene overview-scene" data-scene="overview" aria-label="All prototype pages" aria-hidden="true">
+            <header class="scene-header overview-header">
+              <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <h2>All pages</h2>
+              <span class="header-spacer" aria-hidden="true"></span>
+            </header>
+            <p class="overview-intro">Explore every screen</p>
+            <nav class="overview-grid" aria-label="All prototype pages">
+              <button class="overview-card overview-card-peach" type="button" data-go="home"><i data-lucide="house" aria-hidden="true"></i><span>Home</span><small>Start</small></button>
+              <button class="overview-card overview-card-lavender" type="button" data-go="apps"><i data-lucide="layout-grid" aria-hidden="true"></i><span>Apps</span><small>Menu</small></button>
+              <button class="overview-card overview-card-mint" type="button" data-go="chat"><i data-lucide="audio-lines" aria-hidden="true"></i><span>AI Chat</span><small>Talk</small></button>
+              <button class="overview-card overview-card-yellow" type="button" data-go="controls"><i data-lucide="sliders-horizontal" aria-hidden="true"></i><span>Controls</span><small>Adjust</small></button>
+              <button class="overview-card overview-card-lavender" type="button" data-go="notifications"><i data-lucide="bell" aria-hidden="true"></i><span>Reminders</span><small>Today</small></button>
+              <button class="overview-card overview-card-mint" type="button" data-go="voice"><i data-lucide="mic" aria-hidden="true"></i><span>Voice Note</span><small>Record</small></button>
+              <button class="overview-card overview-card-peach" type="button" data-go="care"><i data-lucide="heart-handshake" aria-hidden="true"></i><span>Care</span><small>Breathe</small></button>
+              <button class="overview-card overview-card-yellow" type="button" data-go="states"><i data-lucide="triangle-alert" aria-hidden="true"></i><span>UI States</span><small>39 states</small></button>
+              <button class="overview-card overview-card-mint" type="button" data-go="pairing"><i data-lucide="link" aria-hidden="true"></i><span>Pairing</span><small>12 steps</small></button>
+            </nav>
+          </section>
+
+          <section class="scene onboarding-scene" data-scene="pairing" data-step="brand" aria-label="First-time setup" aria-hidden="true">
+            <header class="onboarding-header">
+              <button class="onboarding-back" id="onboarding-back" type="button" data-action="onboarding-back" aria-label="Previous setup step">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+              </button>
+              <p id="onboarding-count">Step 1 of 12</p>
+              <button class="onboarding-skip" type="button" data-action="skip-onboarding">Skip</button>
+            </header>
+            <div class="onboarding-stage" id="onboarding-stage" aria-live="polite"></div>
+            <div class="onboarding-copy">
+              <h2 id="onboarding-title">Powering up LUMIQ</h2>
+              <p id="onboarding-subtitle">Checking your companion display.</p>
+            </div>
+            <div class="onboarding-actions" id="onboarding-actions"></div>
+            <div class="onboarding-progress" aria-hidden="true"><span id="onboarding-progress"></span></div>
+          </section>
+
+          <div class="edge-feedback" id="edge-feedback" aria-hidden="true"></div>
+          <div class="screen-contact-marquee" id="screen-contact-marquee" aria-hidden="true"></div>
+          <div class="device-toast" id="device-toast" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+      <p class="canvas-size">360 × 360 px</p>
+    </section>
+
+    <aside class="scene-panel" aria-label="Prototype scenes">
+      <div class="panel-brand"><span>L</span><strong>LUMIQ · LG01</strong></div>
+      <p class="panel-kicker" id="panel-kicker">Fox star edition</p>
+      <h1 id="panel-title">Fox Companion UI</h1>
+      <p class="panel-meta">Round OLED · 360 px · Voice first</p>
+      <nav class="scene-nav" aria-label="Choose prototype scene">
+        <button type="button" data-go="overview"><i data-lucide="panels-top-left" aria-hidden="true"></i><span>All pages</span></button>
+        <button class="is-current" type="button" data-go="home"><i data-lucide="house" aria-hidden="true"></i><span>Home</span></button>
+        <button type="button" data-go="apps"><i data-lucide="layout-grid" aria-hidden="true"></i><span>Apps</span></button>
+        <button type="button" data-go="chat"><i data-lucide="audio-lines" aria-hidden="true"></i><span>AI Chat</span></button>
+        <button type="button" data-go="controls"><i data-lucide="sliders-horizontal" aria-hidden="true"></i><span>Controls</span></button>
+        <button type="button" data-go="notifications"><i data-lucide="bell" aria-hidden="true"></i><span>Reminders</span></button>
+        <button type="button" data-go="voice"><i data-lucide="mic" aria-hidden="true"></i><span>Voice Note</span></button>
+        <button type="button" data-go="care"><i data-lucide="heart-handshake" aria-hidden="true"></i><span>Care</span></button>
+        <button type="button" data-go="states"><i data-lucide="triangle-alert" aria-hidden="true"></i><span>UI States</span></button>
+        <button type="button" data-go="pairing"><i data-lucide="link" aria-hidden="true"></i><span>Pairing</span></button>
+      </nav>
+      <label class="state-picker" id="state-picker-wrap" hidden>
+        <span>Choose a state</span>
+        <select id="state-picker" aria-label="Choose a UI state"></select>
+      </label>
+      <div class="panel-palette" aria-label="Color palette">
+        <span class="swatch swatch-peach" title="Warm peach"></span>
+        <span class="swatch swatch-lavender" title="Soft lavender"></span>
+        <span class="swatch swatch-mint" title="Calm mint"></span>
+        <span class="swatch swatch-yellow" title="Signal yellow"></span>
+      </div>
+    </aside>
+  </main>
+
+  <div class="sr-only" id="live-region" aria-live="polite"></div>
+  <script src="lucide.min.js"></script>
+  <script src="app-fox.js?v=voice-video-v158-20260831"></script>
+</body>
+</html>

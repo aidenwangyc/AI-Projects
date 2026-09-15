@@ -1,0 +1,1573 @@
+[
+  {
+    "id": "setup",
+    "title": "首次使用",
+    "sections": [
+      {
+        "id": "setup-start",
+        "title": "开机与连接主设备",
+        "kind": "path",
+        "pages": [
+          "01",
+          "178",
+          "02",
+          "03",
+          "04"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "05",
+            "label": "连接成功后选网"
+          }
+        ]
+      },
+      {
+        "id": "setup-recovery",
+        "title": "连接请求超时",
+        "kind": "recovery",
+        "pages": [
+          "37"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "02",
+            "label": "重新发起连接"
+          },
+          {
+            "n": "04",
+            "label": "再试一下"
+          }
+        ]
+      },
+      {
+        "id": "setup-network",
+        "title": "在圆屏连接加密网络",
+        "kind": "path",
+        "pages": [
+          "05",
+          "110",
+          "111",
+          "112"
+        ],
+        "related": [
+          "127",
+          "128",
+          "129",
+          "78",
+          "22"
+        ],
+        "links": [
+          {
+            "n": "111",
+            "label": "开放网络直接连接"
+          },
+          {
+            "n": "186",
+            "label": "联网后选择伙伴"
+          }
+        ]
+      },
+      {
+        "id": "setup-companion",
+        "title": "选择伙伴与首次问候",
+        "kind": "path",
+        "pages": [
+          "186",
+          "07",
+          "09"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "10",
+            "label": "进入日常待机"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daily",
+    "title": "日常待机与功能入口",
+    "sections": [
+      {
+        "id": "daily-menu",
+        "title": "待机与环形应用菜单",
+        "kind": "path",
+        "pages": [
+          "10",
+          "74"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "161",
+            "label": "智能对话"
+          },
+          {
+            "n": "82",
+            "label": "陪伴孩子"
+          },
+          {
+            "n": "70",
+            "label": "录音与已存录音"
+          },
+          {
+            "n": "187",
+            "label": "日常：提醒与步数"
+          },
+          {
+            "n": "185",
+            "label": "好友与消息"
+          },
+          {
+            "n": "180",
+            "label": "设备设置"
+          },
+          {
+            "n": "93",
+            "label": "我的伙伴与等级"
+          }
+        ]
+      },
+      {
+        "id": "daily-moments",
+        "title": "每日分享与播报",
+        "kind": "states",
+        "pages": [
+          "17",
+          "162"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "17",
+            "label": "播报结束返回分享"
+          },
+          {
+            "n": "10",
+            "label": "回到待机"
+          }
+        ]
+      },
+      {
+        "id": "daily-responses",
+        "title": "轻敲、翻转与夜间回应",
+        "kind": "states",
+        "pages": [
+          "12",
+          "13",
+          "11"
+        ],
+        "related": [],
+        "links": []
+      },
+      {
+        "id": "daily-display",
+        "title": "时钟息屏",
+        "kind": "states",
+        "pages": [
+          "79"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "10",
+            "label": "唤醒回到待机"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chat",
+    "title": "智能对话",
+    "sections": [
+      {
+        "id": "chat-conversation",
+        "title": "进入、聆听、回答与结束",
+        "kind": "path",
+        "pages": [
+          "161",
+          "14",
+          "15",
+          "16",
+          "76"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "14",
+            "label": "回答结束继续聆听"
+          },
+          {
+            "n": "74",
+            "label": "结束后返回菜单"
+          }
+        ]
+      },
+      {
+        "id": "chat-recovery",
+        "title": "未听清、超时与安全回应",
+        "kind": "recovery",
+        "pages": [
+          "41",
+          "43",
+          "44",
+          "170"
+        ],
+        "related": [
+          "21",
+          "78",
+          "22"
+        ],
+        "links": [
+          {
+            "n": "161",
+            "label": "重新进入对话"
+          },
+          {
+            "n": "21",
+            "label": "离线状态"
+          },
+          {
+            "n": "78",
+            "label": "服务不可用"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pet",
+    "title": "我的伙伴与照顾",
+    "sections": [
+      {
+        "id": "pet-actions",
+        "title": "伙伴切换与状态总览",
+        "kind": "states",
+        "pages": [
+          "93"
+        ],
+        "related": [
+          "186"
+        ],
+        "links": [
+          {
+            "n": "186",
+            "label": "切换本地可用伙伴"
+          },
+          {
+            "n": "94",
+            "label": "使用 App 购买的食物喂养"
+          },
+          {
+            "n": "95",
+            "label": "清洁伙伴"
+          }
+        ]
+      },
+      {
+        "id": "pet-feeding",
+        "title": "App 购买库存与喂养确认",
+        "kind": "path",
+        "pages": [
+          "94"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "喂养或取消后返回伙伴"
+          },
+          {
+            "n": "157",
+            "label": "库存不足时在 App 购买后同步"
+          }
+        ]
+      },
+      {
+        "id": "pet-feeding-recovery",
+        "title": "库存不足、同步失败与照顾限制",
+        "kind": "recovery",
+        "pages": [
+          "157"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "94",
+            "label": "同步成功后确认喂养"
+          },
+          {
+            "n": "93",
+            "label": "返回伙伴"
+          }
+        ]
+      },
+      {
+        "id": "pet-clean",
+        "title": "清洁伙伴",
+        "kind": "states",
+        "pages": [
+          "95"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "清洁后返回总览"
+          },
+          {
+            "n": "157",
+            "label": "已清洁或冷却反馈"
+          }
+        ]
+      },
+      {
+        "id": "pet-rest",
+        "title": "安排休息与休息中",
+        "kind": "path",
+        "pages": [
+          "96",
+          "175"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "休息结束回到总览"
+          }
+        ]
+      },
+      {
+        "id": "pet-explore",
+        "title": "探索与视角切换",
+        "kind": "states",
+        "pages": [
+          "97",
+          "98",
+          "99"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "完成探索回到总览"
+          }
+        ]
+      },
+      {
+        "id": "pet-growth",
+        "title": "伙伴等级与升级反馈",
+        "kind": "states",
+        "pages": [
+          "18"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "查看伙伴与当前等级"
+          },
+          {
+            "n": "74",
+            "label": "回到应用菜单"
+          }
+        ]
+      },
+      {
+        "id": "pet-photo",
+        "title": "从照片生成新角色",
+        "kind": "path",
+        "pages": [
+          "51",
+          "52",
+          "53"
+        ],
+        "related": [
+          "102",
+          "186"
+        ],
+        "links": [
+          {
+            "n": "154",
+            "label": "启用新角色"
+          },
+          {
+            "n": "186",
+            "label": "稍后在伙伴选择中查看"
+          },
+          {
+            "n": "102",
+            "label": "生成失败"
+          }
+        ]
+      },
+      {
+        "id": "pet-activate",
+        "title": "确认更换与启用角色",
+        "kind": "path",
+        "pages": [
+          "154",
+          "155"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "93",
+            "label": "启用后查看伙伴"
+          }
+        ]
+      },
+      {
+        "id": "pet-activation-recovery",
+        "title": "角色启用异常",
+        "kind": "recovery",
+        "pages": [
+          "156"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "155",
+            "label": "重试启用"
+          },
+          {
+            "n": "10",
+            "label": "返回待机"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "care",
+    "title": "陪伴开关与安抚反馈",
+    "sections": [
+      {
+        "id": "care-company",
+        "title": "关闭、开启与声音安抚",
+        "kind": "path",
+        "pages": [
+          "82",
+          "58",
+          "59",
+          "60"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "58",
+            "label": "反馈结束继续陪伴"
+          },
+          {
+            "n": "82",
+            "label": "关闭陪伴"
+          },
+          {
+            "n": "74",
+            "label": "返回菜单仍保留开关"
+          }
+        ]
+      },
+      {
+        "id": "care-guidance",
+        "title": "主动表达后的情境安抚",
+        "kind": "states",
+        "pages": [
+          "61",
+          "62",
+          "63",
+          "64",
+          "65"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "58",
+            "label": "完成后继续陪伴"
+          },
+          {
+            "n": "82",
+            "label": "关闭陪伴"
+          }
+        ]
+      },
+      {
+        "id": "care-support",
+        "title": "需要现实中的支持",
+        "kind": "branch",
+        "pages": [
+          "66"
+        ],
+        "related": [
+          "21",
+          "78",
+          "22"
+        ],
+        "links": [
+          {
+            "n": "58",
+            "label": "回到陪伴"
+          },
+          {
+            "n": "82",
+            "label": "关闭陪伴"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "voice",
+    "title": "录音与回放",
+    "sections": [
+      {
+        "id": "voice-save",
+        "title": "录制、停止与本地保存",
+        "kind": "path",
+        "pages": [
+          "70",
+          "71",
+          "122",
+          "123"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "124",
+            "label": "查看已保存录音"
+          }
+        ]
+      },
+      {
+        "id": "voice-recording",
+        "title": "暂停、提醒到达与低亮录制",
+        "kind": "states",
+        "pages": [
+          "184",
+          "81",
+          "121"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "71",
+            "label": "继续录制"
+          },
+          {
+            "n": "122",
+            "label": "结束并保存"
+          }
+        ]
+      },
+      {
+        "id": "voice-discard",
+        "title": "放弃未保存的录音",
+        "kind": "branch",
+        "pages": [
+          "125",
+          "177",
+          "42"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "122",
+            "label": "改为保存"
+          },
+          {
+            "n": "70",
+            "label": "删除后重新录制"
+          }
+        ]
+      },
+      {
+        "id": "voice-recovery",
+        "title": "保存失败、空间不足与过期",
+        "kind": "recovery",
+        "pages": [
+          "73",
+          "158",
+          "168"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "122",
+            "label": "重试保存"
+          },
+          {
+            "n": "70",
+            "label": "重新录制"
+          }
+        ]
+      },
+      {
+        "id": "voice-backup",
+        "title": "备份权限、仅本地保存与云端备份结果",
+        "kind": "states",
+        "pages": [
+          "173",
+          "171",
+          "72"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "124",
+            "label": "查看录音状态"
+          }
+        ]
+      },
+      {
+        "id": "voice-play",
+        "title": "选择录音与回放",
+        "kind": "path",
+        "pages": [
+          "124",
+          "182"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "124",
+            "label": "回放后返回列表"
+          }
+        ]
+      },
+      {
+        "id": "voice-delete",
+        "title": "删除已保存录音",
+        "kind": "branch",
+        "pages": [
+          "183"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "182",
+            "label": "保留并返回回放"
+          },
+          {
+            "n": "124",
+            "label": "删除后返回列表"
+          }
+        ]
+      },
+      {
+        "id": "voice-reminder",
+        "title": "录音结束后处理提醒",
+        "kind": "branch",
+        "pages": [
+          "164"
+        ],
+        "related": [
+          "68",
+          "69"
+        ],
+        "links": [
+          {
+            "n": "68",
+            "label": "处理排队提醒"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reminders",
+    "title": "日常：提醒与步数",
+    "sections": [
+      {
+        "id": "reminders-entry",
+        "title": "日常菜单入口",
+        "kind": "path",
+        "pages": [
+          "187"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "77",
+            "label": "查看提醒"
+          },
+          {
+            "n": "103",
+            "label": "查看今日步数"
+          },
+          {
+            "n": "74",
+            "label": "返回应用菜单"
+          }
+        ]
+      },
+      {
+        "id": "reminders-inbox",
+        "title": "消息列表、提醒详情与播报",
+        "kind": "path",
+        "pages": [
+          "77",
+          "134"
+        ],
+        "related": [
+          "162"
+        ],
+        "links": [
+          {
+            "n": "162",
+            "label": "播报提醒"
+          },
+          {
+            "n": "68",
+            "label": "处理到期提醒"
+          }
+        ]
+      },
+      {
+        "id": "reminders-complete",
+        "title": "提前提醒、到期与完成",
+        "kind": "path",
+        "pages": [
+          "67",
+          "68",
+          "69"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "77",
+            "label": "回到消息列表"
+          }
+        ]
+      },
+      {
+        "id": "reminders-later",
+        "title": "稍后提醒与多项待办",
+        "kind": "states",
+        "pages": [
+          "133",
+          "167"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "68",
+            "label": "再次到期后处理"
+          },
+          {
+            "n": "134",
+            "label": "查看某一项提醒"
+          }
+        ]
+      },
+      {
+        "id": "reminders-changes",
+        "title": "提醒已更新与空列表",
+        "kind": "states",
+        "pages": [
+          "159",
+          "135"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "77",
+            "label": "查看最新消息"
+          }
+        ]
+      },
+      {
+        "id": "reminders-steps",
+        "title": "日常菜单与今日步数",
+        "kind": "path",
+        "pages": [
+          "103"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "187",
+            "label": "返回日常菜单"
+          }
+        ]
+      },
+      {
+        "id": "reminders-steps-recovery",
+        "title": "计步暂不可用",
+        "kind": "recovery",
+        "pages": [
+          "107"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "103",
+            "label": "重新获取步数"
+          },
+          {
+            "n": "187",
+            "label": "返回日常菜单"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "friends",
+    "title": "碰一碰与好友互动",
+    "sections": [
+      {
+        "id": "friends-list",
+        "title": "好友菜单与我的好友列表",
+        "kind": "path",
+        "pages": [
+          "185",
+          "191"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "54",
+            "label": "碰一碰交友"
+          },
+          {
+            "n": "56",
+            "label": "查看所选好友"
+          },
+          {
+            "n": "165",
+            "label": "好友消息"
+          }
+        ]
+      },
+      {
+        "id": "friends-connect",
+        "title": "设备接触、双方确认与好友详情",
+        "kind": "path",
+        "pages": [
+          "54",
+          "55",
+          "176",
+          "56"
+        ],
+        "related": [
+          "144"
+        ],
+        "links": [
+          {
+            "n": "191",
+            "label": "查看好友列表"
+          },
+          {
+            "n": "188",
+            "label": "添加对方已有宠物"
+          },
+          {
+            "n": "144",
+            "label": "拒绝、取消或超时"
+          }
+        ]
+      },
+      {
+        "id": "friends-import",
+        "title": "添加对方宠物与查看伙伴",
+        "kind": "path",
+        "pages": [
+          "188",
+          "189"
+        ],
+        "related": [
+          "186",
+          "93"
+        ],
+        "links": [
+          {
+            "n": "56",
+            "label": "成功后回好友详情"
+          },
+          {
+            "n": "186",
+            "label": "查看并手动切换已添加伙伴"
+          }
+        ]
+      },
+      {
+        "id": "friends-import-recovery",
+        "title": "宠物添加失败与重试",
+        "kind": "recovery",
+        "pages": [
+          "190"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "189",
+            "label": "重新添加"
+          },
+          {
+            "n": "56",
+            "label": "取消并返回好友"
+          }
+        ]
+      },
+      {
+        "id": "friends-permission",
+        "title": "社交权限异常",
+        "kind": "recovery",
+        "pages": [
+          "169"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "191",
+            "label": "返回好友列表"
+          },
+          {
+            "n": "185",
+            "label": "返回好友菜单"
+          }
+        ]
+      },
+      {
+        "id": "friends-activities",
+        "title": "好友详情中的更多互动",
+        "kind": "branch",
+        "pages": [
+          "87"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "56",
+            "label": "返回好友详情"
+          },
+          {
+            "n": "88",
+            "label": "发起组队"
+          },
+          {
+            "n": "141",
+            "label": "共同创作"
+          }
+        ]
+      },
+      {
+        "id": "friends-greeting",
+        "title": "选择问候、发送与送达",
+        "kind": "path",
+        "pages": [
+          "136",
+          "137",
+          "138"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "56",
+            "label": "返回好友"
+          }
+        ]
+      },
+      {
+        "id": "friends-messages",
+        "title": "收到问候与待发送问候",
+        "kind": "states",
+        "pages": [
+          "57",
+          "139"
+        ],
+        "related": [
+          "21",
+          "78",
+          "22"
+        ],
+        "links": [
+          {
+            "n": "136",
+            "label": "回复问候"
+          },
+          {
+            "n": "137",
+            "label": "重试发送"
+          }
+        ]
+      },
+      {
+        "id": "friends-relation",
+        "title": "好友关系已变化",
+        "kind": "recovery",
+        "pages": [
+          "140"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "191",
+            "label": "查看好友列表"
+          }
+        ]
+      },
+      {
+        "id": "friends-team",
+        "title": "邀请组队与确认结果",
+        "kind": "path",
+        "pages": [
+          "88",
+          "89",
+          "90"
+        ],
+        "related": [
+          "144"
+        ],
+        "links": [
+          {
+            "n": "141",
+            "label": "组队后共同创作"
+          },
+          {
+            "n": "144",
+            "label": "邀请结束"
+          }
+        ]
+      },
+      {
+        "id": "friends-create",
+        "title": "邀请共同创作与生成结果",
+        "kind": "path",
+        "pages": [
+          "141",
+          "143",
+          "91",
+          "92"
+        ],
+        "related": [
+          "154",
+          "155",
+          "156"
+        ],
+        "links": [
+          {
+            "n": "154",
+            "label": "启用新角色"
+          }
+        ]
+      },
+      {
+        "id": "friends-generation-failed",
+        "title": "角色生成失败",
+        "kind": "recovery",
+        "pages": [
+          "102"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "91",
+            "label": "重新生成"
+          }
+        ]
+      },
+      {
+        "id": "friends-accept",
+        "title": "收到共同创作邀请",
+        "kind": "branch",
+        "pages": [
+          "142"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "91",
+            "label": "接受后开始生成"
+          },
+          {
+            "n": "144",
+            "label": "拒绝或过期"
+          }
+        ]
+      },
+      {
+        "id": "friends-cancel",
+        "title": "取消邀请与结束状态",
+        "kind": "branch",
+        "pages": [
+          "145",
+          "144"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "165",
+            "label": "回到好友消息"
+          }
+        ]
+      },
+      {
+        "id": "friends-requests",
+        "title": "好友消息与后台任务",
+        "kind": "states",
+        "pages": [
+          "165"
+        ],
+        "related": [],
+        "links": []
+      }
+    ]
+  },
+  {
+    "id": "settings",
+    "title": "设置与隐私",
+    "sections": [
+      {
+        "id": "settings-entry",
+        "title": "设置总览与通用设置",
+        "kind": "path",
+        "pages": [
+          "180",
+          "75"
+        ],
+        "related": [
+          "178",
+          "186"
+        ],
+        "links": [
+          {
+            "n": "31",
+            "label": "调节音量"
+          },
+          {
+            "n": "32",
+            "label": "调节亮度"
+          },
+          {
+            "n": "126",
+            "label": "搜索并选择网络"
+          },
+          {
+            "n": "178",
+            "label": "语言选择"
+          },
+          {
+            "n": "186",
+            "label": "更换预置伙伴"
+          },
+          {
+            "n": "29",
+            "label": "回忆同步"
+          }
+        ]
+      },
+      {
+        "id": "settings-adjust",
+        "title": "音量与亮度独立调节",
+        "kind": "states",
+        "pages": [
+          "31",
+          "32"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "75",
+            "label": "返回通用设置"
+          }
+        ]
+      },
+      {
+        "id": "settings-privacy",
+        "title": "勿扰与数据权限",
+        "kind": "states",
+        "pages": [
+          "30",
+          "28"
+        ],
+        "related": [
+          "173"
+        ],
+        "links": [
+          {
+            "n": "173",
+            "label": "录音备份权限"
+          },
+          {
+            "n": "75",
+            "label": "返回通用设置"
+          }
+        ]
+      },
+      {
+        "id": "settings-display",
+        "title": "显示偏好",
+        "kind": "states",
+        "pages": [
+          "172"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "75",
+            "label": "返回通用设置"
+          }
+        ]
+      },
+      {
+        "id": "settings-about",
+        "title": "关于设备与系统入口",
+        "kind": "states",
+        "pages": [
+          "181"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "163",
+            "label": "系统更新"
+          },
+          {
+            "n": "118",
+            "label": "关机确认"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wifi",
+    "title": "更换网络与连接恢复",
+    "sections": [
+      {
+        "id": "wifi-change",
+        "title": "搜索与选择网络",
+        "kind": "path",
+        "pages": [
+          "126",
+          "109"
+        ],
+        "related": [
+          "110",
+          "111",
+          "112"
+        ],
+        "links": [
+          {
+            "n": "110",
+            "label": "加密网络输入密码"
+          },
+          {
+            "n": "111",
+            "label": "开放网络直接连接"
+          },
+          {
+            "n": "112",
+            "label": "查看连接成功状态"
+          },
+          {
+            "n": "180",
+            "label": "返回设置"
+          }
+        ]
+      },
+      {
+        "id": "wifi-name",
+        "title": "密码页的网络名称详情",
+        "kind": "branch",
+        "pages": [
+          "174"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "110",
+            "label": "保留输入并返回密码页"
+          }
+        ]
+      },
+      {
+        "id": "wifi-switch",
+        "title": "关闭网络与关闭状态",
+        "kind": "branch",
+        "pages": [
+          "114",
+          "115"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "126",
+            "label": "重新开启并搜索"
+          }
+        ]
+      },
+      {
+        "id": "wifi-recovery",
+        "title": "无网络、密码错误与网络丢失",
+        "kind": "recovery",
+        "pages": [
+          "127",
+          "128",
+          "129"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "126",
+            "label": "重新搜索"
+          },
+          {
+            "n": "110",
+            "label": "重新输入"
+          },
+          {
+            "n": "109",
+            "label": "重新选网"
+          }
+        ]
+      },
+      {
+        "id": "wifi-service",
+        "title": "离线、重连与在线服务异常",
+        "kind": "recovery",
+        "pages": [
+          "21",
+          "22",
+          "78"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "126",
+            "label": "搜索网络"
+          },
+          {
+            "n": "10",
+            "label": "连接恢复后回到待机"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "memories",
+    "title": "回忆同步",
+    "sections": [
+      {
+        "id": "memories-copy",
+        "title": "确认范围、传输、校验与完成",
+        "kind": "path",
+        "pages": [
+          "29",
+          "146",
+          "147",
+          "148",
+          "08"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "180",
+            "label": "完成后返回设置来源"
+          },
+          {
+            "n": "10",
+            "label": "待机来源完成后返回待机"
+          }
+        ]
+      },
+      {
+        "id": "memories-recovery",
+        "title": "中断、失败与取消",
+        "kind": "recovery",
+        "pages": [
+          "39",
+          "40",
+          "149"
+        ],
+        "related": [
+          "21",
+          "78",
+          "22"
+        ],
+        "links": [
+          {
+            "n": "147",
+            "label": "恢复传输"
+          },
+          {
+            "n": "29",
+            "label": "重新确认同步范围"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "system",
+    "title": "充电、关机与系统维护",
+    "sections": [
+      {
+        "id": "system-charge",
+        "title": "入座提示、充电待机与充满",
+        "kind": "path",
+        "pages": [
+          "23",
+          "24",
+          "26"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "10",
+            "label": "拔出后普通待机"
+          },
+          {
+            "n": "74",
+            "label": "打开应用菜单"
+          }
+        ]
+      },
+      {
+        "id": "system-dock-sync",
+        "title": "底座内容同步（独立于电量）",
+        "kind": "branch",
+        "pages": [
+          "25"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "24",
+            "label": "同步结束返回充电待机"
+          }
+        ]
+      },
+      {
+        "id": "system-dock-recovery",
+        "title": "底座接触与同步异常",
+        "kind": "recovery",
+        "pages": [
+          "45",
+          "46",
+          "47"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "23",
+            "label": "重新放入底座"
+          },
+          {
+            "n": "25",
+            "label": "重试同步"
+          }
+        ]
+      },
+      {
+        "id": "system-power",
+        "title": "低电量、即将关机与过热",
+        "kind": "states",
+        "pages": [
+          "33",
+          "34",
+          "48"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "24",
+            "label": "连接电源充电"
+          }
+        ]
+      },
+      {
+        "id": "system-shutdown",
+        "title": "确认关机",
+        "kind": "branch",
+        "pages": [
+          "118"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "01",
+            "label": "重新开机"
+          }
+        ]
+      },
+      {
+        "id": "system-update",
+        "title": "检查更新、安装、完成与重启",
+        "kind": "path",
+        "pages": [
+          "163",
+          "35",
+          "49",
+          "153"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "01",
+            "label": "重启后状态判断"
+          }
+        ]
+      },
+      {
+        "id": "system-rollback",
+        "title": "更新失败与回退",
+        "kind": "recovery",
+        "pages": [
+          "50",
+          "100"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "163",
+            "label": "重试更新"
+          },
+          {
+            "n": "101",
+            "label": "无法回退时恢复系统"
+          }
+        ]
+      },
+      {
+        "id": "system-restore",
+        "title": "系统恢复与协助操作",
+        "kind": "path",
+        "pages": [
+          "101",
+          "150",
+          "151"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "153",
+            "label": "恢复完成后重启"
+          }
+        ]
+      },
+      {
+        "id": "system-restore-failed",
+        "title": "系统恢复失败",
+        "kind": "recovery",
+        "pages": [
+          "152"
+        ],
+        "related": [],
+        "links": [
+          {
+            "n": "150",
+            "label": "重新尝试恢复"
+          }
+        ]
+      }
+    ]
+  }
+]

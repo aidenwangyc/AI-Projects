@@ -1,0 +1,91 @@
+/* Voice Note playback progress and spacing. */
+.voice-note-scene.is-list-view .recording-list-track {
+  gap: 20px;
+  min-width: 0;
+}
+
+.voice-note-scene.is-list-view .recording-items,
+.voice-note-scene.is-list-view .recording-item {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.voice-note-scene.is-list-view .recording-item .recording-waveform i,
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-waveform i,
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-waveform i:nth-child(n + 27) {
+  background: rgba(255, 255, 255, .2);
+  box-shadow: none;
+  animation: none;
+  transition: background 90ms linear, box-shadow 90ms linear;
+}
+
+.voice-note-scene.is-list-view .recording-item .recording-waveform i.is-played,
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-waveform i.is-played,
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-waveform i.is-played:nth-child(n + 27) {
+  background: var(--peach);
+  box-shadow: 0 0 5px rgba(255, 150, 120, .24);
+}
+
+/* Keep every bar inside the compact track after the card width is constrained. */
+.voice-note-scene.is-list-view .recording-waveform {
+  gap: 2.8px;
+}
+
+/* Refined playback glyphs: soft joins and a restrained coral glow keep the tiny controls crisp. */
+.voice-note-scene.is-list-view .recording-play-button svg {
+  width: 24px;
+  height: 29px;
+  color: var(--peach);
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 1px 2px rgba(255, 150, 120, .22));
+  transform: translateX(1px);
+  transition: color 140ms ease, filter 140ms ease, transform 140ms var(--ease-out);
+}
+
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-play-button svg {
+  width: 25px;
+  height: 29px;
+  fill: currentColor;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: none;
+}
+
+.voice-note-scene.is-list-view .recording-play-button:hover svg,
+.voice-note-scene.is-list-view .recording-play-button:focus-visible svg {
+  color: #ffad92;
+  filter: drop-shadow(0 0 5px rgba(255, 150, 120, .38));
+  transform: translateX(1px) scale(1.04);
+}
+
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-play-button:hover svg,
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-play-button:focus-visible svg {
+  transform: scale(1.04);
+}
+
+.voice-note-scene.is-list-view .recording-play-button:active svg {
+  transform: translateX(1px) scale(.94);
+}
+
+.voice-note-scene.is-list-view .recording-item.is-playing .recording-play-button:active svg {
+  transform: scale(.94);
+}
+
+/* A recording capsule can be dismissed with a deliberate right swipe. */
+.voice-note-scene.is-list-view .recording-item {
+  position: relative;
+  touch-action: pan-y;
+  transform: translateX(var(--swipe-offset, 0px));
+  transition: transform 180ms var(--ease-out), opacity 180ms ease;
+}
+
+.voice-note-scene.is-list-view .recording-item.is-swiping {
+  transition: none;
+  opacity: .82;
+}

@@ -1,0 +1,237 @@
+/* Settings menu reference: 280x72 glass rows with 40px color medallions. */
+.scene[data-scene="controls"] .controls-detail {
+  top: 78px;
+  right: 40px;
+  bottom: 16px;
+  left: 40px;
+  width: 280px;
+}
+
+.scene[data-scene="controls"] .controls-menu-list {
+  width: 280px;
+  height: 100%;
+  min-height: 0;
+  gap: 6px;
+  overflow-y: auto;
+  padding: 0 0 72px;
+  scroll-padding-bottom: 72px;
+  box-sizing: border-box;
+}
+
+.scene[data-scene="controls"] .controls-menu-item {
+  width: 280px;
+  height: 72px;
+  min-height: 72px;
+  flex: 0 0 72px;
+  grid-template-columns: 40px minmax(0, 1fr) 20px;
+  gap: 12px;
+  padding: 0 16px 0 14px;
+  border: 1px solid rgba(218, 225, 239, .2);
+  border-radius: 36px;
+  background:
+    linear-gradient(112deg, rgba(255, 255, 255, .13), rgba(127, 139, 162, .08)),
+    rgba(35, 37, 46, .72);
+  -webkit-backdrop-filter: blur(14px) saturate(126%);
+  backdrop-filter: blur(14px) saturate(126%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .18),
+    inset 0 -10px 18px rgba(0, 0, 0, .14),
+    0 7px 16px rgba(0, 0, 0, .14);
+  box-sizing: border-box;
+}
+
+.scene[data-scene="controls"] .controls-menu-item:hover,
+.scene[data-scene="controls"] .controls-menu-item:focus-visible {
+  border-color: color-mix(in srgb, var(--icon-color) 42%, rgba(255, 255, 255, .28));
+  background:
+    linear-gradient(112deg, rgba(255, 255, 255, .16), rgba(127, 139, 162, .1)),
+    rgba(42, 44, 55, .78);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--icon-color) 46%, rgba(255, 255, 255, .34));
+  border-radius: 50%;
+  color: #fffdfb;
+  background:
+    radial-gradient(circle at 32% 23%, rgba(255, 255, 255, .7), transparent 27%),
+    radial-gradient(circle at 52% 58%, color-mix(in srgb, var(--icon-color) 72%, #fff 28%), color-mix(in srgb, var(--icon-deep) 84%, #181923 16%) 82%);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, .3),
+    inset -3px -4px 7px rgba(26, 24, 34, .3),
+    0 3px 8px color-mix(in srgb, var(--icon-glow) 44%, transparent);
+  transform: translateZ(0);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot::before {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 22px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .3);
+  content: "";
+  filter: blur(2px);
+  pointer-events: none;
+  transform: rotate(-12deg);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot::after {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-menu-dot svg {
+  position: relative;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  color: #fffdfb;
+  stroke-width: 2.35;
+  filter: drop-shadow(0 1px 1px rgba(27, 22, 34, .28));
+  transform: none;
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-brightness {
+  --icon-color: #ffd36b;
+  --icon-deep: #db922f;
+  --icon-glow: rgba(255, 190, 74, .34);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-volume {
+  --icon-color: #ff9f8b;
+  --icon-deep: #d76766;
+  --icon-glow: rgba(255, 144, 143, .3);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-quiet {
+  --icon-color: #c4adff;
+  --icon-deep: #816bd3;
+  --icon-glow: rgba(165, 138, 255, .32);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-wifi {
+  --icon-color: #a8dfff;
+  --icon-deep: #568bd7;
+  --icon-glow: rgba(117, 190, 255, .3);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-language {
+  --icon-color: #a9e8ca;
+  --icon-deep: #58afa9;
+  --icon-glow: rgba(122, 213, 198, .28);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot-about {
+  --icon-color: #ffd184;
+  --icon-deep: #dc9844;
+  --icon-glow: rgba(255, 190, 101, .28);
+}
+
+.scene[data-scene="controls"] .controls-menu-copy strong {
+  color: rgba(255, 250, 244, .96);
+  font-size: 18px;
+  font-weight: 620;
+}
+
+.scene[data-scene="controls"] .controls-menu-chevron {
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, .76);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene[data-scene="controls"] .controls-menu-item,
+  .scene[data-scene="controls"] .controls-menu-dot {
+    transition: none;
+  }
+}
+
+/* Previous reference lock: keep the circular color medallions as the menu icon treatment. */
+.scene[data-scene="controls"] .controls-menu-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 32% 23%, rgba(255, 255, 255, .7), transparent 27%),
+    radial-gradient(circle at 52% 58%, color-mix(in srgb, var(--icon-color) 72%, #fff 28%), color-mix(in srgb, var(--icon-deep) 84%, #181923 16%) 82%);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, .3),
+    inset -3px -4px 7px rgba(26, 24, 34, .3),
+    0 3px 8px color-mix(in srgb, var(--icon-glow) 44%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-menu-dot svg {
+  width: 25px;
+  height: 25px;
+  color: #fffdfb;
+  stroke-width: 2.35;
+  filter: drop-shadow(0 1px 1px rgba(27, 22, 34, .28));
+}
+
+/* Flat settings treatment: match the Apps menu line icons and keep rows neutral. */
+.scene[data-scene="controls"] .controls-menu-item {
+  border: 1px solid rgba(231, 226, 235, .2);
+  background: #242126;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .08),
+    0 6px 14px rgba(0, 0, 0, .14);
+}
+
+.scene[data-scene="controls"] .controls-menu-item:hover,
+.scene[data-scene="controls"] .controls-menu-item:focus-visible {
+  border-color: rgba(240, 235, 244, .34);
+  background: #2b272e;
+}
+
+.scene[data-scene="controls"] .controls-menu-dot {
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  color: var(--icon-color);
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.scene[data-scene="controls"] .controls-menu-dot::before,
+.scene[data-scene="controls"] .controls-menu-dot::after {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-menu-dot svg {
+  width: 40px;
+  height: 40px;
+  color: var(--icon-color);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: none;
+  transform: none;
+}
+
+/* Selected-row accents: the outline follows each destination's icon color. */
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-brightness) { --menu-accent: #ffd36b; }
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-volume) { --menu-accent: #ff9f8b; }
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-quiet) { --menu-accent: #c4adff; }
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-wifi) { --menu-accent: #a8dfff; }
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-language) { --menu-accent: #a9e8ca; }
+.scene[data-scene="controls"] .controls-menu-item:has(.controls-menu-dot-about) { --menu-accent: #ffd184; }
+
+.scene[data-scene="controls"] .controls-menu-item:hover,
+.scene[data-scene="controls"] .controls-menu-item:focus-visible,
+.scene[data-scene="controls"] .controls-menu-item:active {
+  border-color: color-mix(in srgb, var(--menu-accent) 78%, #fff 22%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .1),
+    0 0 0 1px color-mix(in srgb, var(--menu-accent) 28%, transparent),
+    0 0 14px color-mix(in srgb, var(--menu-accent) 18%, transparent);
+}

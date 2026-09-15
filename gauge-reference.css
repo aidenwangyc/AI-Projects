@@ -1,0 +1,276 @@
+/* Brightness and Volume: final open-arc dial treatment from the supplied reference. */
+.scene[data-scene="controls"]:has(.controls-gauge-page) {
+  background: #111012;
+}
+
+.scene[data-scene="controls"]:has(.controls-gauge-page) .scene-header {
+  top: 12px;
+  right: 46px;
+  left: 46px;
+}
+
+.scene[data-scene="controls"]:has(.controls-gauge-page) .scene-header .icon-button {
+  color: #f7f5f4;
+  transform: translateX(36px);
+}
+
+.scene[data-scene="controls"]:has(.controls-gauge-page) .scene-header .icon-button:active {
+  transform: translateX(36px) scale(.94);
+}
+
+.scene[data-scene="controls"]:has(.controls-gauge-page) .scene-header .icon-button svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.9;
+}
+
+.scene[data-scene="controls"]:has(.controls-gauge-page) .scene-header h2 {
+  color: #fff;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 610;
+  line-height: 1;
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge,
+.scene[data-scene="controls"] .controls-volume-gauge {
+  position: relative;
+  margin-top: -19px;
+  overflow: visible;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* The dial rises above the detail viewport; keep its crown and glow visible. */
+.scene[data-scene="controls"] .controls-detail:has(.controls-gauge-page),
+.scene[data-scene="controls"] .controls-gauge-page {
+  overflow: visible;
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge {
+  --gauge-color: #ffae18;
+  --gauge-deep: #ff7900;
+  --gauge-soft: rgba(255, 174, 24, .22);
+  --gauge-halo: rgba(255, 145, 12, .34);
+}
+
+.scene[data-scene="controls"] .controls-volume-gauge {
+  --gauge-color: #078cff;
+  --gauge-deep: #214bd2;
+  --gauge-soft: rgba(7, 140, 255, .22);
+  --gauge-halo: rgba(7, 140, 255, .3);
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge {
+  width: 256px;
+  height: 256px;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ticks,
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-label,
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-note {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ring {
+  inset: 14px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  filter: drop-shadow(0 0 4px var(--gauge-soft)) drop-shadow(0 0 10px var(--gauge-halo));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 27px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 27px));
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-ring {
+  background: conic-gradient(
+    from 225deg,
+    #ff7900 0%,
+    #ff9610 calc(var(--gauge-arc) * .55),
+    #ffb629 var(--gauge-arc),
+    #252426 var(--gauge-arc) 75%,
+    transparent 75% 100%
+  );
+}
+
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-ring {
+  background: conic-gradient(
+    from 225deg,
+    #214bd2 0%,
+    #2e78df calc(var(--gauge-arc) * .55),
+    #52b5e8 var(--gauge-arc),
+    #252426 var(--gauge-arc) 75%,
+    transparent 75% 100%
+  );
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ring::before,
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ring::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: -14px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  content: "";
+  filter: none;
+  pointer-events: none;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ring::before {
+  right: auto;
+  bottom: auto;
+  background: var(--gauge-deep);
+  box-shadow: 0 0 6px var(--gauge-soft), 0 0 14px var(--gauge-halo);
+  transform: rotate(-135deg) translateY(-100px);
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-ring::after {
+  right: auto;
+  bottom: auto;
+  background: #252426;
+  transform: rotate(135deg) translateY(-100px);
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-knob,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-knob {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: -15px;
+  border: 2px solid var(--gauge-color);
+  border-radius: 50%;
+  background: #f8f8f8;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--gauge-color) 24%, transparent),
+    0 0 9px var(--gauge-color),
+    0 0 18px var(--gauge-halo),
+    0 2px 5px rgba(0, 0, 0, .38),
+    inset 0 1px 1px rgba(255, 255, 255, .8);
+  transform: rotate(var(--gauge-angle)) translateY(-100px);
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-knob:active {
+  filter: brightness(.96);
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--gauge-color) 30%, transparent),
+    0 0 12px var(--gauge-color),
+    0 0 22px var(--gauge-halo),
+    0 2px 5px rgba(0, 0, 0, .42),
+    inset 0 1px 1px rgba(255, 255, 255, .8);
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-center,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center {
+  top: 64px;
+  right: 58px;
+  bottom: 88px;
+  left: 58px;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-center:hover {
+  filter: none;
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-center > svg,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg {
+  width: 42px;
+  height: 42px;
+  color: var(--gauge-color);
+  stroke-width: 1.9;
+  filter: none;
+}
+
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg {
+  width: 42px;
+  height: 42px;
+  stroke-width: 2;
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-center .controls-detail-value,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center .controls-detail-value {
+  margin: 0;
+  color: var(--gauge-color);
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: none;
+}
+
+.scene[data-scene="controls"] .controls-brightness-gauge .controls-gauge-stepper,
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-stepper {
+  bottom: 0;
+  width: 102px;
+  height: 50px;
+  padding: 1px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--gauge-color) 68%, transparent);
+  border-radius: 25px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--gauge-deep) 22%, #181719), #0d0d0f 76%);
+  box-shadow: 0 0 12px var(--gauge-soft), inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-stepper button {
+  width: 49px;
+  height: 46px;
+  border: 0;
+  border-radius: 0;
+  color: var(--gauge-color);
+  background: transparent;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-stepper button:first-child {
+  border-radius: 23px 0 0 23px;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-stepper button + button {
+  border-left: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 0 23px 23px 0;
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-stepper button:hover {
+  background: color-mix(in srgb, var(--gauge-color) 10%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-gauge-page .controls-gauge-stepper button svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.8;
+}
+
+/* Refined volume glyph: a softly filled speaker body with crisp rounded waves. */
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg {
+  width: 44px;
+  height: 44px;
+  color: color-mix(in srgb, var(--gauge-color) 92%, #fff 8%);
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter:
+    drop-shadow(0 1px 1px rgba(7, 20, 54, .34))
+    drop-shadow(0 0 3px color-mix(in srgb, var(--gauge-color) 55%, transparent));
+}
+
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg path:first-of-type {
+  fill: color-mix(in srgb, var(--gauge-color) 86%, #fff 14%);
+  stroke: color-mix(in srgb, var(--gauge-color) 96%, #fff 4%);
+  stroke-width: 1.45;
+}
+
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg path:nth-of-type(2),
+.scene[data-scene="controls"] .controls-volume-gauge .controls-gauge-center > svg path:nth-of-type(3) {
+  fill: none;
+  stroke: color-mix(in srgb, var(--gauge-color) 96%, #fff 4%);
+  stroke-width: 2.15;
+}

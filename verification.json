@@ -1,0 +1,1078 @@
+{
+  "at": "2026-09-15T02:52:21.611Z",
+  "scope": "Node state machine and DOM structure tests; no browser visual certification",
+  "passed": 164,
+  "total": 164,
+  "results": [
+    {
+      "name": "Previous menu-network revision remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 305,
+        "excluded": "node_modules"
+      }
+    },
+    {
+      "name": "Previous flow-layout revision remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 304,
+        "excluded": "node_modules"
+      }
+    },
+    {
+      "name": "Previous warm-copy revision remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 301,
+        "excluded": "node_modules"
+      }
+    },
+    {
+      "name": "Main-device revision remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 297,
+        "excluded": "node_modules"
+      }
+    },
+    {
+      "name": "Original directory remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 79
+      }
+    },
+    {
+      "name": "Previous complete prototype remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 1665
+      }
+    },
+    {
+      "name": "Previous Chinese prototype remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 1666
+      }
+    },
+    {
+      "name": "Previous scrolling prototype remains byte-for-byte unchanged",
+      "pass": true,
+      "detail": {
+        "files": 294,
+        "excluded": "node_modules"
+      }
+    },
+    {
+      "name": "All pages are unique, ordered, and all transition targets exist",
+      "pass": true,
+      "detail": {
+        "pages": 165,
+        "runtimeOnly": [
+          "119",
+          "120"
+        ],
+        "groups": 12,
+        "routes": 551
+      }
+    },
+    {
+      "name": "Startup confirms the main device and uses the circular password keyboard before character selection",
+      "pass": true,
+      "detail": [
+        "01",
+        "178",
+        "02",
+        "03",
+        "04",
+        "05",
+        "110",
+        "111",
+        "112",
+        "186",
+        "07",
+        "09",
+        "10"
+      ]
+    },
+    {
+      "name": "Sequential catalog reaches every page, with backward and forward snapshots",
+      "pass": true,
+      "detail": 165
+    },
+    {
+      "name": "Every review branch opens its declared page",
+      "pass": true,
+      "detail": 537
+    },
+    {
+      "name": "QR stays valid indefinitely; device confirmation still expires and rejects cancelled callbacks",
+      "pass": true
+    },
+    {
+      "name": "Changing network returns to Settings and preserves the character",
+      "pass": true
+    },
+    {
+      "name": "Device Wi-Fi supports open networks, password boundaries and auth recovery",
+      "pass": true
+    },
+    {
+      "name": "Wi-Fi scan empty, timeout, cancel and rescan keep the correct list origin",
+      "pass": true
+    },
+    {
+      "name": "Wi-Fi cancel, timeout, lost network and stale callbacks do not advance a new attempt",
+      "pass": true
+    },
+    {
+      "name": "Cancelling a Settings network change preserves the prior connection and clears input",
+      "pass": true
+    },
+    {
+      "name": "Cloud unavailable only retries services without repeating password setup or bypassing failure",
+      "pass": true
+    },
+    {
+      "name": "Explicit local setup remains offline and does not manufacture a network connection",
+      "pass": true
+    },
+    {
+      "name": "Main-device pairing retries and cancellations use attempt identities",
+      "pass": true
+    },
+    {
+      "name": "Direct AI chat, thinking, reply, interrupt and end require no phone setup",
+      "pass": true
+    },
+    {
+      "name": "AI offline and microphone guards stay effective",
+      "pass": true
+    },
+    {
+      "name": "Recording pause/resume/save/playback/delete forms one object lifecycle",
+      "pass": true
+    },
+    {
+      "name": "Recording failure preserves draft, and mute does not resume paused capture",
+      "pass": true
+    },
+    {
+      "name": "Previous/Next review snapshots do not duplicate saved objects",
+      "pass": true
+    },
+    {
+      "name": "Pet feed/clean/rest/explore changes state once and respects cooldown",
+      "pass": true
+    },
+    {
+      "name": "Reminder snooze and completion are reflected in detail and lists",
+      "pass": true
+    },
+    {
+      "name": "Social consent is not manufactured by the device",
+      "pass": true
+    },
+    {
+      "name": "All pages render in English and Chinese with available local media",
+      "pass": true,
+      "detail": {
+        "renderings": 330,
+        "controls": 768,
+        "media": [
+          "boot-splash-art.png",
+          "assets/setup-demo-1.png",
+          "lumi-ip-fox-choice.png",
+          "lumi-ip-bird.png",
+          "lumi-ip-bunny.png"
+        ]
+      }
+    },
+    {
+      "name": "Generated QR images decode to demo-only identities",
+      "pass": true
+    },
+    {
+      "name": "Both HTML entry points reference existing, syntactically valid scripts and styles",
+      "pass": true
+    },
+    {
+      "name": "Workbench DOM can navigate and open the last Settings item without pagination",
+      "pass": true
+    },
+    {
+      "name": "All circular list pages keep full item sets without page controls",
+      "pass": true,
+      "detail": {
+        "listPages": 17
+      }
+    },
+    {
+      "name": "Record lists keep all records and preserve scroll when returning from playback",
+      "pass": true
+    },
+    {
+      "name": "Mouse dragging scrolls at the device scale and suppresses the release click",
+      "pass": true
+    },
+    {
+      "name": "Touch list gestures keep native scrolling and do not navigate the device",
+      "pass": true,
+      "detail": {
+        "scope": "Event delegation checks; native momentum is not simulated by this DOM test"
+      }
+    },
+    {
+      "name": "Scroll offsets survive rerenders, language changes and review history",
+      "pass": true
+    },
+    {
+      "name": "Keyboard can scroll lists from top to bottom without changing pages",
+      "pass": true
+    },
+    {
+      "name": "List CSS enables native vertical scrolling within fixed safe-area bounds",
+      "pass": true,
+      "detail": {
+        "scope": "CSS rule and logical geometry assertions; no browser layout measurement"
+      }
+    },
+    {
+      "name": "Gallery shows all current Chinese pages in order without pagination and supports filters",
+      "pass": true
+    },
+    {
+      "name": "Deferred character-resource page is not exposed in the current review copy",
+      "pass": true,
+      "detail": {
+        "page": "P131",
+        "status": "deferred from current review"
+      }
+    },
+    {
+      "name": "Today-steps gallery documents the Daily submenu entry",
+      "pass": true,
+      "detail": {
+        "entry": "P74 Daily > P187",
+        "target": "P103"
+      }
+    },
+    {
+      "name": "Chinese deep links retain language in preview, history, and top navigation",
+      "pass": true
+    },
+    {
+      "name": "Chat End control uses a stable center anchor inside the circular safe area",
+      "pass": true,
+      "detail": {
+        "basis": "CSS rule and logical geometry checks only; not a browser layout measurement",
+        "logicalButton": {
+          "width": 142,
+          "height": 50,
+          "bottom": 40,
+          "centerX": 180
+        },
+        "artboardCenterX": 240
+      }
+    },
+    {
+      "name": "Chat character, state row, and End control occupy separate vertical bands",
+      "pass": true,
+      "detail": {
+        "character": "164 x 144",
+        "state": "horizontal row at 232px",
+        "end": "142 x 50 at bottom 40px"
+      }
+    },
+    {
+      "name": "Annotated setup screens show the main device, local networks, and no unwanted helper text",
+      "pass": true
+    },
+    {
+      "name": "Six language endonyms remain intact, scrollable, and selected without pretending to translate new locales",
+      "pass": true
+    },
+    {
+      "name": "On-screen keyboard enters the chosen network, protects raw passwords and does not store them in review history",
+      "pass": true
+    },
+    {
+      "name": "Recording uses labeled icon-only controls and playback places Delete before Play",
+      "pass": true
+    },
+    {
+      "name": "Pet unavailable feedback is kind and returns safely without retrying a blocked action",
+      "pass": true
+    },
+    {
+      "name": "Feeding defaults to no food and App-confirmed stock is consumed exactly once",
+      "pass": true
+    },
+    {
+      "name": "Food sync rejects malformed, wrong-device, stale and decreasing cumulative balances",
+      "pass": true
+    },
+    {
+      "name": "An unchanged food balance acknowledges only the matching active sync without restoring consumed food",
+      "pass": true
+    },
+    {
+      "name": "Zero-version empty inventory can finish sync and expired unchanged responses cannot finish a retry",
+      "pass": true
+    },
+    {
+      "name": "Fullness, cooldown, resting, safety and invalidated actions preserve food",
+      "pass": true
+    },
+    {
+      "name": "Food is shared across installed partners without sharing care values or restoring spent stock",
+      "pass": true
+    },
+    {
+      "name": "Food sync expires and confirmed stock remains usable offline without reset on reboot",
+      "pass": true
+    },
+    {
+      "name": "Changed controls use fixed circular-safe geometry and dark-mode contrast",
+      "pass": true,
+      "detail": {
+        "scope": "Source geometry and color math only; browser layout and physical touch size remain unverified"
+      }
+    },
+    {
+      "name": "Restored radial menu replaces Home with My companion and removes steps",
+      "pass": true
+    },
+    {
+      "name": "Network selection stays concise and step count explains its source",
+      "pass": true
+    },
+    {
+      "name": "Due-reminder list shows only tasks without redundant status and has a truthful empty state",
+      "pass": true
+    },
+    {
+      "name": "Reminder completion and postponement still mutate the selected item only",
+      "pass": true
+    },
+    {
+      "name": "Mixed messages and reminder details retain distinct statuses",
+      "pass": true
+    },
+    {
+      "name": "Microphone has no standalone software switch while hardware mute remains effective",
+      "pass": true
+    },
+    {
+      "name": "Microphone status page is retired everywhere without removing hardware mute protection",
+      "pass": true
+    },
+    {
+      "name": "Hardware mute ends an active conversation and preserves captured recording audio",
+      "pass": true
+    },
+    {
+      "name": "General settings has consistent names, separate adjustment entries and no duplicate Wi-Fi",
+      "pass": true
+    },
+    {
+      "name": "Volume and brightness use distinct native sliders and save immediately without Done",
+      "pass": true
+    },
+    {
+      "name": "Native setting sliders retain keyboard focus and are not replaced during a pointer drag",
+      "pass": true,
+      "detail": {
+        "scope": "Simulated native focus and timer callbacks; not browser pointer geometry"
+      }
+    },
+    {
+      "name": "Independent adjustment bounds remain volume 0-100 and brightness 10-100",
+      "pass": true
+    },
+    {
+      "name": "Single setting icons, sliders and values occupy separate fixed circular-safe rows",
+      "pass": true,
+      "detail": {
+        "sourceArtboard": "480 x 480",
+        "panel": {
+          "left": 152,
+          "top": 128,
+          "width": 176,
+          "height": 282
+        },
+        "rows": [
+          36,
+          184,
+          38
+        ],
+        "gap": 12,
+        "scope": "Source CSS geometry, not browser pixel measurement"
+      }
+    },
+    {
+      "name": "Merged adjustment page is retired from routes and gallery while old links open General settings",
+      "pass": true
+    },
+    {
+      "name": "Companion is an explicit persistent switch with no confirmation or time limit",
+      "pass": true
+    },
+    {
+      "name": "Companion pauses for other tasks and sleep without losing the user switch state",
+      "pass": true
+    },
+    {
+      "name": "Companion rejects stale callbacks and feedback never listens to its own playback",
+      "pass": true
+    },
+    {
+      "name": "Companion feedback returns to its real source and UI commands retain feedback identity",
+      "pass": true
+    },
+    {
+      "name": "Companion off status, microphone indicator and guide Done buttons stay removed",
+      "pass": true
+    },
+    {
+      "name": "Every soothing guide completes automatically or returns early without ending companionship",
+      "pass": true
+    },
+    {
+      "name": "Hardware mute and safety turn companionship off without silently re-enabling it",
+      "pass": true
+    },
+    {
+      "name": "Continuous companionship does not suppress reminders or level updates",
+      "pass": true
+    },
+    {
+      "name": "Companion switch and listening status use fixed circular-safe geometry",
+      "pass": true,
+      "detail": {
+        "scope": "Source geometry only; actual font wrapping and physical hit areas need browser/device validation"
+      }
+    },
+    {
+      "name": "AI status is warm but does not imply continued capture or thinking after a timeout",
+      "pass": true
+    },
+    {
+      "name": "Warm wording retains deletion, expiry, upload and real-world support information",
+      "pass": true
+    },
+    {
+      "name": "New Chinese prompts stay concise and risk controls keep explicit accessible names",
+      "pass": true
+    },
+    {
+      "name": "Warm copy remains covered by a complete rendered comparison with the device-pairing version",
+      "pass": true,
+      "detail": {
+        "total": 165,
+        "changed": 111,
+        "pages": [
+          "178",
+          "02",
+          "37",
+          "05",
+          "111",
+          "112",
+          "186",
+          "09",
+          "74",
+          "17",
+          "12",
+          "13",
+          "11",
+          "14",
+          "15",
+          "16",
+          "76",
+          "41",
+          "43",
+          "44",
+          "170",
+          "93",
+          "94",
+          "157",
+          "95",
+          "18",
+          "52",
+          "53",
+          "156",
+          "82",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "70",
+          "71",
+          "123",
+          "81",
+          "121",
+          "125",
+          "177",
+          "73",
+          "168",
+          "173",
+          "171",
+          "183",
+          "164",
+          "187",
+          "77",
+          "134",
+          "68",
+          "69",
+          "133",
+          "167",
+          "159",
+          "135",
+          "103",
+          "185",
+          "191",
+          "54",
+          "55",
+          "176",
+          "56",
+          "188",
+          "189",
+          "190",
+          "87",
+          "136",
+          "138",
+          "57",
+          "90",
+          "141",
+          "143",
+          "92",
+          "102",
+          "142",
+          "145",
+          "144",
+          "165",
+          "180",
+          "75",
+          "31",
+          "32",
+          "28",
+          "109",
+          "174",
+          "128",
+          "129",
+          "21",
+          "78",
+          "29",
+          "146",
+          "147",
+          "148",
+          "08",
+          "39",
+          "40",
+          "149",
+          "23",
+          "24",
+          "26",
+          "25",
+          "46",
+          "47",
+          "48",
+          "101"
+        ],
+        "scope": "Rendered catalog fixtures, not exhaustive dynamic user content or a browser screenshot"
+      }
+    },
+    {
+      "name": "Task order has one owner per page and separates task stages from recovery states",
+      "pass": true,
+      "detail": {
+        "pages": 165,
+        "groups": 12,
+        "stages": 74
+      }
+    },
+    {
+      "name": "Numbered primary paths have actual consecutive transitions",
+      "pass": true,
+      "detail": {
+        "primaryPathEdges": 53,
+        "runtimeEdges": [
+          "124:182",
+          "176:56"
+        ]
+      }
+    },
+    {
+      "name": "Gallery hierarchy shows each stage and does not number alternative or recovery states as required steps",
+      "pass": true
+    },
+    {
+      "name": "Shared-page links reveal destinations outside current filters and preserve language",
+      "pass": true
+    },
+    {
+      "name": "Deep anchors override conflicting search filters without losing the requested page",
+      "pass": true
+    },
+    {
+      "name": "Gallery opens real interactions while the page index and catalog follow the same task order",
+      "pass": true
+    },
+    {
+      "name": "Unrelated product routes, copy, original templates and hardware input recognition stay unchanged",
+      "pass": true,
+      "detail": {
+        "unchangedPages": 78,
+        "handoffScope": [
+          "51",
+          "52",
+          "53",
+          "102",
+          "146",
+          "147",
+          "148"
+        ],
+        "dockScope": [
+          "23",
+          "24",
+          "25",
+          "26",
+          "33",
+          "34",
+          "45",
+          "46",
+          "47"
+        ]
+      }
+    },
+    {
+      "name": "Responsive task bands keep one column on small screens and never place sections in decorative cards",
+      "pass": true,
+      "detail": {
+        "scope": "CSS and geometry only, not browser or physical-device verification",
+        "measurements": [
+          {
+            "width": 320,
+            "columns": 1,
+            "card": 288
+          },
+          {
+            "width": 375,
+            "columns": 1,
+            "card": 320
+          },
+          {
+            "width": 600,
+            "columns": 1,
+            "card": 320
+          },
+          {
+            "width": 768,
+            "columns": 2,
+            "card": 320
+          },
+          {
+            "width": 900,
+            "columns": 2,
+            "card": 320
+          },
+          {
+            "width": 1024,
+            "columns": 3,
+            "card": 302.6666666666667
+          },
+          {
+            "width": 1200,
+            "columns": 3,
+            "card": 320
+          },
+          {
+            "width": 1440,
+            "columns": 4,
+            "card": 320
+          }
+        ]
+      }
+    },
+    {
+      "name": "Retired page links open their replacements without exposing duplicate gallery pages",
+      "pass": true
+    },
+    {
+      "name": "Original menu destinations are restored and each primary button opens the expected flow",
+      "pass": true
+    },
+    {
+      "name": "Specified flow pages hide visible Back controls while preserving business exits",
+      "pass": true,
+      "detail": {
+        "pages": [
+          "74",
+          "178",
+          "02",
+          "111",
+          "112",
+          "05",
+          "186"
+        ],
+        "systemBack": "state-machine BACK and right-swipe paths remain enabled"
+      }
+    },
+    {
+      "name": "Merged Wi-Fi screen keeps power confirmation, off state and the Settings overview return path",
+      "pass": true
+    },
+    {
+      "name": "First network list has no search control and password failure offers Re-enter",
+      "pass": true
+    },
+    {
+      "name": "Network-name detail explains its purpose, wraps raw names and preserves masked input on return",
+      "pass": true
+    },
+    {
+      "name": "Response images share exact geometry and gallery artboards use a single aspect ratio",
+      "pass": true,
+      "detail": {
+        "imageSize": "200 x 200 logical artboard units",
+        "scope": "Source geometry only, no browser pixel or physical-device measurement"
+      }
+    },
+    {
+      "name": "Daily menu has no More, setup, saved-recording or friend-update entry in any setup state",
+      "pass": true
+    },
+    {
+      "name": "Daily micro-event names its source and display-off stays runtime-only",
+      "pass": true
+    },
+    {
+      "name": "Saved recordings belong to Voice note and both visible Back and swipe Back preserve the parent menu",
+      "pass": true
+    },
+    {
+      "name": "Friend messages are named consistently inside Friends and return there without granting social consent",
+      "pass": true
+    },
+    {
+      "name": "Removing daily setup entry preserves first-use deferral, resume and explicit local completion",
+      "pass": true
+    },
+    {
+      "name": "Simplified Chinese visible copy has no untranslated sentence fragments",
+      "pass": true
+    },
+    {
+      "name": "Compact UI titles and recording status copy match the requested hierarchy",
+      "pass": true,
+      "detail": {
+        "p02": "设备连接",
+        "aiStates": "角色下方带状态图标",
+        "recording": [
+          "P81",
+          "P121"
+        ]
+      }
+    },
+    {
+      "name": "Latest copy and flow revisions remove the local skip, explain sources, and auto-advance setup",
+      "pass": true,
+      "detail": {
+        "p05": "网络项直接进入密码页",
+        "p29": "补充 App 选择说明",
+        "p77": "隐藏提醒来源标题",
+        "p112": "首次配网自动进入 P186"
+      }
+    },
+    {
+      "name": "Interaction graph is closed: every action has a valid destination and every external state declares its trigger",
+      "pass": true,
+      "detail": {
+        "pages": 165,
+        "runtimeOnly": [
+          "119",
+          "120"
+        ],
+        "externalStates": [
+          "12",
+          "13",
+          "11",
+          "18",
+          "51",
+          "67",
+          "135",
+          "57",
+          "119"
+        ],
+        "routes": 551
+      }
+    },
+    {
+      "name": "Modules keep shared failures nearby without duplicating canonical IDs",
+      "pass": true,
+      "detail": {
+        "modules": 12,
+        "sharedPreviews": 36
+      }
+    },
+    {
+      "name": "Character management and recording backup belong to their owning modules with adjacent recovery sections",
+      "pass": true,
+      "detail": {
+        "characterPages": "pet",
+        "backupPermission": "voice-backup",
+        "canonicalPages": 165
+      }
+    },
+    {
+      "name": "Shared screens continue the same responsive grid without adding fake numbered steps or blank rows",
+      "pass": true,
+      "detail": {
+        "sharedPreviews": 36,
+        "layout": "One responsive grid per section; shared previews remain unnumbered"
+      }
+    },
+    {
+      "name": "Regrouped module filters retain local settings, partner, invitation and reminder previews",
+      "pass": true
+    },
+    {
+      "name": "Daily submenu returns correctly through reminders, steps and step failures",
+      "pass": true
+    },
+    {
+      "name": "Growth is driven by increasing character levels, not care actions or repeated callbacks",
+      "pass": true
+    },
+    {
+      "name": "Removed Wi-Fi and weather pages are absent from all gallery variants, indexes and routes",
+      "pass": true
+    },
+    {
+      "name": "Cloud failure has exactly one visible retry action and no Continue branch",
+      "pass": true
+    },
+    {
+      "name": "Seven radial menu entries include Daily without adding Home or a steps shortcut",
+      "pass": true,
+      "detail": {
+        "entries": 7,
+        "stepsParent": "187",
+        "standbyShortcut": false
+      }
+    },
+    {
+      "name": "My companion switches presets and preserves each partner level and care values",
+      "pass": true
+    },
+    {
+      "name": "Only locally activated partners join the reusable companion selector",
+      "pass": true
+    },
+    {
+      "name": "Partner switch header and expanded selector use fixed circular-safe geometry",
+      "pass": true,
+      "detail": {
+        "switchSize": "56 x 56",
+        "expandedSelector": "338 x 216",
+        "scope": "Source geometry only; no browser layout measurement"
+      }
+    },
+    {
+      "name": "Peer friendship requires a valid encounter and matching bilateral acceptance",
+      "pass": true
+    },
+    {
+      "name": "Background friendship acceptance preserves the active detail, greeting and companion import",
+      "pass": true
+    },
+    {
+      "name": "Greeting receipts follow the captured recipient when an incoming invitation changes the visible friend",
+      "pass": true
+    },
+    {
+      "name": "Friend declines close only the matching request and incoming avatar invitations require an established peer",
+      "pass": true
+    },
+    {
+      "name": "Accepting an incoming friend creation request needs no second remote acceptance",
+      "pass": true
+    },
+    {
+      "name": "Peer import is cancellable and idempotent, with stale callback rejection and no automatic activation",
+      "pass": true
+    },
+    {
+      "name": "Peer request expiry and import permission, storage and offline guards preserve existing partners",
+      "pass": true
+    },
+    {
+      "name": "Peer-bound partner and avatar receipts reject a different device without consuming the request",
+      "pass": true
+    },
+    {
+      "name": "Viewing imported partners follows the selected friend, not the most recent import",
+      "pass": true
+    },
+    {
+      "name": "Menu hides levels while companion profile and upgrade feedback retain the current level",
+      "pass": true
+    },
+    {
+      "name": "Photo results survive Later and are explicitly activated from the companion picker",
+      "pass": true
+    },
+    {
+      "name": "Photo failure and timeout keep one task, reject stale retries and never activate a fallback",
+      "pass": true
+    },
+    {
+      "name": "Photo tasks arrive in the background and messages return to their own source",
+      "pass": true
+    },
+    {
+      "name": "Memory retries and cancellations isolate old callbacks by session identity",
+      "pass": true
+    },
+    {
+      "name": "Memory waiting and transfer timeouts expose recovery without accepting expired results",
+      "pass": true
+    },
+    {
+      "name": "App reminders support validated creation, versioned updates and deletion tombstones",
+      "pass": true
+    },
+    {
+      "name": "Reminder synchronization preserves failed edits and rejects stale or incomplete acknowledgments",
+      "pass": true
+    },
+    {
+      "name": "Reminder sync retries after offline and timeout, and serializes edits to the same reminder",
+      "pass": true
+    },
+    {
+      "name": "Reminders queue during settings and network input, then return through the real menu",
+      "pass": true
+    },
+    {
+      "name": "Photo failure and deferred-result gallery links restore the correct module context",
+      "pass": true
+    },
+    {
+      "name": "Canonical reminder conflicts replace optimistic state without reviving a deleted reminder",
+      "pass": true
+    },
+    {
+      "name": "Friends menu keeps three fixed destinations independently of friend count",
+      "pass": true
+    },
+    {
+      "name": "Multiple friends preserve selection and list scroll through detail, gestures, language and errors",
+      "pass": true
+    },
+    {
+      "name": "Empty friend list offers discovery and returns there after cancel, denial and successful pairing",
+      "pass": true
+    },
+    {
+      "name": "Friend-message unread state follows new request revisions and clears when viewed",
+      "pass": true
+    },
+    {
+      "name": "Friend list and fixed menu use stable circular geometry with bounded names and local portraits",
+      "pass": true,
+      "detail": {
+        "scope": "DOM, CSS and logical safe-area checks; not browser-pixel verification"
+      }
+    },
+    {
+      "name": "My friends has a canonical gallery page next to its menu and a working deep link",
+      "pass": true
+    },
+    {
+      "name": "Companion swipe changes only the installed partner and preserves levels, care, inventory and return origin",
+      "pass": true
+    },
+    {
+      "name": "Companion mouse, pen and touch swipes use scaled thresholds and never trigger care on release",
+      "pass": true
+    },
+    {
+      "name": "Companion gesture cancellation, vertical scrolling and background navigation do not switch or activate a partner",
+      "pass": true
+    },
+    {
+      "name": "Friend pet import wording is distinct from friendship and companion navigation stays discoverable",
+      "pass": true
+    },
+    {
+      "name": "Dock acknowledgment lasts 1.5 seconds and repeated or stale signals cannot restart it",
+      "pass": true
+    },
+    {
+      "name": "Dock battery reports validate session, revision and full charge without resetting idle state",
+      "pass": true
+    },
+    {
+      "name": "Dock acknowledgment interrupted by controls, notifications or power confirmation returns to standby",
+      "pass": true
+    },
+    {
+      "name": "Dock attach, full and detach preserve recording, conversation, settings, password and system tasks",
+      "pass": true,
+      "detail": [
+        "71",
+        "14",
+        "110",
+        "180",
+        "35",
+        "148",
+        "93"
+      ]
+    },
+    {
+      "name": "Dock charging follows AOD, screen-off and wake preferences without battery traffic keeping it awake",
+      "pass": true
+    },
+    {
+      "name": "Dock contact errors defer during tasks and charge receipts cannot dismiss thermal or low-battery protection",
+      "pass": true
+    },
+    {
+      "name": "Dock standby supports companionship and returns reminders, growth and AI to its current home",
+      "pass": true
+    },
+    {
+      "name": "Dock home variants retain ordinary home events and physical friendship returns to charging standby",
+      "pass": true
+    },
+    {
+      "name": "Dock content synchronization is independent of full charge and isolates reconnects, retries and late results",
+      "pass": true
+    },
+    {
+      "name": "Dock simulation controls automatically advance the live acknowledgment and preserve static review modes",
+      "pass": true
+    },
+    {
+      "name": "Dock gallery states stay together and use one consistent charging state layout",
+      "pass": true,
+      "detail": {
+        "basis": "DOM and logical CSS geometry only; browser rendering is not verified",
+        "sharedLayout": [
+          "23",
+          "24",
+          "26"
+        ],
+        "chargeState": "214px ring with status and swipe hint"
+      }
+    }
+  ]
+}

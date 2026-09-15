@@ -1,0 +1,193 @@
+/* Uploaded menu artwork: consistent frames with content-aware image fitting. */
+.scene[data-scene="apps"] .app-icon .menu-icon-asset {
+  display: block;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  image-rendering: auto;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 9px 10px color-mix(in srgb, var(--icon-color) 5%, transparent));
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.scene[data-scene="apps"] .app-tile:nth-child(-n + 5) .app-icon {
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile:nth-child(-n + 5) .app-icon::before {
+  display: none !important;
+}
+
+.scene[data-scene="apps"] .app-icon::after {
+  position: absolute;
+  inset: auto auto 1px 50%;
+  z-index: 0;
+  display: block !important;
+  width: 38px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--icon-color) 5%, transparent);
+  box-shadow: 0 7px 16px color-mix(in srgb, var(--icon-color) 5%, transparent);
+  content: "";
+  filter: blur(6px);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.scene[data-scene="apps"] .tile-settings .menu-icon-asset,
+.scene[data-scene="apps"] .tile-peach:not(.app-tile-chat) .menu-icon-asset {
+  width: 46px;
+  height: 46px;
+}
+
+.scene[data-scene="apps"] .tile-mint .menu-icon-asset,
+.scene[data-scene="apps"] .tile-lavender .menu-icon-asset {
+  width: 43px;
+  height: 43px;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon {
+  width: 120px;
+  height: 120px;
+  overflow: visible;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon::before {
+  display: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon::after {
+  display: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .menu-icon-asset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 145.2px;
+  height: 145.2px;
+  max-width: none;
+  max-height: none;
+  filter: none;
+  transform: translate(-50%, -50%);
+}
+
+.scene[data-scene="apps"] .app-tile-chat > span:last-child {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  word-spacing: 1px;
+  text-shadow: 0 2px 7px rgba(0, 0, 0, .78);
+  transform: translateY(-40px);
+}
+
+.scene[data-scene="apps"] .app-tile:hover .app-icon,
+.scene[data-scene="apps"] .app-tile:focus-visible .app-icon,
+.scene[data-scene="apps"] .app-tile:active .app-icon {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile:hover .menu-icon-asset,
+.scene[data-scene="apps"] .app-tile:focus-visible .menu-icon-asset {
+  transform: translateY(-1px) scale(1.035);
+}
+
+.scene[data-scene="apps"] .app-tile-chat:hover .menu-icon-asset,
+.scene[data-scene="apps"] .app-tile-chat:focus-visible .menu-icon-asset {
+  transform: translate(-50%, calc(-50% - 1px)) scale(1.035);
+}
+
+.scene[data-scene="apps"] .menu-icon-asset {
+  transition: transform 180ms var(--ease-out), filter 180ms ease;
+}
+
+/* Restore the original Apps menu language: crisp colored line icons without artwork medallions. */
+.scene[data-scene="apps"] .app-icon {
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .app-icon::before,
+.scene[data-scene="apps"] .app-icon::after {
+  display: none !important;
+}
+
+.scene[data-scene="apps"] .app-icon svg {
+  display: block;
+  width: 42px;
+  height: 42px;
+  color: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: none;
+  transition: transform 180ms var(--ease-out), filter 180ms ease;
+}
+
+.scene[data-scene="apps"] .tile-home .app-icon { color: #e1d6ff; }
+.scene[data-scene="apps"] .tile-settings .app-icon { color: #9ccaff; }
+.scene[data-scene="apps"] .tile-mint .app-icon { color: #80f1e9; }
+.scene[data-scene="apps"] .tile-peach:not(.app-tile-chat) .app-icon { color: #f7a5ca; }
+.scene[data-scene="apps"] .tile-lavender .app-icon { color: #ffd28b; }
+
+.scene[data-scene="apps"] .app-tile:hover .app-icon svg,
+.scene[data-scene="apps"] .app-tile:focus-visible .app-icon svg {
+  filter: none;
+  transform: translateY(-1px) scale(1.04);
+}
+
+/* Override the older dimensional treatment on the five peripheral destinations. */
+.scene[data-scene="apps"] .app-tile:nth-child(-n + 5) .app-icon svg,
+.scene[data-scene="apps"] .app-tile:nth-child(-n + 5):hover .app-icon svg,
+.scene[data-scene="apps"] .app-tile:nth-child(-n + 5):focus-visible .app-icon svg {
+  filter: none !important;
+  stroke-width: 1.8 !important;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon {
+  width: 126px;
+  height: 126px;
+  border: 1px solid rgba(157, 105, 238, .9) !important;
+  border-radius: 50%;
+  color: #c9a5ff;
+  background: radial-gradient(circle at 45% 35%, rgba(81, 46, 135, .25), rgba(17, 15, 25, .92) 74%) !important;
+  box-shadow: 0 0 0 1px rgba(184, 136, 255, .38), 0 0 25px rgba(135, 83, 235, .28), inset 0 0 22px rgba(134, 85, 216, .1) !important;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon svg {
+  width: 55px;
+  height: 55px;
+  stroke-width: 1.65;
+  filter: none;
+}
+
+.scene[data-scene="apps"] .app-tile-chat:hover .app-icon,
+.scene[data-scene="apps"] .app-tile-chat:focus-visible .app-icon {
+  background: radial-gradient(circle at 45% 35%, rgba(105, 60, 173, .34), rgba(17, 15, 25, .94) 74%) !important;
+  box-shadow: 0 0 0 2px rgba(212, 174, 255, .55), 0 0 36px rgba(157, 102, 255, .46), inset 0 0 26px rgba(165, 106, 255, .16) !important;
+}

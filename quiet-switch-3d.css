@@ -1,0 +1,339 @@
+/* Quiet Mode switch: recessed track with a raised, light-catching thumb. */
+.scene[data-scene="controls"] .controls-detail:has(.controls-quiet-reference) {
+  bottom: 0;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch {
+  bottom: 24px;
+}
+  isolation: isolate;
+  padding: 4px;
+  border: 1px solid rgba(255, 214, 198, .3);
+  background:
+    linear-gradient(180deg, rgba(65, 43, 43, .96) 0%, rgba(101, 63, 57, .9) 58%, rgba(122, 75, 65, .88) 100%);
+  box-shadow:
+    inset 0 4px 8px rgba(24, 12, 14, .52),
+    inset 0 -2px 3px rgba(255, 221, 208, .13),
+    inset 0 0 0 1px rgba(255, 143, 113, .13),
+    0 1px 0 rgba(255, 230, 218, .16),
+    0 7px 13px rgba(0, 0, 0, .34),
+    0 2px 3px rgba(0, 0, 0, .38);
+  transition: background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 120ms ease-out;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch::before {
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: inherit;
+  box-shadow:
+    inset 0 2px 3px rgba(0, 0, 0, .34),
+    inset 0 -1px 1px rgba(255, 255, 255, .08);
+  content: "";
+  pointer-events: none;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb {
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background:
+    radial-gradient(circle at 34% 25%, #f1f1f2 0%, #c7c7ca 30%, #929397 68%, #696a6e 100%);
+  box-shadow:
+    inset 0 3px 3px rgba(255, 255, 255, .4),
+    inset 0 -5px 7px rgba(47, 48, 51, .32),
+    0 2px 2px rgba(0, 0, 0, .32),
+    0 6px 8px rgba(0, 0, 0, .38),
+    0 0 0 1px rgba(0, 0, 0, .16);
+  transition: transform 220ms cubic-bezier(.2, .8, .2, 1), background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb::before {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 15px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .34);
+  content: "";
+  filter: blur(2px);
+  pointer-events: none;
+  transform: rotate(-18deg);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--companion-accent) 56%, rgba(255, 255, 255, .16));
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--companion-accent) 23%, #38262a 77%) 0%, color-mix(in srgb, var(--companion-accent) 32%, #5a3636 68%) 100%);
+  box-shadow:
+    inset 0 4px 8px rgba(41, 18, 20, .5),
+    inset 0 -2px 3px color-mix(in srgb, var(--companion-accent) 22%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--companion-accent) 22%, transparent),
+    0 1px 0 rgba(255, 230, 218, .2),
+    0 7px 13px rgba(0, 0, 0, .34),
+    0 0 14px color-mix(in srgb, var(--companion-accent) 13%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] .controls-quiet-switch-thumb {
+  border-color: color-mix(in srgb, var(--companion-accent) 64%, #fff 36%);
+  background:
+    radial-gradient(circle at 34% 25%, #ffd9ca 0%, color-mix(in srgb, var(--companion-accent) 72%, #ffd0bf 28%) 31%, var(--companion-accent) 67%, color-mix(in srgb, var(--companion-accent) 70%, #8f3c35 30%) 100%);
+  box-shadow:
+    inset 0 3px 3px rgba(255, 255, 255, .46),
+    inset 0 -5px 7px rgba(136, 53, 43, .25),
+    0 2px 2px rgba(61, 23, 20, .34),
+    0 6px 9px rgba(0, 0, 0, .36),
+    0 0 0 1px color-mix(in srgb, var(--companion-accent) 34%, transparent),
+    0 0 11px color-mix(in srgb, var(--companion-accent) 24%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--companion-accent) 72%, #fff 28%);
+  outline-offset: 4px;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active {
+  transform: translateX(-50%) scale(.97);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active .controls-quiet-switch-thumb {
+  transform: translateX(2px) scale(.95);
+  box-shadow:
+    inset 0 3px 5px rgba(0, 0, 0, .18),
+    0 2px 3px rgba(0, 0, 0, .3);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"]:active .controls-quiet-switch-thumb {
+  transform: translateX(44px) scale(.95);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] {
+  border-color: rgba(255, 183, 160, .72);
+  background:
+    linear-gradient(180deg, rgba(255, 194, 174, .28) 0%, rgba(136, 77, 69, .78) 13%, rgba(65, 38, 40, .98) 60%, rgba(34, 22, 27, .99) 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 238, 229, .24),
+    inset 0 -5px 8px rgba(22, 10, 15, .7),
+    inset 2px 0 4px rgba(255, 147, 119, .14),
+    0 3px 0 rgba(25, 12, 17, .84),
+    0 8px 16px rgba(0, 0, 0, .3),
+    0 0 16px rgba(255, 134, 106, .2);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] .controls-quiet-switch-thumb {
+  border: 1px solid rgba(255, 245, 240, .46);
+  background:
+    radial-gradient(circle at 32% 22%, #fff2ec 0%, #ffc1ae 24%, #ff9d83 58%, #cc5f56 100%);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, .62),
+    inset -4px -5px 7px rgba(137, 49, 45, .34),
+    0 2px 1px rgba(255, 237, 226, .3),
+    0 5px 8px rgba(31, 13, 17, .48),
+    0 0 0 1px rgba(255, 141, 116, .26);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene[data-scene="controls"] .controls-quiet-switch,
+  .scene[data-scene="controls"] .controls-quiet-switch-thumb {
+    transition-duration: .01ms;
+  }
+}
+
+/* Flat glow variant: solid color surfaces with no bevels, highlights, or inset depth. */
+.scene[data-scene="controls"] .controls-quiet-switch {
+  border: 1.5px solid color-mix(in srgb, var(--companion-accent) 72%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--companion-accent) 14%, #171519 86%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--companion-accent) 18%, transparent),
+    0 0 14px color-mix(in srgb, var(--companion-accent) 24%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch::before {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--companion-accent) 88%, #fff 12%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--companion-accent) 52%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb::before {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--companion-accent) 86%, #fff 14%);
+  background: color-mix(in srgb, var(--companion-accent) 28%, #171519 72%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--companion-accent) 26%, transparent),
+    0 0 18px color-mix(in srgb, var(--companion-accent) 38%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] .controls-quiet-switch-thumb {
+  border: 0;
+  background: var(--companion-accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--companion-accent) 68%, transparent);
+}
+
+/* State contrast: muted gray when off, companion coral when on. */
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] {
+  border-color: rgba(173, 178, 191, .42);
+  background: #292830;
+  box-shadow:
+    0 0 0 1px rgba(173, 178, 191, .12),
+    0 0 10px rgba(137, 145, 166, .18);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] .controls-quiet-switch-thumb {
+  background: #92949d;
+  box-shadow: 0 0 9px rgba(176, 181, 198, .42);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active .controls-quiet-switch-thumb,
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"]:active .controls-quiet-switch-thumb {
+  box-shadow: 0 0 8px color-mix(in srgb, var(--companion-accent) 58%, transparent);
+}
+
+/* Final pseudo-3D pass: layered materials, raised thumb, and tactile depth. */
+.scene[data-scene="controls"] .controls-quiet-switch {
+  isolation: isolate;
+  padding: 4px;
+  border: 1px solid rgba(255, 183, 160, .72);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 194, 174, .28) 0%, rgba(136, 77, 69, .78) 13%, rgba(65, 38, 40, .98) 60%, rgba(34, 22, 27, .99) 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 238, 229, .24),
+    inset 0 -5px 8px rgba(22, 10, 15, .7),
+    inset 2px 0 4px rgba(255, 147, 119, .14),
+    0 3px 0 rgba(25, 12, 17, .84),
+    0 8px 16px rgba(0, 0, 0, .3),
+    0 0 16px rgba(255, 134, 106, .2);
+  transition: background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 120ms ease-out;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch::before {
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  display: block;
+  border: 1px solid rgba(255, 228, 218, .2);
+  border-radius: inherit;
+  box-shadow:
+    inset 0 2px 3px rgba(16, 8, 13, .5),
+    inset 0 -1px 1px rgba(255, 255, 255, .11);
+  content: "";
+  pointer-events: none;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 245, 240, .46);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 22%, #fff2ec 0%, #ffc1ae 24%, #ff9d83 58%, #cc5f56 100%);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, .62),
+    inset -4px -5px 7px rgba(137, 49, 45, .34),
+    0 2px 1px rgba(255, 237, 226, .3),
+    0 5px 8px rgba(31, 13, 17, .48),
+    0 0 0 1px rgba(255, 141, 116, .26);
+  transform: translateX(0);
+  transition: transform 220ms cubic-bezier(.2, .8, .2, 1), background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb::before {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 16px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .42);
+  content: "";
+  filter: blur(2px);
+  pointer-events: none;
+  transform: rotate(-18deg);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--companion-accent) 86%, #fff 14%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--companion-accent) 46%, #5a3034 54%) 0%, color-mix(in srgb, var(--companion-accent) 32%, #271c25 68%) 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 238, 229, .28),
+    inset 0 -5px 8px rgba(35, 12, 18, .64),
+    0 3px 0 rgba(25, 12, 17, .82),
+    0 8px 16px rgba(0, 0, 0, .3),
+    0 0 18px color-mix(in srgb, var(--companion-accent) 25%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] .controls-quiet-switch-thumb {
+  border-color: rgba(255, 245, 240, .7);
+  background:
+    radial-gradient(circle at 32% 22%, #fff7f2 0%, #ffd0bf 23%, var(--companion-accent) 58%, #b34d4e 100%);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, .7),
+    inset -4px -5px 7px rgba(124, 42, 42, .3),
+    0 2px 1px rgba(255, 237, 226, .34),
+    0 5px 8px rgba(31, 13, 17, .48),
+    0 0 0 1px color-mix(in srgb, var(--companion-accent) 50%, transparent),
+    0 0 12px color-mix(in srgb, var(--companion-accent) 28%, transparent);
+  transform: translateX(46px);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--companion-accent) 72%, #fff 28%);
+  outline-offset: 4px;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active {
+  transform: translateX(-50%) scale(.97);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active .controls-quiet-switch-thumb {
+  transform: translateX(2px) scale(.95);
+  box-shadow:
+    inset 2px 3px 4px rgba(79, 27, 28, .28),
+    0 2px 3px rgba(19, 8, 12, .38);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"]:active .controls-quiet-switch-thumb {
+  transform: translateX(44px) scale(.95);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] {
+  border-color: rgba(255, 183, 160, .72);
+  background:
+    linear-gradient(180deg, rgba(255, 194, 174, .28) 0%, rgba(136, 77, 69, .78) 13%, rgba(65, 38, 40, .98) 60%, rgba(34, 22, 27, .99) 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 238, 229, .24),
+    inset 0 -5px 8px rgba(22, 10, 15, .7),
+    inset 2px 0 4px rgba(255, 147, 119, .14),
+    0 3px 0 rgba(25, 12, 17, .84),
+    0 8px 16px rgba(0, 0, 0, .3),
+    0 0 16px rgba(255, 134, 106, .2);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] .controls-quiet-switch-thumb {
+  border: 1px solid rgba(255, 245, 240, .46);
+  background:
+    radial-gradient(circle at 32% 22%, #fff2ec 0%, #ffc1ae 24%, #ff9d83 58%, #cc5f56 100%);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, .62),
+    inset -4px -5px 7px rgba(137, 49, 45, .34),
+    0 2px 1px rgba(255, 237, 226, .3),
+    0 5px 8px rgba(31, 13, 17, .48),
+    0 0 0 1px rgba(255, 141, 116, .26);
+}

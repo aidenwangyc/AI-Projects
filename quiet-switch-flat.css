@@ -1,0 +1,79 @@
+/* Quiet Mode flat switch: solid state colors with a restrained glow. */
+.scene[data-scene="controls"] .controls-quiet-switch {
+  isolation: auto;
+  padding: 4px;
+  border: 1.5px solid rgba(173, 178, 191, .5);
+  border-radius: 999px;
+  background: #292830;
+  box-shadow:
+    0 0 0 1px rgba(173, 178, 191, .12),
+    0 0 12px rgba(137, 145, 166, .18);
+  transition: background 200ms ease, border-color 200ms ease, box-shadow 200ms ease, transform 120ms ease-out;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch::before,
+.scene[data-scene="controls"] .controls-quiet-switch-thumb::before {
+  display: none;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch-thumb {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #92949d;
+  box-shadow: 0 0 10px rgba(176, 181, 198, .4);
+  transition: transform 200ms cubic-bezier(.2, .8, .2, 1), background 200ms ease, box-shadow 200ms ease;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--companion-accent) 86%, #fff 14%);
+  background: color-mix(in srgb, var(--companion-accent) 28%, #171519 72%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--companion-accent) 26%, transparent),
+    0 0 16px color-mix(in srgb, var(--companion-accent) 34%, transparent);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"] .controls-quiet-switch-thumb {
+  background: var(--companion-accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--companion-accent) 66%, transparent);
+  transform: translateX(46px);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] {
+  border-color: rgba(173, 178, 191, .5);
+  background: #292830;
+  box-shadow:
+    0 0 0 1px rgba(173, 178, 191, .12),
+    0 0 10px rgba(137, 145, 166, .18);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="false"] .controls-quiet-switch-thumb {
+  background: #92949d;
+  box-shadow: 0 0 9px rgba(176, 181, 198, .42);
+  transform: translateX(0);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--companion-accent) 72%, #fff 28%);
+  outline-offset: 4px;
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active {
+  transform: translateX(-50%) scale(.97);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch:active .controls-quiet-switch-thumb {
+  transform: translateX(2px) scale(.95);
+}
+
+.scene[data-scene="controls"] .controls-quiet-switch[aria-pressed="true"]:active .controls-quiet-switch-thumb {
+  transform: translateX(44px) scale(.95);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene[data-scene="controls"] .controls-quiet-switch,
+  .scene[data-scene="controls"] .controls-quiet-switch-thumb {
+    transition-duration: .01ms;
+  }
+}

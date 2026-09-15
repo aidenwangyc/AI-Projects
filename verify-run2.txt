@@ -1,0 +1,146 @@
+PASS Previous menu-network revision remains byte-for-byte unchanged
+PASS Previous flow-layout revision remains byte-for-byte unchanged
+PASS Previous warm-copy revision remains byte-for-byte unchanged
+PASS Main-device revision remains byte-for-byte unchanged
+PASS Original directory remains byte-for-byte unchanged
+PASS Previous complete prototype remains byte-for-byte unchanged
+PASS Previous Chinese prototype remains byte-for-byte unchanged
+PASS Previous scrolling prototype remains byte-for-byte unchanged
+PASS All pages are unique, ordered, and all transition targets exist
+PASS Startup confirms the main device and uses the circular password keyboard before character selection
+PASS Sequential catalog reaches every page, with backward and forward snapshots
+PASS Every review branch opens its declared page
+PASS QR stays valid indefinitely; device confirmation still expires and rejects cancelled callbacks
+PASS Changing network returns to Settings and preserves the character
+PASS Device Wi-Fi supports open networks, password boundaries and auth recovery
+PASS Wi-Fi scan empty, timeout, cancel and rescan keep the correct list origin
+PASS Wi-Fi cancel, timeout, lost network and stale callbacks do not advance a new attempt
+PASS Cancelling a Settings network change preserves the prior connection and clears input
+PASS Cloud unavailable continues with a local character without repeating password setup
+PASS Explicit local setup remains offline and does not manufacture a network connection
+FAIL Main-device pairing retries and cancellations use attempt identities
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'37' !== '38'
+
+    at F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:148:152
+    at test (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:14:64)
+    at Object.<anonymous> (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:146:1)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS Direct AI chat, thinking, reply, interrupt and end require no phone setup
+PASS AI offline and microphone guards stay effective
+PASS Recording pause/resume/save/playback/delete forms one object lifecycle
+PASS Recording failure preserves draft, and mute does not resume paused capture
+PASS Previous/Next review snapshots do not duplicate saved objects
+PASS Pet feed/clean/rest/explore changes state once and respects cooldown
+PASS Reminder snooze and completion are reflected in detail and lists
+PASS Social consent is not manufactured by the device
+PASS All pages render in English and Chinese with available local media
+PASS Generated QR images decode to demo-only identities
+PASS Both HTML entry points reference existing, syntactically valid scripts and styles
+PASS Workbench DOM can navigate and open the last Settings item without pagination
+PASS All circular list pages keep full item sets without page controls
+PASS Record lists keep all records and preserve scroll when returning from playback
+PASS Mouse dragging scrolls at the device scale and suppresses the release click
+PASS Touch list gestures keep native scrolling and do not navigate the device
+PASS Scroll offsets survive rerenders, language changes and review history
+PASS Keyboard can scroll lists from top to bottom without changing pages
+PASS List CSS enables native vertical scrolling within fixed safe-area bounds
+PASS Gallery shows all current Chinese pages in order without pagination and supports filters
+PASS Deferred character-resource page is not exposed in the current review copy
+PASS Today-steps entry is visible as a continuation of the scrollable app menu
+PASS Chinese deep links retain language in preview, history, and top navigation
+PASS Chat End control uses a stable center anchor inside the circular safe area
+PASS Chat character, state row, and End control occupy separate vertical bands
+PASS Annotated setup screens show the main device, local networks, and no unwanted helper text
+PASS Six language endonyms remain intact, scrollable, and selected without pretending to translate new locales
+PASS On-screen keyboard enters the chosen network, protects raw passwords and does not store them in review history
+PASS Recording uses labeled icon-only controls and playback places Delete before Play
+PASS Pet unavailable feedback is kind and returns safely without retrying a blocked action
+PASS Changed controls use fixed circular-safe geometry and dark-mode contrast
+PASS One scrollable menu restores the original wheel and keeps supplementary functions
+PASS Network selection stays concise and step count explains its source
+PASS Due-reminder list shows only tasks without redundant status and has a truthful empty state
+PASS Reminder completion and postponement still mutate the selected item only
+PASS Mixed messages and reminder details retain distinct statuses
+FAIL Companion invitation is optional and keeps consent, mic, stop and timeout guards
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(screenDoc('160',s).querySelector('.device-screen').textContent.includes('已停止收音'))
+
+    at F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:434:143
+    at test (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:14:64)
+    at Object.<anonymous> (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:426:1)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS Companion capture notice follows state and fits the fixed content region by source geometry
+PASS AI status is warm but does not imply continued capture or thinking after a timeout
+PASS Warm wording retains deletion, expiry, upload and real-world support information
+PASS New Chinese prompts stay concise and risk controls keep explicit accessible names
+PASS Warm copy remains covered by a complete rendered comparison with the device-pairing version
+PASS Task order has one owner per page and separates task stages from recovery states
+PASS Numbered primary paths have actual consecutive transitions
+PASS Gallery hierarchy shows each stage and does not number alternative or recovery states as required steps
+PASS Shared-page links reveal destinations outside current filters and preserve language
+PASS Deep anchors override conflicting search filters without losing the requested page
+PASS Gallery opens real interactions while the page index and catalog follow the same task order
+FAIL Unrelated product routes, copy, original templates and hardware input recognition stay unchanged
+AssertionError [ERR_ASSERTION]: 37
++ actual - expected
+
++ '{"n":"37","title":"设备连接超时","status":"revised","tag":"主设备配网与交互修订","type":"status","summary":"设备端确认超时后自动拒绝请求，不保留失效授权。","trigger":"主设备连接请求在有效时间内未完成。","feedback":"点击“再试一下”重新连接设备；取消后回到二维码。","edge":"超时不会写入绑定；重试创建新的连接尝试。","ui":{"kind":"status","label":"Device setup","text":"连接超时","sub":"Keep device nearby","tone":"dark","character":"","actions":[{"label":"Back","event":"PROVISION_CANCEL","target":"02","tone":"secondary","actionRole":"back","icon":"ArrowLeft","iconOnly":true},{"label":"再试一下","event":"BIND_RETRY","target":"04","tone":"primary","actionRole":"command"}],"items":[]}}'
+- '{"n":"37","title":"绑定请求已超时","status":"revised","tag":"主设备配网与交互修订","type":"status","summary":"设备端确认超时后自动拒绝请求，不保留失效授权。","trigger":"PAGE 03 等待用户确认超过 60 秒","feedback":"返回二维码页重新发起主设备连接；不跳过用户确认。","edge":"不得自动接受或创建重复绑定","ui":{"kind":"status","label":"Device setup","text":"Connection timed out","sub":"Keep device nearby","tone":"dark","character":"","actions":[{"label":"Back","event":"PROVISION_CANCEL","target":"02","tone":"secondary","actionRole":"back","icon":"ArrowLeft","iconOnly":true}],"items":[]}}'
+
+    at F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:548:12
+    at test (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:14:64)
+    at Object.<anonymous> (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:544:1)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS Responsive task bands keep one column on small screens and never place sections in decorative cards
+FAIL Retired page links open their replacements without exposing duplicate gallery pages
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'79' !== '120'
+
+    at F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:571:77
+    at test (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:14:64)
+    at Object.<anonymous> (F:\产品资料\07. AI Project\001. 电子小圆屏\02_小圆屏UI\companion-ui-fox_录音与连接流程修订_2026-09-14\verify-complete.cjs:567:1)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+PASS Original menu destinations are restored and each primary button opens the expected flow
+PASS Specified flow pages hide visible Back controls while preserving business exits
+PASS Merged Wi-Fi screen keeps power confirmation, off state and both Settings return paths
+PASS First network list has no search control and password failure offers Re-enter
+PASS Network-name detail explains its purpose, wraps raw names and preserves masked input on return
+PASS Response images share exact geometry and gallery artboards use a single aspect ratio
+PASS Daily menu has no More, setup, saved-recording or friend-update entry in any setup state
+PASS Daily micro-event names its source and display-off stays runtime-only
+PASS Saved recordings belong to Voice note and both visible Back and swipe Back preserve the parent menu
+PASS Friend updates are named consistently inside Friends and return there without granting social consent
+PASS Removing daily setup entry preserves first-use deferral, resume and explicit local completion
+PASS Simplified Chinese visible copy has no untranslated sentence fragments
+PASS Compact UI titles and recording status copy match the requested hierarchy
+PASS Latest copy and flow revisions remove the local skip, explain sources, and auto-advance setup
+PASS Interaction graph is closed: every action has a valid destination and every external state declares its trigger
+{"passed":83,"total":87}

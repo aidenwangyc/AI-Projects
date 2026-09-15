@@ -1,0 +1,1084 @@
+/* Friends entry: a seventh, bottom-center destination in the Apps wheel. */
+.scene[data-scene="apps"] .tile-friends {
+  position: absolute;
+  top: auto;
+  right: 124px;
+  bottom: 0;
+  left: 124px;
+  width: 112px;
+  height: 84px;
+  gap: 6px;
+  z-index: 1;
+}
+
+.scene[data-scene="apps"] .tile-friends .app-icon {
+  width: 56px;
+  height: 56px;
+  border: 0 !important;
+  border-radius: 0;
+  color: #bca9ff;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .tile-friends .app-icon svg {
+  width: 38px;
+  height: 38px;
+  overflow: visible;
+  color: currentColor;
+  fill: none;
+  stroke: #bca9ff;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 2px 0 #6e56b8) drop-shadow(0 -1px 0 #f3efff);
+  transition: transform 180ms var(--ease-out), filter 180ms ease;
+}
+
+.scene[data-scene="apps"] .tile-friends > span:last-child {
+  max-width: 112px;
+  overflow: visible;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 540;
+  line-height: 1.05;
+  text-align: center;
+  text-overflow: clip;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .72), 0 0 10px rgba(255, 255, 255, .05);
+}
+
+.scene[data-scene="apps"] .tile-friends:hover .app-icon svg,
+.scene[data-scene="apps"] .tile-friends:focus-visible .app-icon svg {
+  filter: drop-shadow(0 2px 0 #6e56b8) drop-shadow(0 -1px 0 #f3efff);
+  transform: translateY(-1px) scale(1.06);
+}
+
+/* Mask the old six-way bottom divider and draw the two Friends sector spokes. */
+.scene[data-scene="apps"] .apps-friend-spoke-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.scene[data-scene="apps"] .apps-friend-spoke-mask {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 182px;
+  display: block;
+  background: var(--screen);
+}
+
+.scene[data-scene="apps"] .apps-friend-spoke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 178px;
+  display: block;
+  background: rgba(209, 201, 255, .14);
+  box-shadow: 0 0 5px rgba(178, 143, 255, .12);
+  transform-origin: 50% 0;
+}
+
+.scene[data-scene="apps"] .apps-friend-spoke-left {
+  transform: rotate(-32deg);
+}
+
+.scene[data-scene="apps"] .apps-friend-spoke-right {
+  transform: rotate(32deg);
+}
+
+/* A compact Friends destination reached from the new wheel entry. */
+.friends-scene .scene-header {
+  top: 28px;
+  right: 46px;
+  left: 46px;
+}
+
+.friends-scene .scene-header h2 {
+  font-size: 24px;
+  font-weight: 720;
+}
+
+.friends-list {
+  position: absolute;
+  top: 92px;
+  right: 40px;
+  left: 40px;
+  display: grid;
+  gap: 10px;
+}
+
+.friend-card {
+  width: 100%;
+  min-height: 72px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  border: 1px solid rgba(188, 169, 255, .28);
+  border-radius: 36px;
+  color: var(--text);
+  background: linear-gradient(112deg, rgba(188, 169, 255, .12), rgba(255, 255, 255, .045));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 8px 18px rgba(20, 12, 38, .2);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, transform 120ms ease;
+}
+
+.friend-card:hover,
+.friend-card:focus-visible {
+  border-color: rgba(188, 169, 255, .62);
+  background: rgba(188, 169, 255, .16);
+}
+
+.friend-card:active {
+  transform: scale(.98);
+}
+
+.friend-avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(188, 169, 255, .62);
+  border-radius: 50%;
+  color: #f1ebff;
+  background: radial-gradient(circle at 32% 24%, rgba(255, 255, 255, .32), rgba(131, 95, 212, .35) 68%, rgba(28, 20, 46, .88));
+  box-shadow: 0 0 0 3px rgba(188, 169, 255, .1), 0 5px 14px rgba(111, 75, 184, .22), inset 2px 2px 5px rgba(255, 255, 255, .18);
+}
+
+.friend-avatar svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.9;
+}
+
+.friend-avatar img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.friend-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.friend-copy strong,
+.friend-copy small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.friend-copy strong {
+  font-size: 16px;
+  font-weight: 680;
+}
+
+.friend-copy small {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.friend-chevron {
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 248, 239, .68);
+  stroke-width: 2;
+}
+
+.friends-hint {
+  position: absolute;
+  right: 38px;
+  bottom: 37px;
+  left: 38px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* Re-align the seven destinations to the supplied 360 px Frame 4333 artwork. */
+.scene[data-scene="apps"] .app-grid {
+  background: var(--screen) !important;
+}
+
+.scene[data-scene="apps"] .app-grid::before {
+  position: absolute;
+  inset: 0;
+  display: block !important;
+  border: 0;
+  border-radius: 50%;
+  background: url("bg-divider.png") center / 100% 100% no-repeat;
+  content: "";
+  opacity: .17;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: none;
+  z-index: 0;
+}
+
+.scene[data-scene="apps"] .apps-friend-spoke-layer {
+  display: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile:nth-child(1) {
+  top: 8px;
+}
+
+.scene[data-scene="apps"] .app-tile:nth-child(2),
+.scene[data-scene="apps"] .app-tile:nth-child(3) {
+  top: 121px;
+}
+
+.scene[data-scene="apps"] .app-tile:nth-child(4),
+.scene[data-scene="apps"] .app-tile:nth-child(5) {
+  bottom: 42px;
+}
+
+.scene[data-scene="apps"] .tile-friends {
+  bottom: 18px;
+}
+
+/* Lift and enlarge the central hub so the lower Friends sector has the same breathing room as the reference. */
+.scene[data-scene="apps"] .app-tile:nth-child(6).app-tile-chat {
+  top: 87px;
+}
+
+.scene[data-scene="apps"] .app-tile-chat .app-icon {
+  width: 132px;
+  height: 132px;
+}
+
+.scene[data-scene="apps"] .app-tile-chat > span:last-child {
+  transform: translateY(-38px);
+}
+
+/* Keep every peripheral destination in one flat, outlined icon language. */
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat) {
+  --icon-bright: #f5efff;
+  --icon-color: #b783ff;
+  --icon-deep: #57328f;
+}
+
+.scene[data-scene="apps"] .tile-settings {
+  --icon-bright: #e9f8ff !important;
+  --icon-color: #69b9ff !important;
+  --icon-deep: #1767bd !important;
+}
+
+.scene[data-scene="apps"] .tile-mint {
+  --icon-bright: #eaffff !important;
+  --icon-color: #5df0e9 !important;
+  --icon-deep: #078f9c !important;
+}
+
+.scene[data-scene="apps"] .tile-peach:not(.app-tile-chat) {
+  --icon-bright: #fff0fa !important;
+  --icon-color: #ff85c2 !important;
+  --icon-deep: #b9347b !important;
+}
+
+.scene[data-scene="apps"] .tile-lavender {
+  --icon-bright: #fff8e7 !important;
+  --icon-color: #ffc967 !important;
+  --icon-deep: #bd7120 !important;
+}
+
+.scene[data-scene="apps"] .tile-home {
+  --icon-bright: #f5efff;
+  --icon-color: #b783ff;
+  --icon-deep: #57328f;
+}
+
+.scene[data-scene="apps"] .tile-friends {
+  --icon-bright: #f3efff !important;
+  --icon-color: #bca9ff !important;
+  --icon-deep: #6e56b8 !important;
+}
+
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat) .app-icon {
+  width: 56px;
+  height: 56px;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat) .app-icon svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: var(--icon-color);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2 !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: none !important;
+  transform: none;
+  transition: transform 180ms var(--ease-out);
+}
+
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat):hover .app-icon svg,
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat):focus-visible .app-icon svg {
+  filter: none !important;
+  transform: translateY(-1px) scale(1.06);
+}
+
+.scene[data-scene="apps"] .app-tile:not(.app-tile-chat):active .app-icon svg {
+  transform: scale(.96);
+}
+
+/* Place the six existing destinations on the bisectors of the supplied six-way wheel. */
+.scene[data-scene="apps"] .app-tile.tile-home {
+  top: 17px !important;
+  right: 124px !important;
+  bottom: auto !important;
+  left: 124px !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-settings,
+.scene[data-scene="apps"] .app-tile.tile-mint {
+  top: 78px !important;
+  bottom: auto !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-settings {
+  right: auto !important;
+  left: 4px !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-mint {
+  right: 4px !important;
+  left: auto !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-peach:not(.app-tile-chat),
+.scene[data-scene="apps"] .app-tile.tile-lavender {
+  top: 205px !important;
+  bottom: auto !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-peach:not(.app-tile-chat) {
+  right: auto !important;
+  left: 4px !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-lavender {
+  right: 4px !important;
+  left: auto !important;
+}
+
+.scene[data-scene="apps"] .app-tile.tile-friends {
+  top: 264px !important;
+  right: 124px !important;
+  bottom: auto !important;
+  left: 124px !important;
+}
+
+/* Anchor the AI Chat tile to the exact horizontal midpoint of the round screen. */
+.scene[data-scene="apps"] .app-tile.app-tile-chat {
+  top: 107px !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 50% !important;
+  width: 136px !important;
+  margin: 0 0 0 -68px !important;
+}
+
+.scene[data-scene="apps"] .app-tile.app-tile-chat .app-icon {
+  margin-inline: auto;
+}
+
+/* Friends flow: a compact, calm sequence of discover, connect, and create states. */
+.friends-scene .scene-header {
+  top: 17px;
+  right: 56px;
+  left: 56px;
+  height: 42px;
+}
+
+.friends-scene .scene-header h2 {
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 680;
+}
+
+/* Align Friends navigation with the standard scene header button footprint. */
+.friends-scene .scene-header .icon-button {
+  transform: translate(28px, 0);
+}
+
+.friends-scene .scene-header .icon-button:active {
+  transform: translate(28px, 0) scale(.94);
+}
+
+.friends-flow {
+  position: absolute;
+  top: 57px;
+  right: 22px;
+  bottom: 38px;
+  left: 22px;
+}
+
+.friends-flow-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.friends-flow-kicker {
+  margin: 0;
+  color: #f0ae7c;
+  font-size: 9px;
+  font-weight: 720;
+  letter-spacing: .12em;
+  line-height: 1;
+}
+
+.friends-flow-visual {
+  position: relative;
+  width: 176px;
+  height: 122px;
+  flex: 0 0 122px;
+  display: grid;
+  place-items: center;
+  margin: 6px 0 7px;
+  overflow: hidden;
+  border: 1px solid rgba(188, 169, 255, .27);
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 38%, rgba(105, 71, 151, .18), rgba(22, 18, 30, .92) 72%);
+}
+
+.friends-flow-visual::after {
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(255, 248, 239, .08);
+  border-radius: inherit;
+  content: "";
+  pointer-events: none;
+}
+
+.friends-flow-orbit,
+.friends-flow-bond-ring {
+  position: absolute;
+  width: 110px;
+  height: 94px;
+  border: 1px solid rgba(188, 169, 255, .2);
+  border-radius: 50%;
+}
+
+.friends-flow-character {
+  position: relative;
+  z-index: 1;
+  width: 112px;
+  height: 104px;
+  display: grid;
+  place-items: center;
+}
+
+.friends-flow-avatar {
+  width: 108px;
+  height: 102px;
+  object-fit: contain;
+}
+
+.friends-flow-visual-badge,
+.friends-flow-status-icon {
+  position: absolute;
+  z-index: 3;
+  right: 29px;
+  bottom: 18px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 248, 239, .16);
+  border-radius: 50%;
+  color: #fff3e8;
+  background: #bf805f;
+}
+
+.friends-flow-visual-badge svg,
+.friends-flow-status-icon svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2.15;
+}
+
+.friends-flow-visual-success .friends-flow-visual-badge,
+.friends-flow-visual-born .friends-flow-visual-badge {
+  color: #20202a;
+  background: #9ce0c4;
+}
+
+.friends-flow-visual-wave .friends-flow-visual-badge {
+  color: #20202a;
+  background: #a8ddff;
+}
+
+.friends-flow-visual-waiting .friends-flow-visual-badge {
+  color: #25212e;
+  background: #cbb7ff;
+}
+
+.friends-flow-visual-companion .friends-flow-visual-badge,
+.friends-flow-visual-feed .friends-flow-visual-badge,
+.friends-flow-visual-clean .friends-flow-visual-badge,
+.friends-flow-visual-rest .friends-flow-visual-badge {
+  color: #2b1c27;
+  background: #ffb084;
+}
+
+.friends-flow-visual-bond .friends-flow-bond-ring {
+  width: 116px;
+  height: 96px;
+  border-color: rgba(240, 174, 124, .32);
+}
+
+.friends-flow-visual-bond .friends-flow-avatar {
+  width: 100px;
+  height: 96px;
+}
+
+.friends-flow-visual-bond .friends-flow-visual-badge {
+  right: 31px;
+  bottom: 16px;
+  color: #2b1c27;
+  background: #f0ae7c;
+}
+
+.friends-flow-pair {
+  position: relative;
+  z-index: 1;
+  width: 144px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends-flow-pair .friends-flow-avatar {
+  width: 82px;
+  height: 80px;
+}
+
+.friends-flow-avatar-secondary {
+  margin-left: -18px;
+  filter: hue-rotate(54deg) saturate(.7) brightness(1.08);
+}
+
+.friends-flow-pair::after {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(240, 174, 124, .5);
+  border-radius: 50%;
+  background: #352a31;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.friends-flow-visual-badge {
+  line-height: 0;
+}
+
+/* New-friend greeting: keep the square video contained in the circular visual. */
+.friends-flow-visual-greeting {
+  overflow: visible;
+}
+
+.friends-flow-greeting-video {
+  width: 120px;
+  height: 120px;
+  display: block;
+  border: 1px solid rgba(240, 174, 124, .34);
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(22, 18, 30, .92);
+  box-shadow: 0 0 18px rgba(240, 174, 124, .22), 0 0 36px rgba(188, 169, 255, .14);
+}
+
+.friends-flow-visual-greeting .friends-flow-visual-badge {
+  right: 22px;
+  bottom: 12px;
+}
+
+/* Nearby greeting: bring the uploaded companion in from the lower edge. */
+.friends-flow[data-step="nearby"] .friends-flow-kicker,
+.friends-flow[data-step="partners"] .friends-flow-kicker {
+  display: none;
+}
+
+.friends-flow-visual-nearby-greeting {
+  width: 204px;
+  height: 154px;
+  flex-basis: 154px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 77px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.friends-flow-visual-nearby-greeting::after {
+  display: none;
+}
+
+.friends-flow-visual-nearby-greeting .friends-flow-nearby-video {
+  width: 204px;
+  height: 154px;
+  border: 0;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.friends-flow-visual-nearby-greeting .friends-flow-visual-badge {
+  display: none;
+}
+
+.friends-flow-visual-nearby-greeting .friends-flow-nearby-video {
+  will-change: transform, opacity;
+  animation: friends-greeting-rise 900ms cubic-bezier(.22, .8, .24, 1) both;
+}
+
+@keyframes friends-greeting-rise {
+  from {
+    opacity: .18;
+    transform: translate3d(0, 52px, 0) scale(.88);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .friends-flow-visual-nearby-greeting .friends-flow-nearby-video {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* New-friend reference layout: let the greeting video carry the visual focus. */
+.friends-flow[data-step="new-friend"] .friends-flow-kicker {
+  display: none;
+}
+
+.friends-flow[data-step="new-friend"] .friends-flow-visual-greeting {
+  width: 214px;
+  height: 174px;
+  flex-basis: 174px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.friends-flow[data-step="new-friend"] .friends-flow-greeting-video {
+  width: 170px;
+  height: 170px;
+}
+
+.friends-flow[data-step="new-friend"] .friends-flow-subtitle {
+  min-height: 18px;
+}
+
+/* Creating-together greeting: give the source video the same visual priority as the success state. */
+.friends-flow[data-step="creating"] .friends-flow-visual-creating-greeting {
+  width: 214px;
+  height: 174px;
+  flex-basis: 174px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.friends-flow[data-step="creating"] .friends-flow-greeting-video {
+  width: 170px;
+  height: 170px;
+}
+
+.friends-flow[data-step="creating"] .friends-flow-visual-creating-greeting .friends-flow-visual-badge {
+  right: 22px;
+  bottom: 12px;
+  color: #2b1c27;
+  background: #f0ae7c;
+}
+
+/* Partners confirmation: use the uploaded greeting video as the main visual. */
+.friends-flow[data-step="partners"] .friends-flow-visual-partners-greeting {
+  width: 204px;
+  height: 154px;
+  flex-basis: 154px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border: 0;
+  border-radius: 77px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.friends-flow[data-step="partners"] .friends-flow-visual-partners-greeting::after {
+  display: none;
+}
+
+.friends-flow[data-step="partners"] .friends-flow-greeting-video {
+  width: 204px;
+  height: 154px;
+  border: 0;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.friends-flow[data-step="partners"] .friends-flow-visual-partners-greeting .friends-flow-visual-badge {
+  display: none;
+}
+
+.friends-flow-visual-partners .friends-flow-visual-badge,
+.friends-flow-visual-creating .friends-flow-visual-badge {
+  right: 27px;
+  bottom: 16px;
+  color: #2b1c27;
+  background: #f0ae7c;
+}
+
+.friends-flow-visual-universe,
+.friends-flow-visual-cell {
+  background: radial-gradient(circle at 50% 48%, rgba(188, 169, 255, .17), rgba(22, 18, 30, .92) 68%);
+}
+
+.friends-flow-visual-universe::before,
+.friends-flow-visual-cell::before {
+  position: absolute;
+  width: 126px;
+  height: 78px;
+  border: 1px solid rgba(188, 169, 255, .34);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(-19deg);
+}
+
+.friends-flow-visual-universe::after,
+.friends-flow-visual-cell::after {
+  inset: 17px 23px;
+  border-color: rgba(240, 174, 124, .24);
+}
+
+.friends-flow-visual-universe .friends-flow-pair,
+.friends-flow-visual-cell .friends-flow-pair {
+  transform: scale(.72);
+}
+
+.friends-flow-progress-track {
+  position: absolute;
+  right: 35px;
+  bottom: 18px;
+  left: 35px;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(255, 248, 239, .12);
+}
+
+.friends-flow-progress-track i {
+  display: block;
+  width: 68%;
+  height: 100%;
+  border-radius: inherit;
+  background: #f0ae7c;
+}
+
+.friends-flow-visual-paused {
+  gap: 4px;
+  align-content: center;
+}
+
+.friends-flow-status-icon {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 4px;
+  color: #2b1c27;
+  background: #f0ae7c;
+}
+
+.friends-flow-visual-paused strong {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.friends-flow-visual-paused small {
+  color: var(--text-muted);
+  font-size: 9px;
+}
+
+.friends-flow-card h3 {
+  max-width: 290px;
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 680;
+  line-height: 1.05;
+}
+
+.friends-flow-subtitle {
+  max-width: 278px;
+  min-height: 24px;
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 540;
+  line-height: 1.25;
+}
+
+.friends-flow-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.friends-flow-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  max-width: 216px;
+}
+
+.friends-flow-actions-grid .friends-flow-action {
+  min-width: 0;
+}
+
+.friends-flow-action {
+  min-width: 104px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 11px;
+  border: 1px solid rgba(240, 174, 124, .45);
+  border-radius: 17px;
+  color: #f0ae7c;
+  background: rgba(240, 174, 124, .07);
+  font-size: 10px;
+  font-weight: 660;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+
+.friends-flow-action svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+}
+
+.friends-flow-action.is-primary,
+.friends-flow-option.is-primary {
+  border-color: #f0ae7c;
+  color: #2b1c27;
+  background: #f0ae7c;
+}
+
+.friends-flow-action:hover,
+.friends-flow-action:focus-visible {
+  border-color: #ffd0af;
+  background: rgba(240, 174, 124, .18);
+}
+
+.friends-flow-action.is-primary:hover,
+.friends-flow-action.is-primary:focus-visible,
+.friends-flow-option.is-primary:hover,
+.friends-flow-option.is-primary:focus-visible {
+  background: #ffc49a;
+}
+
+.friends-flow-action:active {
+  transform: scale(.96);
+}
+
+.friends-flow-nav {
+  position: absolute;
+  right: 112px;
+  bottom: 14px;
+  left: 112px;
+  height: 23px;
+  display: none;
+  grid-template-columns: 24px 1fr 24px;
+  align-items: center;
+  gap: 9px;
+}
+
+.friends-flow-nav > button {
+  width: 24px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: rgba(255, 248, 239, .7);
+  background: transparent;
+  cursor: pointer;
+}
+
+.friends-flow-nav > button:disabled {
+  opacity: .24;
+  cursor: default;
+}
+
+.friends-flow-nav > button:not(:disabled):hover,
+.friends-flow-nav > button:not(:disabled):focus-visible {
+  color: #f0ae7c;
+  background: rgba(240, 174, 124, .1);
+}
+
+.friends-flow-nav > button svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+
+.friends-flow-progress {
+  position: relative;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends-flow-progress strong {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 248, 239, .56);
+  font-size: 8px;
+  font-weight: 650;
+}
+
+.friends-flow-progress i {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  left: 0;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: rgba(255, 248, 239, .11);
+}
+
+.friends-flow-progress i::after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #f0ae7c;
+  content: "";
+}
+
+/* Match the compact Step 5 pairing controls exactly on the Friends preview. */
+.friends-flow-actions:not(.friends-flow-actions-grid) {
+  position: absolute;
+  right: 32px;
+  bottom: -9px;
+  left: 32px;
+  width: auto;
+  min-height: 46px;
+  height: 46px;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action {
+  position: relative;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  min-height: 42px;
+  gap: 0;
+  padding: 0;
+  border: 1px solid rgba(184, 173, 168, .52);
+  border-radius: 50%;
+  color: var(--action-end);
+  background: rgba(39, 35, 42, .94);
+  box-shadow: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action.is-primary {
+  border-color: rgba(255, 248, 239, .42);
+  color: var(--action-ink);
+  background: linear-gradient(145deg, var(--action-start), var(--action-end));
+  box-shadow: 0 9px 20px rgba(255, 150, 120, .24), inset 2px 2px 5px rgba(255, 255, 255, .34), inset -3px -4px 6px rgba(188, 75, 61, .2);
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action:not(.is-primary):hover,
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action:not(.is-primary):focus-visible {
+  border-color: rgba(255, 150, 120, .72);
+  color: var(--action-end);
+  background: rgba(61, 47, 49, .96);
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action.is-primary:hover,
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action.is-primary:focus-visible {
+  border-color: rgba(255, 248, 239, .42);
+  background: linear-gradient(145deg, var(--action-start), var(--action-end));
+  filter: brightness(1.06);
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action:not(.is-primary):active {
+  transform: scale(.96);
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action.is-primary:active {
+  transform: scale(.93);
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action:not(.is-primary) svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 2.3;
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action.is-primary svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 2.3;
+}
+
+.friends-flow-actions:not(.friends-flow-actions-grid) .friends-flow-action span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

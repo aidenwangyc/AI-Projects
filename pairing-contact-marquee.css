@@ -1,0 +1,50 @@
+/* Pairing contact feedback: a restrained light sweep around the screen edge. */
+.screen-contact-marquee {
+  position: absolute;
+  inset: 0;
+  z-index: 21;
+  padding: 4px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from -36deg,
+    rgba(157, 104, 255, .12) 0deg 18deg,
+    rgba(185, 119, 255, .95) 28deg 42deg,
+    rgba(255, 190, 79, .98) 58deg 76deg,
+    rgba(255, 99, 153, .92) 92deg 112deg,
+    rgba(157, 104, 255, .16) 138deg 276deg,
+    rgba(185, 119, 255, .7) 298deg 316deg,
+    rgba(157, 104, 255, .12) 332deg 360deg
+  );
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mix-blend-mode: screen;
+  filter: blur(24px) drop-shadow(0 0 34px rgba(179, 112, 255, .9));
+  will-change: transform, opacity, filter;
+}
+
+.device-screen.is-screen-contacting .screen-contact-marquee {
+  animation: screen-contact-marquee 1.75s linear 1;
+}
+
+@keyframes screen-contact-marquee {
+  0% {
+    opacity: 0;
+    transform: rotate(-18deg) scale(.985);
+  }
+  14% { opacity: .95; }
+  78% { opacity: .84; }
+  100% {
+    opacity: 0;
+    transform: rotate(342deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .device-screen.is-screen-contacting .screen-contact-marquee {
+    animation: none;
+    opacity: .65;
+  }
+}
