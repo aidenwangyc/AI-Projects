@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN" class="notranslate" translate="no">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google" content="notranslate">
+  <title>LUMIQ LG01 · 环形菜单与次级入口 · 交互原型</title>
+  <link rel="stylesheet" href="screen.css"><link rel="stylesheet" href="styles-fox.css"><link rel="stylesheet" href="menu-icons.css"><link rel="stylesheet" href="friends-menu.css"><link rel="stylesheet" href="complete-ui.css">
+</head>
+<body class="fox-workbench" data-view="prototype" data-default-locale="zh-CN">
+      <header class="workbench-header"><a class="workbench-brand" href="index.html"><img src="lumiq-logo.png" alt="LUMIQ"><span>LG01 <small>简中 · 环形菜单与次级入口</small></span></a><nav aria-label="原型视图"><a href="index.html" aria-current="page">交互原型</a><a href="gallery.html">全部页面</a><a href="HANDOFF.md">交付说明</a></nav></header>
+  <main class="workbench-main">
+    <section class="device-area" aria-label="交互设备">
+      <div class="review-heading"><span id="page-code">P01</span><h1 id="page-name">开机</h1></div>
+      <nav id="review-context" class="review-context" aria-label="当前流程位置"></nav>
+      <div class="device-holder"><div class="fox-device-frame"><div id="live-screen" class="live-screen" aria-live="off"></div></div></div>
+      <div class="device-meta"><span>沿用原稿 360 逻辑尺寸 · 480 画板</span><span id="capture-state">未采集</span></div>
+      <nav class="review-controls" aria-label="浏览控制"><button id="previous" type="button" title="返回上一步，恢复演示快照"><i data-lucide="arrow-left"></i><span>上一步</span></button><button id="clock" class="icon-control" type="button" title="运行模拟计时" aria-label="运行模拟计时" aria-pressed="false"><i data-lucide="play"></i></button><button id="next" class="next-control" type="button" title="下一步"><span>下一步</span><i data-lucide="arrow-right"></i></button></nav>
+      <div class="review-mode" role="group" aria-label="浏览模式"><button type="button" data-mode="flow" aria-pressed="true">按交互流程</button><button type="button" data-mode="catalog" aria-pressed="false">按页面顺序</button></div>
+      <p class="simulation-note">本地交互演示。扫码、语音、联网及外部回执均为模拟；不会采集、上传或改变真实设备。</p><div id="review-feedback" role="status"></div>
+    </section>
+    <aside class="inspection-area" aria-label="页面说明与分支">
+      <div class="inspection-heading"><h2>页面说明</h2><span id="visited-count"></span></div><p id="page-summary"></p>
+      <dl class="page-spec"><dt>进入条件</dt><dd id="page-trigger"></dd><dt>操作反馈</dt><dd id="page-feedback"></dd><dt>异常与边界</dt><dd id="page-edge"></dd></dl>
+      <h2>当前分支 <span class="small-note">模拟设备或外部事件</span></h2><div id="branches" class="branch-list"></div>
+      <details open><summary>场景入口</summary><div class="scenario-grid" id="scenarios"></div></details>
+      <details><summary>设备输入</summary><div class="hardware-controls"><button type="button" data-key="one" title="键 1：短按息屏，长按 3 秒开关机">键 1</button><button type="button" data-key="two" title="键 2：单击录音，双击静音，长按 2 秒调节">键 2</button><button type="button" data-inject="MUTE_TOGGLE" title="模拟麦克风开关" aria-label="模拟麦克风开关"><i data-lucide="mic-off"></i></button><button type="button" data-inject="POWER_CONFIRM" title="模拟关机请求" aria-label="模拟关机请求"><i data-lucide="power"></i></button></div><div class="gesture-controls" aria-label="手势替代按钮"><button data-gesture="left" title="向左滑" aria-label="向左滑"><i data-lucide="arrow-left"></i></button><button data-gesture="up" title="向上滑" aria-label="向上滑"><i data-lucide="arrow-up"></i></button><button data-gesture="down" title="向下滑" aria-label="向下滑"><i data-lucide="arrow-down"></i></button><button data-gesture="right" title="向右滑" aria-label="向右滑"><i data-lucide="arrow-right"></i></button></div></details>
+      <details><summary>底座事件模拟</summary><div class="hardware-controls"><button type="button" data-dock="connect" title="模拟放入底座" aria-label="模拟放入底座"><i data-lucide="plug-zap"></i></button><button type="button" data-dock="remove" title="模拟拔出底座" aria-label="模拟拔出底座"><i data-lucide="unplug"></i></button><button type="button" data-dock="full" title="模拟电量充满" aria-label="模拟电量充满"><i data-lucide="battery-full"></i></button><button type="button" data-dock="error" title="模拟底座接触异常" aria-label="模拟底座接触异常"><i data-lucide="triangle-alert"></i></button></div></details>
+      <details><summary>演示环境</summary><div id="environment"></div><div class="language-toolbar" role="group" aria-label="画面语言"><button type="button" data-locale="en" aria-pressed="false">English</button><button type="button" data-locale="zh-CN" aria-pressed="true">简体中文</button></div><p class="small-note">二维码是可解码的演示标识，不是生产配网凭据。目录预览暂停计时，实际操作启动自动流程。</p></details>
+      <details><summary>全部页面索引</summary><label class="page-search"><i data-lucide="search"></i><input id="page-search" type="search" placeholder="搜索页码或名称" aria-label="搜索页码或名称"></label><div id="page-index"></div></details>
+      <a class="original-reference" href="companion-ui-fox.html">原始视觉参考 <i data-lucide="arrow-up-right"></i></a>
+    </aside>
+  </main>
+  <script src="lucide.min.js"></script><script src="project-data.js"></script><script src="fox-data.js"></script><script src="fox-flow.js"></script><script src="state-machine.js"></script><script src="review-controller.js"></script><script src="screen-renderer.js"></script><script src="locale-cn.js"></script><script src="fox-templates.js"></script><script src="fox-renderer.js"></script><script src="input-recognizer.js"></script><script src="complete-interaction.js"></script>
+</body>
+</html>
