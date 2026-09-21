@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- lumiq-review-v16: independent copy -->
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 拍学机 Device UX · V16.1 默认权限修正版</title><style>:root{color-scheme:light;--ink:#29342f;--muted:#5c6a63;--line:#d9e2dc;--paper:#fff;--wash:#f3f6f4;--accent:#316b53;--tint:#e6f1e9;--danger:#a73f41;--warning:#855a12;--radius:8px;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s6:24px;--s8:32px;font-family:"Microsoft YaHei",Arial,sans-serif;letter-spacing:0}
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 拍学机 Device UX · V16.3 交互闭环复核版</title><style>:root{color-scheme:light;--ink:#29342f;--muted:#5c6a63;--line:#d9e2dc;--paper:#fff;--wash:#f3f6f4;--accent:#316b53;--tint:#e6f1e9;--danger:#a73f41;--warning:#855a12;--radius:8px;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s6:24px;--s8:32px;font-family:"Microsoft YaHei",Arial,sans-serif;letter-spacing:0}
 .app-head>.back-button,.device-head>.back-button{width:44px;height:44px;min-width:44px;flex:0 0 44px;padding:10px;border-color:transparent;background:transparent;border-radius:6px;box-shadow:none}.app-head>.back-button:hover,.device-head>.back-button:hover{background:var(--tint)}.app-head>.back-button:active,.device-head>.back-button:active{background:var(--line)}.back-button svg{width:24px;height:24px;stroke-width:2}
 *{box-sizing:border-box;letter-spacing:0}body{margin:0;background:var(--wash);color:var(--ink);font-size:14px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button,a,input,select,textarea{touch-action:manipulation}button,a{cursor:pointer}button{border:1px solid var(--line);border-radius:8px;background:#fff;min-height:44px;padding:9px 13px}button:hover{border-color:var(--accent);background:var(--tint)}button:active{background:#dce9e1}button:disabled{opacity:.55;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #206ba6;outline-offset:3px}button svg{flex-shrink:0}svg{width:22px;height:22px;stroke-width:1.8;vertical-align:middle}a{color:var(--accent)}h1,h2,h3,h4,p{margin:0}h1{font-size:22px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}small,.muted{color:var(--muted)}small{font-size:12px}strong,b{font-weight:700}img{display:block;max-width:100%;object-fit:contain}label{display:block}input,select,textarea{border:1px solid #b4c4ba;border-radius:6px;padding:10px;max-width:100%;min-height:44px;background:#fff;font-size:16px}input[type=checkbox]{width:22px;min-height:22px;accent-color:var(--accent)}input[type=range]{width:180px;padding:0;accent-color:var(--accent)}input[type=time]{min-width:128px}input[type=radio]{min-height:20px}textarea{width:100%;min-height:88px}input[type=range]{min-width:90px}.skip{position:absolute;left:12px;top:-60px;z-index:99;background:white;padding:12px}.skip:focus{top:12px}
 .review-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;background:#fff;border-bottom:1px solid var(--line);flex-wrap:wrap}.review-top p{font-size:12px;color:var(--muted);margin-top:3px}.review-tools,.segments,.actions,.row,.inline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.review-tools{justify-content:flex-end}.segments{gap:0}.segments button{border-radius:0}.segments button:first-child{border-radius:8px 0 0 8px}.segments button:last-child{border-radius:0 8px 8px 0}.segments [aria-pressed=true]{background:var(--accent);color:#fff;border-color:var(--accent)}.review-nav{padding:12px 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:#fdfefd;border-bottom:1px solid var(--line)}.review-nav label{font-size:12px;color:var(--muted)}.review-nav select{font-size:13px;min-width:200px}.notice{padding:10px 24px;background:#edf3ef;color:#4a5c51;font-size:12px;border-bottom:1px solid var(--line)}.review-main{padding:24px;max-width:1920px;margin:auto}.band{margin-bottom:40px}.band-head{display:flex;gap:16px;align-items:baseline;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}.band-head span{font-size:12px;color:var(--muted)}.map-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(335px,1fr));gap:24px;align-items:start}.page-card{min-width:0;scroll-margin:20px}.page-title{display:flex;gap:8px;align-items:center;margin-bottom:10px;font-size:14px;min-height:30px}.page-title code{font-size:11px;color:var(--muted)}.spec{margin-top:12px;padding-top:10px;border-top:1px dashed #b8c8bd;max-width:650px}.spec p{font-size:12px;line-height:1.8;color:#4c5d53;margin-top:4px}.spec b{color:#29382f}.spec details{margin-top:6px;font-size:12px}.spec summary{cursor:pointer;color:var(--accent)}.preview-layout{display:grid;grid-template-columns:minmax(300px,420px) minmax(250px,480px);gap:32px;align-items:start;justify-content:center}.preview-aside{padding-top:18px}.preview-aside h2{margin-bottom:8px}.preview-aside .spec{border:0}.preview-aside .actions{margin-top:18px}.phone{width:100%;max-width:390px;background:#fdfbff;border:8px solid #363239;border-radius:28px;margin:0 auto;box-shadow:0 4px 16px #27392c12}.app-ui{padding:20px 16px 24px;min-height:630px;border-radius:19px;background:#fff;color:#302e35;--accent:#77638d;--tint:#f1ebf7;--line:#e0dae6;--muted:#68606f}.app-ui .statusbar{font-size:11px;display:flex;justify-content:space-between;margin-bottom:16px;color:#68606f}.app-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:18px}.app-head h3{font-size:20px}.app-head .title-copy{flex:1;min-width:0}.icon-button{display:inline-grid;place-items:center;width:44px;min-width:44px;padding:9px}.primary{background:var(--accent);border-color:var(--accent);color:white;display:inline-flex;align-items:center;justify-content:center;gap:6px}.primary:hover{background:#275740;color:white}.app-ui .primary:hover{background:#65507c}.danger{color:var(--danger);border-color:#d7b3b3}.danger.primary{background:var(--danger);color:white;border-color:var(--danger)}.actions{margin-top:16px}.actions>button{flex:1;min-width:0}.actions .icon-button{flex:0 0 44px}.section{margin-top:22px}.section-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}.section-title h4{font-size:15px}.text-action{background:none;border:0;padding:6px;min-height:44px;color:var(--accent);text-decoration:underline;text-underline-offset:3px}.metrics{display:flex;gap:8px;margin:18px 0}.metric{flex:1;border-right:1px solid var(--line);padding:4px 6px}.metric:last-child{border:0}.metric b{display:block;font-size:25px;font-variant-numeric:tabular-nums}.metric small{display:block;font-size:12px}.summary-lead{border-bottom:1px solid var(--line);padding-bottom:16px}.summary-lead h3{font-size:22px;margin-bottom:8px}.summary-lead p{font-size:14px;color:#5d5863}.list{display:grid;gap:8px}.item{display:flex;gap:12px;width:100%;align-items:center;text-align:left;min-width:0;padding:12px}.item .copy{flex:1;min-width:0}.item b{display:block;font-size:14px}.item small{display:block;margin-top:3px;white-space:normal}.item img{width:62px;height:62px;flex-shrink:0;border-radius:6px;background:#f1f6f3}.item>.symbol{background:var(--tint);width:40px;height:40px;display:grid;place-items:center;border-radius:8px;flex-shrink:0}.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.filters button{font-size:12px;padding:8px 12px}.filters [aria-pressed=true]{background:var(--tint);border-color:var(--accent);color:var(--accent);font-weight:700}.tag{display:inline-block;font-size:12px;background:#f0f3f1;color:#41594c;padding:3px 7px;border-radius:4px}.tag.warn{background:#fff2d7;color:#775315}.tag.bad{background:#fbe9e9;color:#9c3c40}.tag.good{background:#e7f2eb;color:#2e6a48}.banner{padding:12px;border-radius:8px;background:var(--tint);margin:12px 0;font-size:13px}.banner.bad{background:#fbeeee;color:#843638}.banner.warn{background:#fff5e0;color:#75531e}.banner p{margin-top:4px}.photo{width:100%;height:190px;background:#f1f5f2;border-radius:8px}.photo.large{height:240px}.empty-media{height:168px;display:grid;place-content:center;gap:8px;text-align:center;background:#f1f4f2;border-radius:8px;color:#59685e}.empty-media svg{margin:auto}.album-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.album-item{padding:0;overflow:hidden;text-align:left}.album-item img{height:120px;width:100%;background:#f0f5f2}.album-item span{display:block;padding:8px;font-size:13px}.album-item small{display:block}.facts{margin:12px 0;display:grid;gap:8px}.fact{display:flex;justify-content:space-between;gap:16px;font-size:13px;border-bottom:1px solid var(--line);padding:8px 0}.fact span{color:var(--muted)}.timeline{display:grid;gap:0;margin:12px 0}.timeline li{list-style:none;position:relative;padding:8px 0 12px 24px;border-left:2px solid #dbe4dd;font-size:13px}.timeline li:before{content:"";position:absolute;width:9px;height:9px;background:#b6c8ba;border-radius:50%;left:-5px;top:16px}.timeline li.done:before{background:#39785c}.timeline li b{display:block}.timeline li small{display:block}.step-list{padding-left:22px;font-size:13px}.step-list li{margin:10px 0}.step-list small{display:block}.control-row{padding:12px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}.control-row>span,.control-row>div{flex:1}.control-row small{display:block}.form-field{margin:12px 0}.form-field>span{display:block;font-weight:700;font-size:13px;margin-bottom:6px}.full{width:100%}.app-ui .module-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.module-grid .item{gap:8px;min-height:76px}.module-grid .item small{font-size:11px}.app-ui .fold-note{margin-top:16px;font-size:12px;color:var(--muted)}.definition{font-size:13px;line-height:1.9}.quote{padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:12px;font-size:15px}.empty{padding:30px 12px;text-align:center}.empty svg{width:36px;height:36px;margin-bottom:12px}.empty p{margin:10px 0;color:var(--muted);font-size:13px}.loading-lines{display:grid;gap:12px;margin:20px 0}.loading-lines i{height:14px;background:#e7ece8;border-radius:4px}.loading-lines i:nth-child(2){width:70%}
@@ -146,7 +146,7 @@
 .record-meta{text-align:center}
 .record-meta h4{font-size:20px;line-height:1.4}
 .device-ui .record-meta p{font-size:14px;margin-top:4px;color:var(--muted);font-variant-numeric:tabular-nums}
-</style></head><body><script>/**
+</style><style>.device-ui .task-recap-list{flex:1;min-height:0;overflow-y:auto}.device-ui .task-recap-list .item{min-height:52px;padding:8px 12px}.device-ui .task-recap-list+.actions{flex-shrink:0}</style></head><body><script>/**
  * @license lucide v1.8.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -197,43 +197,86 @@ function createReview(pages,opts){
  let current=pageById.has(params.get('screen'))?params.get('screen'):opts.initial;
  let view=params.get('view')==='map'?'map':'preview';
  let trail=[];const scrolls=new Map();
+ const capture=()=>({taskKey:deviceState.taskKey,mediaId:deviceState.mediaId,recordIndex:deviceState.recordIndex,recordPage:deviceState.recordPage,taskPage:deviceState.taskPage,albumDetailBack:deviceState.albumDetailBack,folderPages:structuredClone(deviceState.folderPages||{}),artPage:deviceState.artPage||0,artPhotoPage:deviceState.artPhotoPage||0});
+ const restore=context=>{if(context)Object.assign(deviceState,structuredClone(context));};
+ const snapshot=()=>({id:current,payload:selectedPayload(current),context:capture()});
  if(params.get('item'))opts.select?.(params.get('item'),current);
  const groups=[...new Set(pages.map(p=>p.group))];
  document.body.className=opts.kind==='device'?'device-mode':'';
  document.body.innerHTML=`<a class="skip" href="#reviewMain">跳到页面内容</a><header class="review-top"><div><h1>${H(opts.title)}</h1><p>${H(opts.version)} · 简体中文评审版 · ${pages.length} 个页面与状态</p></div><div class="review-tools"><div class="segments" aria-label="展示方式"><button data-view="preview">交互预览</button><button data-view="map">页面展开</button></div><button data-review="reset" title="仅重置本原型的演示数据">${ico('rotate-ccw')} 重置演示</button></div></header><nav class="review-nav"><label>页面定位 <select id="pageSelect">${groups.map(g=>`<optgroup label="${H(g)}">${pages.filter(p=>p.group===g).map(p=>`<option value="${p.id}">${p.id} ${H(p.title)}</option>`).join('')}</optgroup>`).join('')}</select></label>${opts.controls||''}</nav><div class="notice">交互原型使用独立演示数据，不连接真实设备或云端。页面展开保留每个画面及交互说明；进入预览后可连续操作。</div><main id="reviewMain" class="review-main" tabindex="-1"></main><footer class="review-footer">${H(opts.footer)} · 保存与删除只影响当前浏览器中的演示数据。</footer><div id="uxToast" class="toast" role="status" aria-live="polite"></div>`;
  const ui=(p,preview=false)=>opts.kind==='device'?`<div class="device-viewport"><div class="device-frame"><div class="device-ui" data-screen-id="${p.id}">${p.html(preview)}</div></div></div>`:`<div class="phone"><div class="app-ui" data-screen-id="${p.id}">${p.html(preview)}</div></div>`;
  function draw(){
-  const selected=pageById.get(current);document.title=`${opts.title} · ${selected.title}`;
+  const selected=pageById.get(current);if(!selected)return;
+  document.title=`${opts.title} · ${selected.title}`;
   document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
   document.getElementById('pageSelect').value=current;
   document.getElementById('reviewMain').innerHTML=view==='map'?groups.map(g=>`<section class="band" id="group-${groups.indexOf(g)}"><div class="band-head"><h2>${H(g)}</h2><span>${pages.filter(p=>p.group===g).length} 个页面与状态</span></div><div class="map-grid">${pages.filter(p=>p.group===g).map(p=>`<article class="page-card" id="page-${p.id}" data-page="${p.id}"><div class="page-title"><code>${p.id}</code><b>${H(p.title)}</b>${go(p.id,ico('maximize-2'),'icon-button')}</div>${ui(p)}${specHTML(p)}</article>`).join('')}</div></section>`).join(''):`<div class="preview-layout"><article class="page-card" data-page="${selected.id}"><div class="page-title"><code>${selected.id}</code><b>${H(selected.title)}</b></div>${ui(selected,true)}</article><aside class="preview-aside"><h2>本页交互说明</h2>${specHTML(selected)}${opts.previewNotes?.(current)||''}<div class="actions"><button data-view="map">${ico('layout-grid')} 回到页面展开</button></div></aside></div>`;
-  document.querySelectorAll('button.icon-button').forEach(b=>{if(!b.getAttribute('aria-label')){const name=b.dataset.go?pageById.get(b.dataset.go)?.title:'操作';b.setAttribute('aria-label',name||'返回');b.title=name||'返回'}});
+  document.querySelectorAll('button.icon-button').forEach(b=>{if(!b.getAttribute('aria-label')){const name=b.dataset.go?pageById.get(b.dataset.go)?.title:'返回';b.setAttribute('aria-label',name||'返回');b.title=name||'返回'}});
   document.querySelectorAll('button').forEach(b=>{if(!b.textContent.trim()&&!b.getAttribute('aria-label')&&b.querySelector('img[alt]'))b.setAttribute('aria-label','查看'+b.querySelector('img').alt)});
   paintIcons();opts.afterRender?.(current,view);opts.persist?.();
  }
- function updateHash(replace=false){const q=new URLSearchParams({screen:current,view});const item=opts.selected?.(current);if(item)q.set('item',item);history[replace?'replaceState':'pushState']({screen:current,view,trail:[...trail]},'',`#${q}`)}
- function open(id,payload='',push=true){if(!pageById.has(id)){announce('该页面不存在');return}const redirect=opts.beforeOpen?.(current,id,payload);if(redirect){id=redirect;payload=''}scrolls.set(current,window.scrollY);if(push&&current!==id)trail.push(current);if(payload)opts.select?.(payload,id,current);current=id;view='preview';updateHash();draw();window.scrollTo(0,scrolls.get(id)||0);document.querySelector('.device-head h3,.app-head h3')?.setAttribute('tabindex','-1');document.querySelector('.device-head h3,.app-head h3')?.focus({preventScroll:true})}
- const api={open,refresh:draw,current:()=>current,view:()=>view,setBeforeOpen:hook=>{opts.beforeOpen=hook},back:(fallback=opts.initial)=>{const target=trail.pop()||fallback;open(target,'',false)},map:()=>{view='map';updateHash();draw()},pages,frame:()=>document.querySelector('#reviewMain .app-ui,#reviewMain .device-ui')};
+ function selectedPayload(id=current){return opts.selected?.(id)||'';}
+ function updateHash(replace=false){const q=new URLSearchParams({screen:current,view});const item=selectedPayload();if(item)q.set('item',item);history[replace?'replaceState':'pushState']({screen:current,view,trail:[...trail]},'',`#${q}`)}
+ function open(id,payload='',push=true){
+  if(!pageById.has(id)){announce('该页面不存在');return}
+  id=normalizeDeviceRoute(id);const from=current;const redirect=opts.beforeOpen?.(from,id,payload);const target=redirect&&pageById.has(redirect)?redirect:id;
+  scrolls.set(from,window.scrollY);
+  if(push&&from!==target)trail.push(snapshot());
+  if(payload&&!redirect)opts.select?.(payload,target,from);
+  current=target;view='preview';updateHash();draw();window.scrollTo(0,scrolls.get(target)||0);
+  document.querySelector('.device-head h3,.app-head h3')?.setAttribute('tabindex','-1');document.querySelector('.device-head h3,.app-head h3')?.focus({preventScroll:true});
+ }
+ function back(fallback=opts.initial){
+  const direct=deviceBackDestination(current);
+  if(direct){returnTo(direct);return;}
+  const previous=trail.at(-1);
+  const id=previous?.id||fallback;
+  const redirect=opts.beforeOpen?.(current,id,previous?.payload||'');
+  if(redirect){open(redirect,'',false);return;}
+  if(previous){trail.pop();restore(previous.context);}
+  open(id,previous?.payload||'',false);
+ }
+ function finish(id,payload='',skipIds=[]){
+  const invalid=new Set([current,...skipIds]);trail=trail.filter(x=>!invalid.has(x.id));
+  const ancestor=trail.findLastIndex(x=>x.id===id);
+  if(ancestor>=0)trail=trail.slice(0,ancestor);
+  open(id,payload,false);
+ }
+ function returnTo(id,payload=''){
+  const index=trail.findLastIndex(x=>x.id===id);
+  if(index>=0){const target=trail[index];const redirect=opts.beforeOpen?.(current,id,payload||target.payload);
+   if(redirect&&redirect!==id){open(redirect,'',false);return;}
+   trail=trail.slice(0,index);restore(target.context);open(id,payload||target.payload,false);
+  }else open(id,payload,false);
+ }
+ const api={open,refresh:draw,current:()=>current,view:()=>view,setBeforeOpen:hook=>{opts.beforeOpen=hook},back,finish,returnTo,map:()=>{view='map';updateHash();draw()},pages,frame:()=>document.querySelector('#reviewMain .app-ui,#reviewMain .device-ui')};
  document.addEventListener('click',event=>{
   const b=event.target.closest('button');if(!b||b.disabled)return;
   if(b.dataset.view){view=b.dataset.view;updateHash();draw();return}
-  if(b.dataset.review==='reset'){opts.reset();trail=[];current=opts.initial;updateHash(true);draw();announce('演示数据已重置');return}
+  if(b.dataset.review==='reset'){opts.reset?.();trail=[];current=opts.initial;view='preview';updateHash(true);draw();announce('演示数据已重置');return}
   const p=pageById.get(b.closest('[data-page]')?.dataset.page);
   if(b.dataset.back){if(view==='map'){p?.prepare?.();current=p?.id||current;view='preview';updateHash(true)}api.back(b.dataset.back);return}
-  if(b.dataset.go){if(view==='map')p?.prepare?.();open(b.dataset.go,b.dataset.payload||'');return}
-  if(b.dataset.action){if(view==='map'){p?.prepare?.();current=p?.id||current;view='preview';updateHash()}opts.handle(b.dataset.action,b,api)}
+  if(b.dataset.go){if(view==='map'){p?.prepare?.();current=p?.id||current;trail=[];}open(b.dataset.go,b.dataset.payload||'');return}
+  if(b.dataset.action){if(view==='map'){p?.prepare?.();current=p?.id||current;view='preview';updateHash()}opts.handle?.(b.dataset.action,b,api)}
  });
- document.addEventListener('change',event=>{if(event.target.id==='pageSelect'){const id=event.target.value;if(view==='map'){document.getElementById('page-'+id)?.scrollIntoView({block:'start'});current=id;updateHash()}else {pageById.get(id)?.prepare?.();open(id)}return}opts.change?.(event.target,api)});
+ document.addEventListener('change',event=>{if(event.target.id==='pageSelect'){const id=event.target.value;if(view==='map'){document.getElementById('page-'+id)?.scrollIntoView({block:'start'});current=id;updateHash()}else {pageById.get(id)?.prepare?.();open(id);}return}opts.change?.(event.target,api)});
  document.addEventListener('input',event=>opts.input?.(event.target,api));
- addEventListener('popstate',event=>{const q=new URLSearchParams(location.hash.slice(1));const next=pageById.has(q.get('screen'))?q.get('screen'):opts.initial;current=opts.beforeOpen?.(current,next,q.get('item')||'')||next;view=q.get('view')==='preview'?'preview':'map';trail=Array.isArray(event.state?.trail)?[...event.state.trail]:[];if(q.get('item'))opts.select?.(q.get('item'),current);draw()});
- updateHash(true);draw();window.UX={...api,getState:()=>structuredClone(opts.getState())};return api;
+ addEventListener('popstate',event=>{
+  const q=new URLSearchParams(location.hash.slice(1));const requested=pageById.has(q.get('screen'))?q.get('screen'):opts.initial;
+  const next=normalizeDeviceRoute(requested),redirect=opts.beforeOpen?.(current,next,q.get('item')||'');
+  current=redirect&&pageById.has(redirect)?redirect:next;view=redirect?'preview':q.get('view')==='preview'?'preview':'map';
+  if(!redirect){trail=Array.isArray(event.state?.trail)?event.state.trail.filter(x=>x&&pageById.has(x.id)):[];if(q.get('item')&&next===requested)opts.select?.(q.get('item'),current);}
+  updateHash(true);draw();
+ });
+ updateHash(true);draw();window.UX={...api,getState:()=>structuredClone(opts.getState?.()||{})};return api;
 }
 
-const DEVICE_KEY='lumiq-device-ux-v16-interaction-audit';
+
+const DEVICE_KEY='lumiq-device-ux-v163-interaction-closure';
 function recordingExamples(){return [
  {id:'record-demo-1',name:'录音 001',recordedAt:'2026-09-08 10:10',seconds:9},
  {id:'record-demo-2',name:'录音 002',recordedAt:'2026-09-08 17:25',seconds:32},
- {id:'record-demo-3',name:'录音 003',recordedAt:'2026-09-09 08:30',seconds:18}
+ {id:'record-demo-3',name:'录音 003',recordedAt:'2026-09-09 08:30',seconds:18,unavailable:true}
 ]}
 function recordingDuration(seconds){const total=Math.max(0,Math.floor(Number(seconds)||0));return String(Math.floor(total/60)).padStart(2,'0')+':'+String(total%60).padStart(2,'0')}
 function recordingDate(date=new Date()){const pad=n=>String(n).padStart(2,'0');return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}`}
@@ -254,7 +297,7 @@ const dSuccess=(title,copy,actions,back)=>dScreen(title,empty(title,copy,'','cir
 const sounds=()=>`<div class="sound-bars" aria-hidden="true">${[12,24,34,19,36,26,14].map(h=>`<i style="--height:${h}px"></i>`).join('')}</div>`;
 const dPages=[];
 function dp(id,title,group,html,entry,result,edge,prepare){dPages.push({id,title,group,html,entry,result,edge,prepare})}
-function dSelect(value,screen='',from=''){if(screen==='DEV-FAV-01'){deviceState.contentFavoritesReturn=value==='DEV-WORD-01'?'DEV-WORD-01':'DEV-KNOW-01';return}if(screen.startsWith('DEV-ALBUM')){deviceState.mediaId=value;if(screen==='DEV-ALBUM-02')deviceState.albumDetailBack=from==='DEV-ALBUM-03'?'DEV-ALBUM-03':'DEV-ALBUM-01';return}if(taskTemplates.some(t=>t.key===value))deviceState.taskKey=value;else if(deviceState.media.some(m=>m.id===value))deviceState.mediaId=value;else if(['Orbit','Luna'].includes(value))deviceState.chatRole=value}
+function dSelect(value,screen='',from=''){if(screen==='DEV-FAV-01'){deviceState.contentFavoritesReturn=value==='DEV-WORD-01'?'DEV-WORD-01':'DEV-KNOW-01';return}if(screen.startsWith('DEV-ALBUM')){deviceState.mediaId=value;if(screen==='DEV-ALBUM-02')deviceState.albumDetailBack=from==='DEV-ALBUM-03'?'DEV-ALBUM-03':'DEV-ALBUM-01';return}if(deviceState.tasks.some(t=>t.key===value))deviceState.taskKey=value;else if(deviceState.media.some(m=>m.id===value))deviceState.mediaId=value;else if(['Orbit','Luna'].includes(value))deviceState.chatRole=value}
 const menuItems=[[
  ['拍万物','scan','DEV-CAP-01'],['探索任务','compass','DEV-TASK-01'],['百科','book-open','DEV-KNOW-01'],['拍英语','languages','DEV-WORD-01']
 ],[['AI绘图','palette','DEV-ART-01'],['AI对讲','messages-square','DEV-TALK-01'],['AI闹钟','alarm-clock','DEV-ALARM-01'],['故事本','book-audio','DEV-STORY-01']],[['相册','images','DEV-ALBUM-01'],['录音','mic','DEV-REC-01'],['音乐','music','DEV-MUSIC-01'],['设置','settings','DEV-SET-01']]];
@@ -301,28 +344,30 @@ dp('DEV-ART-01','绘图方式','AI 创作与对讲',()=>dScreen('AI绘图',`<div
 dp('DEV-ART-02','绘画草稿','AI 创作与对讲',()=>dScreen('画出你的想法',`<div class="paint-tools"><label class="sr-only" for="paintColor">画笔颜色</label><input type="color" id="paintColor" value="#3e8d68" title="画笔颜色">${act('clear-art',ico('eraser'),'icon-button','aria-label="清空画布" title="清空画布"')}<span class="muted">我的画</span></div><canvas class="draw-canvas" width="720" height="230" aria-label="绘画画布"></canvas>`,`${go('DEV-ART-08','稍后继续')}${primary('generate-art',`${ico('sparkles')} 变成作品`)}`,'DEV-ART-08'),'涂鸦入口进入，使用颜色选择器和清空工具。','画笔轨迹本地保留，生成时保留原稿；退出可保留草稿。','取消、网络失败或家长关闭云端 AI 都不丢原稿。');
 dp('DEV-ART-03','照片变画','AI 创作与对讲',()=>dScreen('选择一张照片',`<div class="album-grid">${deviceState.media.filter(m=>!m.deletedAt&&m.kind==='photo').slice(0,3).map(m=>act('choose-art-photo',dImage(m.id),'album-item',`data-id="${m.id}" aria-label="选择${H(m.name)}"`)).join('')}</div><p>保留原来的照片，另外生成新作品。</p>`,go('DEV-ART-01','返回'),'DEV-ART-01'),'从照片变画进入本地相册选择，选中后进入生成。','生成作品使用新的 media_id，不覆盖原始照片。','无可用照片时提供拍照入口；敏感照片不得发起不允许的云端处理。');
 dp('DEV-ART-04','作品生成中','AI 创作与对讲',()=>dScreen('正在创作',`${dImage(deviceState.artSource==='photo'?deviceState.mediaId:'art')}<p role="status">正在把你的想法变成画…</p>`,act('cancel-art','取消生成'),'DEV-ART-08'),'发起一次明确的联网生成请求。','成功进入作品回看，失败可重试，取消回草稿。','迟到结果不自动入相册；同请求重试不能重复生成或重复扣费。');
-dp('DEV-ART-05','作品回看与保存','AI 创作与对讲',()=>dScreen('你的新作品',dImage('art'),`${go('DEV-ART-08','先不保存')}${primary('save-art','保存到相册')}`,'DEV-ART-08'),'生成成功后显示完整作品，不自动宣称已保存。','孩子保存后建立新相册条目，再进入保存成功页。','存储不足保留临时作品并提供清理入口；重复点击只保存一次。');
-dp('DEV-ART-06','作品已保存','AI 创作与对讲',()=>dSuccess('作品已保存','你可以在相册里找到它。',`${go('DEV-ALBUM-02','看看作品','', deviceState.mediaId)}${go('DEV-ART-01','再创作一幅','primary')}`,'DEV-ART-01'),'相册写入完成后显示成功。','看作品进入该作品详情，可收藏或删除；新创作不覆盖旧作品。','是否出现在 App 由照片备份开关决定，与本地保存成功分开。');
+dp('DEV-ART-05','作品回看与保存','AI 创作与对讲',()=>dScreen('你的新作品',dImage('art'),`${go('DEV-ART-08','先不保存')}${primary('save-art','保存作品')}`,'DEV-ART-08'),'生成成功后显示完整作品，不自动宣称已保存。','孩子保存后建立独立作品条目，再进入保存成功页。','存储不足保留临时作品并提供清理入口；重复点击只保存一次；作品不进入照片相册。');
+dp('DEV-ART-06','作品已保存','AI 创作与对讲',()=>dSuccess('作品已保存','作品已保存到拍学机，照片相册只展示拍摄照片。',`${go('DEV-ART-09','查看作品','primary')}${go('DEV-ART-01','再创作一幅')}`,'DEV-ART-01'),'作品文件写入完成后显示成功。','看作品进入独立详情；删除需要确认，新创作不覆盖旧作品。','作品只在设备创作模块管理，不受照片备份开关控制。');
 dp('DEV-ART-07','生成失败','AI 创作与对讲',()=>dScreen('这次没有画好',empty('你的原稿还在','可以再试一次，或先把原稿留着。','','palette'),`${go('DEV-ART-08','保留原稿')}${primary('generate-art','重试生成')}`,'DEV-ART-08'),'网络超时、生成服务失败。','重试保留素材和请求上下文；退出保留原稿。','内容安全拦截应换一个主题，不无限重试相同风险内容。');
-dp('DEV-ART-08','保留草稿或离开','AI 创作与对讲',()=>dScreen('要先离开吗？',empty('你的想法可以留着','未保存的新作品不会自动进入相册。','','notebook-pen'),`${act('leave-art','保留草稿并离开')}${act('continue-art','继续创作','primary')}`,'DEV-ART-01'),'画画、生成或作品回看时返回。','保留草稿再回菜单；继续回离开前的可恢复阶段。','明确保存作品后才入相册；不同时出现自动保存与必须手动保存的冲突说明。');
+dp('DEV-ART-08','保留草稿或离开','AI 创作与对讲',()=>dScreen('要先离开吗？',empty('你的想法可以留着','未保存的新作品不会自动进入我的作品。','','notebook-pen'),`${act('leave-art','保留草稿并离开')}${act('continue-art','继续创作','primary')}`,'DEV-ART-01'),'画画、生成或作品回看时返回。','保留草稿再回菜单；继续回离开前的可恢复阶段。','明确保存作品后才进入我的作品；不同时出现自动保存与必须手动保存的冲突说明。');
+dp('DEV-ART-09','查看作品','AI 创作与对讲',()=>{const m=dMedia();return m&&m.kind==='art'&&!m.deletedAt?dScreen('查看作品',dImage(m.id,'art large'),`${go('DEV-ART-01','再创作一幅','primary')}${go('DEV-ART-06','返回保存结果')}`,'DEV-ART-06'):dScreen('查看作品',empty('暂时没有可查看的作品','先完成一次 AI 创作并保存。','','palette'),go('DEV-ART-01','返回创作','primary'),'DEV-ART-06')},'从作品保存成功页进入，查看当前已保存的 AI 作品。','作品单独展示，可回到创作模块继续创作；不进入拍摄照片相册。','作品文件缺失时显示空状态，不伪造保存成功，也不回退到照片详情。');
 dp('DEV-TALK-01','选择 AI 伙伴','AI 创作与对讲',()=>dScreen('AI对讲',`<div class="menu-grid" style="grid-template-columns:1fr 1fr">${go('DEV-TALK-02',`${ico('bot')}<b>Orbit</b>`,'menu-tile tone2','Orbit')}${go('DEV-TALK-02',`${ico('sparkles')}<b>Luna</b>`,'menu-tile tone3','Luna')}</div>`,go('DEV-MENU-02','回到菜单'),'DEV-MENU-02'),'菜单第 2 页进入原创角色列表。','选中角色开始新的会话，切换前结束当前录音。','不使用未授权影视角色；角色不能宣称代替监护人或保守危险秘密。');
 dp('DEV-TALK-02','对讲收音','AI 创作与对讲',()=>dScreen(`和 ${deviceState.chatRole} 聊一聊`,`${sounds()}<h4 style="text-align:center">你想问什么？</h4><p style="text-align:center">${deviceState.recording?'正在听你说…':'准备好再开始'}</p>`,`${go('DEV-TALK-01','换个伙伴')}${primary(deviceState.recording?'ask-ai':'start-chat',deviceState.recording?'说好了':`${ico('mic')} 开始说话`)}`,'DEV-TALK-01'),'主动点击开始说话才启动收音，可中途退出。','说好了结束录音并请求回答，回答前可取消。','原型模拟收音；正式设备需麦克风状态灯、超时结束、家长权限检查。');
 dp('DEV-TALK-03','对讲思考中','AI 创作与对讲',()=>dScreen('正在想一想',`${sounds()}<p class="quote">${H(deviceState.chatQuery)}</p><p role="status">正在准备回答…</p>`,act('cancel-ai','取消等待'),'DEV-TALK-02'),'收音结束后显示识别出的提问。','回答到达后进入回答页；取消不触发迟到播报。','开放式问答通常需联网，本地语音识别不代表可离线回答所有问题。');
 dp('DEV-TALK-04','AI 回答与追问','AI 创作与对讲',()=>dScreen(deviceState.chatRole+' 的回答',`<h4>${H(deviceState.chatQuery)}</h4><p>${H(deviceState.chatAnswer)}</p>`,`${act('listen-chat',`${ico('volume-2')} 再听一次`)}${go('DEV-TALK-02','继续问')}${go('DEV-TALK-05','结束聊天','primary')}`,'DEV-TALK-05'),'回答成功后展示短句与播报。','追问沿用会话，结束停止播报和收音，回菜单。','敏感或不确定问题给出适龄边界，不提供危险步骤或权威健康诊断。');
 dp('DEV-TALK-05','对讲结束','AI 创作与对讲',()=>dSuccess('这次聊天结束了','去发现身边更多有趣的东西吧。',`${go('DEV-TALK-01','再聊一会儿')}${go('DEV-MENU-02','回到菜单','primary')}`,'DEV-MENU-02'),'点击结束或会话超时进入。','释放收音与播报资源，必要的已授权问答摘要进入发现记录。','不把原始对讲音频作为本地录音或 App 相册上传。');
 
-dp('DEV-ALBUM-01','本地相册','相册与收藏',()=>{const ms=deviceState.media.filter(m=>!m.deletedAt);return dScreen('相册',`<div class="filters">${go('DEV-ALBUM-03','收藏夹')}${go('DEV-ALBUM-05','最近删除')}</div><div class="album-grid">${ms.slice(deviceState.albumPage*3,deviceState.albumPage*3+3).map(m=>go('DEV-ALBUM-02',`${dImage(m.id)}<span>${H(m.name)}</span>`,'album-item',m.id)).join('')}</div>${!ms.length?'<p>还没有照片，去发现新东西吧。</p>':''}`,`${go('DEV-CAP-01',`${ico('camera')} 拍照`)}${ms.length>3?act('album-page','下一页'):''}`,'DEV-MENU-03')},'菜单第 3 页进入，照片和 AI 作品分页展示，每页至多 3 张。','收藏夹和最近删除是相册内的子文件夹；详情按图片标识进入。','照片默认保存在设备。没有云端授权不影响查看本地内容。');
-dp('DEV-ALBUM-02','本地照片详情','相册与收藏',()=>{const m=dMedia();const title=m?.kind==='photo'&&m.captureSource==='camera'?'照片详情':m?.name||'照片';return dScreen(title,m&&!m.deletedAt?dImage(m.id):empty('照片已移除','可以去最近删除看看。','','image-off'),`${m&&!m.deletedAt?act('favorite-media',`${ico('heart')} ${m.favorite?'取消收藏':'收藏'}`):''}${m&&!m.deletedAt?go('DEV-ALBUM-04',`${ico('trash-2')} 删除`):go('DEV-ALBUM-05','最近删除')}`,deviceState.albumDetailBack==='DEV-ALBUM-03'?'DEV-ALBUM-03':'DEV-ALBUM-01')},'从相册、任务回顾或作品保存成功进入。','照片收藏在相册子文件夹；删除进入确认页。','从任务进入时完成状态独立保留，删除不让孩子重做任务。');
+dp('DEV-ALBUM-01','本地相册','相册与收藏',()=>{const ms=deviceState.media.filter(m=>m.kind==='photo'&&m.captureSource==='camera'&&!m.deletedAt);return dScreen('相册',`<div class="filters">${go('DEV-ALBUM-03','收藏夹')}${go('DEV-ALBUM-05','最近删除')}</div><div class="album-grid">${ms.slice(deviceState.albumPage*3,deviceState.albumPage*3+3).map(m=>go('DEV-ALBUM-02',`${dImage(m.id)}<span><small class="history-photo-date">${H(m.capturedAt||'历史拍摄')}</small></span>`,'album-item',m.id)).join('')}</div>${!ms.length?'<p>还没有照片，去发现新东西吧。</p>':''}`,`${go('DEV-CAP-01',`${ico('camera')} 拍照`)}${ms.length>3?act('album-page','下一页'):''}`,'DEV-MENU-03')},'菜单第 3 页进入，历史拍摄照片分页展示，每页至多 3 张。','收藏夹和最近删除是相册内的子文件夹；详情按图片标识进入。','照片默认保存在设备。没有云端授权不影响查看本地内容。');
+dp('DEV-ALBUM-02','照片详情','相册与收藏',()=>{const m=dMedia();const usable=m&&m.kind==='photo'&&m.captureSource==='camera'&&!m.deletedAt;return dScreen('照片详情',usable?dImage(m.id):empty('照片已移除','可以去最近删除看看。','','image-off'),usable?act('favorite-media',`${ico('heart')} ${m.favorite?'取消收藏':'收藏'}`)+go('DEV-ALBUM-04',`${ico('trash-2')} 删除`):go('DEV-ALBUM-05','最近删除'),'DEV-ALBUM-01')},'从历史照片或任务回顾进入。','照片收藏在相册子文件夹；删除进入确认页。左上角返回实际来源。','AI 作品从独立作品页查看，不复用照片详情页。');
 dp('DEV-ALBUM-03','收藏的照片','相册与收藏',()=>mediaFolderHTML('favorites','收藏的照片',m=>m.kind==='photo'&&m.captureSource==='camera'&&m.favorite&&!m.deletedAt,'DEV-ALBUM-01'),'历史照片中的收藏夹直接进入收藏照片列表。','只展示收藏且未删除的拍摄照片；取消收藏不删除原图。左上角返回历史照片。','不包含知识卡片、单词或 AI 作品；照片仅显示拍摄时间，超过一屏分页。');
 dp('DEV-FAV-01','知识与单词收藏','知识与单词收藏',()=>dScreen('知识与单词收藏','', '',contentFavoritesBack()),'百科或拍英语页右上角的书签图标进入。','按内容或语种打开收藏，左上角返回进入收藏前的学习模块。','收藏数据与照片相互独立；相册收藏夹不再承载知识或词卡。');
 dp('DEV-ALBUM-04','删除本地照片确认','相册与收藏',()=>dScreen('要删除这张照片吗？',empty('7 天内还能找回来','照片会放进最近删除。探索任务仍然保留。','','trash-2'),`${go('DEV-ALBUM-02','留着')}${primary('delete-media','删除照片')}`,'DEV-ALBUM-02'),'照片详情点击删除进入，儿童可取消。','确认软删除后回相册，照片备份存在时通知云端同步软删除。','离线删除形成墓碑，联网不能被旧云端副本复活；不显示儿童手动同步。');
-dp('DEV-ALBUM-05','最近删除列表','相册与收藏',()=>dScreen('最近删除',`<div class="album-grid">${deviceState.media.filter(m=>m.deletedAt).slice(0,3).map(m=>go('DEV-ALBUM-06',`${dImage(m.id)}<span>${H(m.name)}</span>`,'album-item',m.id)).join('')}</div>${!deviceState.media.some(m=>m.deletedAt)?empty('这里还没有照片','删掉的照片会在这里留 7 天。','','images'):''}`,go('DEV-ALBUM-01','返回相册'),'DEV-ALBUM-01'),'相册中进入最近删除。','选择照片进入恢复页；儿童端不提供永久删除按钮。','恢复期两端一致为 7 天；云端保留期限不自动清除设备未删除原图。');
+dp('DEV-ALBUM-05','最近删除列表','相册与收藏',()=>dScreen('最近删除',`<div class="album-grid">${deviceState.media.filter(m=>m.kind==='photo'&&m.captureSource==='camera'&&m.deletedAt).slice(0,3).map(m=>go('DEV-ALBUM-06',`${dImage(m.id)}<span><small class="history-photo-date">${H(m.capturedAt||'历史拍摄')}</small></span>`,'album-item',m.id)).join('')}</div>${!deviceState.media.some(m=>m.kind==='photo'&&m.captureSource==='camera'&&m.deletedAt)?empty('这里还没有照片','删掉的照片会在这里留 7 天。','','images'):''}`,go('DEV-ALBUM-01','返回相册'),'DEV-ALBUM-01'),'相册中进入最近删除。','选择照片进入恢复页；儿童端不提供永久删除按钮。','恢复期两端一致为 7 天；云端保留期限不自动清除设备未删除原图。');
 dp('DEV-ALBUM-06','恢复照片','相册与收藏',()=>dScreen('找回这张照片',dImage(dMedia()?.id||'roll'),`${go('DEV-ALBUM-05','先放这里')}${primary('restore-media','恢复到相册')}`,'DEV-ALBUM-05'),'最近删除中选择一张照片。','恢复原相册位置和原收藏状态，关联任务可再次查看该图片。','不新计一次学习；已永久删除或到期需显示无法恢复而非假成功。');
 
 dp('DEV-REC-01','历史录音','本地功能',()=>recordingListHTML(),'菜单第 3 页的录音直接进入历史列表，按录制时间倒序显示时间、名称和时长，每页两条。','点击条目播放或删除；新录音保存后出现在第一页。左上角返回第 3 页菜单。','原型预置 3 条历史录音示例，回听仍使用提示音演示；未保存草稿不进入历史。录音仅保存在设备，不上传 App。');
 dp('DEV-REC-02','录音中','本地功能',()=>dScreen('录音中',`${sounds()}<div class="record-clock" id="recordClock">${recordingDuration(deviceState.recordSeconds)}</div><p style="text-align:center">正在记下你的声音</p>`,`${go('DEV-REC-05','先离开')}${primary('stop-recording',`${ico('square')} 录好了`)}`,'DEV-REC-05'),'点击开始录音后进入，显示收音状态与计时。','停止后进入回听，尚未保存时只保留临时草稿。','休息、低电量和空间不足先停止收音并保留可恢复草稿；原型不采集真实声音。');
 dp('DEV-REC-03','录音回听与保存','本地功能',()=>dScreen('听听刚才的录音',`${sounds()}<div class="record-clock">${deviceState.recordSeconds} 秒</div>`,`${act('play-recording',`${ico(deviceState.playing?'pause':'play')} ${deviceState.playing?'暂停':'回听'}`)}${go('DEV-REC-05','不要这段')}${primary('save-recording','保存录音')}`,'DEV-REC-05'),'主动停止后进入。','保存完成加入录音列表，重复点击不新增副本。','零秒或无声音不能作为有效录音保存；原型回听为提示音演示。');
-dp('DEV-REC-04','历史录音详情','本地功能',()=>{const r=deviceState.recordings[deviceState.recordIndex];return dScreen('录音详情',r?`<div class="record-meta"><h4>${H(r.name)}</h4><p>${H(r.recordedAt||'时间未记录')}</p></div>${sounds()}<div class="record-clock">${recordingDuration(r.seconds)}</div>`:empty('这段录音已移除','可以回到历史录音看看。','','file-audio'),r?`${act('play-recording',`${ico(deviceState.playing?'pause':'play')} ${deviceState.playing?'暂停':'播放'}`)}${go('DEV-REC-06',`${ico('trash-2')} 删除`)}`:'','DEV-REC-01');},'点击历史录音条目进入对应录音，展示保存的名称、录制时间和时长。','播放或暂停；删除需确认。左上角返回原历史页并停止播放。','当前文件不存在时禁用播放与删除，不展示虚构时长；原型不采集真实声音，回听为提示音演示。');
+function recordingDetailHTML(r){if(!r)return empty('这段录音已移除','可以回到历史录音看看。','','file-audio');const missing=Boolean(r.unavailable);const body=`<div class="record-meta"><h4>${H(r.name)}</h4><p>${H(r.recordedAt||'时间未记录')}</p></div>${missing?empty('录音暂时无法播放','文件可能已损坏或暂时不可用。','','volume-x'):sounds()}<div class="record-clock">${recordingDuration(r.seconds)}</div>`;const actions=missing?`${act('retry-recording',`${ico('refresh-cw')} 重新加载`,'primary')}${go('DEV-REC-06',`${ico('trash-2')} 删除`)}`:`${act('play-recording',`${ico(deviceState.playing?'pause':'play')} ${deviceState.playing?'暂停':'播放'}`)}${go('DEV-REC-06',`${ico('trash-2')} 删除`)}`;return dScreen('录音详情',body,actions,'DEV-REC-01')}
+dp('DEV-REC-04','历史录音详情','本地功能',()=>recordingDetailHTML(deviceState.recordings[deviceState.recordIndex]),'点击历史录音条目进入对应录音，展示保存的名称、录制时间和时长。','正常录音可播放或暂停；文件不可用时提供重新加载和删除。左上角返回原历史页并停止播放。','录音文件不存在或损坏时仍保留日期与时长；删除不可恢复。');
 dp('DEV-REC-05','离开未保存录音','本地功能',()=>dScreen('这段录音还没保存',empty('要留下刚才的声音吗？','离开录音时会先停止收音。','','mic'),`${act('discard-recording','丢弃并离开')}${primary('stop-recording','回听后保存')}`,'DEV-REC-03'),'录音中或回听阶段返回时出现。','丢弃需明确点击；保留进入回听，再由孩子保存。','不一边宣称自动保存、一边丢弃没有手动保存的录音。');
 dp('DEV-REC-06','删除录音确认','本地功能',()=>dScreen('删除这段录音？',empty('删除后不能找回','只删除当前这一段录音。','','trash-2'),`${go('DEV-REC-04','留着')}${primary('delete-recording','确认删除')}`,'DEV-REC-04'),'已保存录音中的删除操作。','取消回播放页；确认后移除本地文件回列表。','与相册 7 天恢复规则分开，文案明确录音不可恢复。');
 dp('DEV-MUSIC-01','音乐列表','本地功能',()=>dScreen('音乐',`<div class="list">${act('open-music',`<span class="symbol">${ico('music')}</span><span class="copy"><b>轻快的小旋律</b><small>本地音乐</small></span>`,'item','data-index="0"')}${act('open-music',`<span class="symbol">${ico('music')}</span><span class="copy"><b>安静时光</b><small>本地音乐</small></span>`,'item','data-index="1"')}</div>`,go('DEV-MUSIC-03','添加本地音乐'),'DEV-MENU-03'),'菜单第 3 页进入，仅显示支持的本地音乐。','选择歌曲开始播放，可暂停、切换曲目和返回列表。','无录音副标题，不新增 App 音乐管理；文件格式能力以固件支持清单为准。');
@@ -377,7 +422,7 @@ function recordingListHTML(){
  const all=deviceState.recordings.map((recording,index)=>({recording,index})).sort((a,b)=>(b.recording.recordedAt||'').localeCompare(a.recording.recordedAt||'')||b.index-a.index);
  const last=Math.max(0,Math.ceil(all.length/2)-1),page=Math.max(0,Math.min(deviceState.recordPage||0,last));
  deviceState.recordPage=page;
- const rows=all.slice(page*2,page*2+2).map(({recording:r,index})=>act('open-recording',`<span class="symbol">${ico('mic')}</span><span class="copy"><b>${H(r.recordedAt||'时间未记录')}</b><small>${H(r.name)}</small></span><span class="record-duration">${recordingDuration(r.seconds)}</span>${ico('chevron-right')}`,'item',`data-index="${index}"`)).join('');
+ const rows=all.slice(page*2,page*2+2).map(({recording:r,index})=>act('open-recording',`<span class="symbol">${ico('mic')}</span><span class="copy"><b>${H(r.recordedAt||'时间未记录')}</b><small>${H(r.name)}${r.unavailable?' · 声音暂不可用':''}</small></span><span class="record-duration">${recordingDuration(r.seconds)}</span>${ico('chevron-right')}`,'item',`data-index="${index}"`)).join('');
  const pager=last?`<div class="history-pagination" role="group" aria-label="历史录音翻页">${act('record-page',ico('chevron-left'),'icon-button',`data-page="${page-1}" aria-label="上一页录音" title="上一页录音" ${page===0?'disabled':''}`)}<span>${page+1} / ${last+1}</span>${act('record-page',ico('chevron-right'),'icon-button',`data-page="${page+1}" aria-label="下一页录音" title="下一页录音" ${page===last?'disabled':''}`)}</div>`:'';
  return dScreen('历史录音',rows?`<div class="list recording-list">${rows}</div>`:empty('还没有历史录音','录一段声音，保存后会出现在这里。','','mic'),`<div class="recording-actions">${primary('start-recording',`${ico('mic')} 开始录音`)}${pager}</div>`,'DEV-MENU-03');
 }
@@ -423,7 +468,7 @@ function dHandle(action,b,ui){const t=dTask();
  else if(action==='clear-art'){deviceState.artDraft=null;ui.refresh()}
  else if(action==='generate-art'){deviceState.artPending='ready';startAI(ui,'DEV-ART-04','DEV-ART-05')}
  else if(action==='cancel-art'){clearTimeout(aiTimer);deviceState.artPending=null;ui.open(deviceState.artSource==='draw'?'DEV-ART-02':'DEV-ART-03')}
- else if(action==='save-art'){const id='art-'+Date.now();deviceState.media.push({id,asset:'art',name:'彩色城堡作品',kind:'art',captureSource:'generated',capturedAt:null,favorite:false,deletedAt:null});deviceState.mediaId=id;deviceState.artPending=null;ui.open('DEV-ART-06')}
+ else if(action==='save-art'){const id='art-'+Date.now();deviceState.media.push({id,asset:'art',name:'彩色城堡作品',kind:'art',captureSource:'generated',capturedAt:today,favorite:false,deletedAt:null});deviceState.mediaId=id;deviceState.artPending=null;ui.open('DEV-ART-06')}
  else if(action==='leave-art'){clearTimeout(aiTimer);ui.open('DEV-MENU-02')}
  else if(action==='continue-art'){ui.open(deviceState.artPending?'DEV-ART-05':deviceState.artSource==='draw'?'DEV-ART-02':'DEV-ART-03')}
  else if(action==='start-chat'){deviceState.recording=true;ui.refresh()}
@@ -434,11 +479,12 @@ function dHandle(action,b,ui){const t=dTask();
  else if(action==='delete-media'){const m=dMedia();if(m)m.deletedAt=today;deviceState.albumPage=0;ui.open(deviceState.albumDetailBack==='DEV-ALBUM-03'?'DEV-ALBUM-03':'DEV-ALBUM-01')}
  else if(action==='restore-media'){const m=dMedia();if(m)m.deletedAt=null;ui.open('DEV-ALBUM-01')}
  else if(action==='start-recording'){stopSound();deviceState.recording=true;deviceState.recordStarted=Date.now();deviceState.recordDraftAt=recordingDate();deviceState.recordSeconds=0;ui.open('DEV-REC-02')}
- else if(action==='stop-recording'){if(deviceState.recording)deviceState.recordSeconds=Math.floor((Date.now()-deviceState.recordStarted)/1000);deviceState.recording=false;deviceState.recordSeconds=Math.max(1,deviceState.recordSeconds);ui.open('DEV-REC-03')}
- else if(action==='save-recording'){if(!deviceState.recordSeconds)return;stopSound();const sequence=(deviceState.recordingSequence||0)+1;deviceState.recordingSequence=sequence;deviceState.recordings.push({id:`record-${Date.now()}-${sequence}`,name:'录音 '+String(sequence).padStart(3,'0'),recordedAt:deviceState.recordDraftAt||recordingDate(),seconds:deviceState.recordSeconds});deviceState.recordIndex=deviceState.recordings.length-1;deviceState.recordPage=0;deviceState.recordSeconds=0;deviceState.recordDraftAt=null;ui.open('DEV-REC-04')}
+ else if(action==='stop-recording'){if(deviceState.recording)deviceState.recordSeconds=Math.floor((Date.now()-deviceState.recordStarted)/1000);deviceState.recording=false;deviceState.recordSeconds=Math.max(0,deviceState.recordSeconds);ui.open('DEV-REC-03')}
+ else if(action==='save-recording'){if(!deviceState.recordSeconds)return;stopSound();const sequence=(deviceState.recordingSequence||0)+1;deviceState.recordingSequence=sequence;deviceState.recordings.push({id:`record-${Date.now()}-${sequence}`,name:'录音 '+String(sequence).padStart(3,'0'),recordedAt:deviceState.recordDraftAt||recordingDate(),seconds:deviceState.recordSeconds,unavailable:false});deviceState.recordIndex=deviceState.recordings.length-1;deviceState.recordPage=0;deviceState.recordSeconds=0;deviceState.recordDraftAt=null;ui.open('DEV-REC-04')}
  else if(action==='discard-recording'){deviceState.recording=false;deviceState.recordSeconds=0;deviceState.recordDraftAt=null;stopSound();ui.open('DEV-REC-01')}
  else if(action==='open-recording'){const index=Number(b.dataset.index);if(!deviceState.recordings[index])return;stopSound();deviceState.recordIndex=index;ui.open('DEV-REC-04')}
- else if(action==='play-recording'){if(deviceState.playing)stopSound();else sampleTone();ui.refresh()}
+ else if(action==='retry-recording'){const r=deviceState.recordings[deviceState.recordIndex];if(r){r.unavailable=false;ui.refresh();announce('录音已重新加载');}}
+  else if(action==='play-recording'){if(deviceState.playing)stopSound();else sampleTone();ui.refresh()}
  else if(action==='delete-recording'){deviceState.recordings.splice(deviceState.recordIndex,1);stopSound();ui.open('DEV-REC-01')}
  else if(action==='open-music'){deviceState.musicIndex=Number(b.dataset.index);sampleTone();ui.open('DEV-MUSIC-02')}
  else if(action==='play-music'){if(deviceState.playing)stopSound();else sampleTone();ui.refresh()}
@@ -1242,8 +1288,167 @@ const WifiSettings = (() => {
     return {summary, attach:api=>{ui=api; afterRender(api.current(),api.view());}};
 })();
 
-const deviceUI=createReview(dPages,{kind:'device',initial:'DEV-MENU-01',title:'AI 拍学机 Device UX',version:'V16.1 默认权限修正版',select:dSelect,selected:id=>id.includes('TASK')||id.includes('SHADOW')?deviceState.taskKey:id.includes('ALBUM')?deviceState.mediaId:'',controls:`<label>网络情景 <select id="deviceNetwork"><option value="online">在线</option><option value="offline">离线</option><option value="failure">服务失败</option></select></label><label>拍摄物品 <select id="deviceScene"><option value="roll">滚动物品</option><option value="cloud">天空</option><option value="bridge">积木桥</option><option value="book">图画书</option></select></label><label class="inline"><input type="checkbox" id="deviceCloud" checked> 家长允许联网 AI</label><label class="inline"><input type="checkbox" id="deviceBackup" checked> 家长允许照片备份</label><label class="inline"><input type="checkbox" id="devicePhotoError"> 拍摄失败</label>${act('demo-rest','切换休息规则')}${act('demo-alarm','模拟闹钟响铃')}`,handle:dHandle,change:dChange,input:(el,ui)=>{if(el.dataset.setting)dChange(el,ui)},reset:()=>{clearTimeout(aiTimer);clearInterval(recordTimer);stopSound();deviceState=deviceSeed();deviceState.alarmDraft=structuredClone(deviceState.alarm)},getState:()=>deviceState,persist:persistDevice,afterRender:(id,view)=>{document.getElementById('deviceNetwork').value=deviceState.network;document.getElementById('deviceScene').value=deviceState.scene;document.getElementById('deviceCloud').checked=deviceState.cloud;document.getElementById('deviceBackup').checked=deviceState.backup;document.getElementById('devicePhotoError').checked=deviceState.photoFailure;mountCanvas();clearInterval(recordTimer);if(id==='DEV-REC-02'&&view==='preview'&&deviceState.recording)recordTimer=setInterval(()=>{deviceState.recordSeconds=Math.floor((Date.now()-deviceState.recordStarted)/1000);const clock=document.getElementById('recordClock');if(clock)clock.textContent=String(Math.floor(deviceState.recordSeconds/60)).padStart(2,'0')+':'+String(deviceState.recordSeconds%60).padStart(2,'0');persistDevice()},1000)},footer:'儿童横屏设备 · V16.1 默认权限修正版 · 返回按实际来源恢复；画面外控件只模拟设备、服务和家长回执。'});
-deviceUI.setBeforeOpen((from,to)=>{if(deviceState.rest&&!['DEV-STATE-05','DEV-STATE-06','DEV-SET-03'].includes(to))return 'DEV-STATE-06'});
+/* V16.3: recoverable recording, independent artwork library, generic tasks. */
+recordingDetailHTML=function(r){if(!r)return dScreen('录音详情',empty('这段录音已移除','可以回到历史录音看看。','','file-audio'),go('DEV-REC-01','返回历史录音','primary'),'DEV-REC-01');const missing=Boolean(r.unavailable);const body=`<div class="record-meta"><h4>${H(r.name)}</h4><p>${H(r.recordedAt||'时间未记录')}</p></div>${missing?empty('录音暂时无法播放','文件可能损坏或暂时不可用。','','volume-x'):sounds()}<div class="record-clock">${recordingDuration(r.seconds)}</div>`;const actions=missing?`${act('retry-recording',`${ico('refresh-cw')} 重新加载`,'primary')}${go('DEV-REC-06',`${ico('trash-2')} 删除`)}`:`${act('play-recording',`${ico(deviceState.playing?'pause':'play')} ${deviceState.playing?'暂停':'回听'}`)}${go('DEV-REC-06',`${ico('trash-2')} 删除`)}`;return dScreen('录音详情',body,actions,'DEV-REC-01')};
+
+function normalizeDeviceRoute(id){
+ const draft=Boolean(deviceState.recordDraftAt||deviceState.recordSeconds>0),p=deviceState.artPending;
+ if(id==='DEV-REC-02'&&!deviceState.recording)return draft?'DEV-REC-03':'DEV-REC-01';
+ if(['DEV-REC-03','DEV-REC-05'].includes(id)&&!draft)return 'DEV-REC-01';
+ if(id==='DEV-REC-06'&&!deviceState.recordings[deviceState.recordIndex])return 'DEV-REC-01';
+ if(id==='DEV-ART-04'&&p?.phase!=='generating')return p?.phase==='generated'?'DEV-ART-05':p?.phase==='failed'?'DEV-ART-07':'DEV-ART-01';
+ if(id==='DEV-ART-05'&&(!p||p.savedId))return p?.savedId?'DEV-ART-09':'DEV-ART-01';
+ if(id==='DEV-ART-06'&&!deviceState.media.some(m=>m.id===deviceState.mediaId&&m.kind==='art'))return 'DEV-ART-10';
+ if(/^DEV-(TASK-0[3-9]|TASK-15|SHADOW-0[1-3])$/.test(id)&&dTask()?.status==='completed')return 'DEV-TASK-10';
+ return id;
+}
+function stopRecordingDraft(){
+ if(deviceState.recording){deviceState.recordSeconds=Math.max(deviceState.recordSeconds||0,Math.floor((Date.now()-deviceState.recordStarted)/1000));deviceState.recording=false;}
+ clearInterval(recordTimer);stopSound();persistDevice();
+}
+function deviceBackDestination(id){
+ if(['DEV-REC-02','DEV-REC-03'].includes(id))return 'DEV-REC-05';
+ if(id==='DEV-REC-05')return 'DEV-REC-03';
+ if(id==='DEV-REC-06')return 'DEV-REC-04';
+ if(['DEV-ART-02','DEV-ART-04','DEV-ART-05','DEV-ART-07'].includes(id))return 'DEV-ART-08';
+ if(id==='DEV-ART-08')return artResumePage();
+ if(id==='DEV-ART-06')return 'DEV-ART-01';
+ if(id==='DEV-ART-09')return 'DEV-ART-10';
+ if(id==='DEV-ART-10')return 'DEV-ART-01';
+ if(id==='DEV-ART-11')return 'DEV-ART-09';
+ if(id==='DEV-ART-12')return 'DEV-ART-02';
+ if(/^DEV-(TASK-0[3-9]|TASK-15|SHADOW-0[1-3])$/.test(id))return 'DEV-TASK-12';
+ if(id==='DEV-TASK-12')return stepRoute();
+ return '';
+}
+function artResumePage(){
+ const p=deviceState.artPending;
+ if(p?.phase==='generated')return 'DEV-ART-05';
+ if(p?.phase==='failed')return 'DEV-ART-07';
+ return deviceState.artSource==='photo'?'DEV-ART-03':'DEV-ART-02';
+}
+function protectDeviceLeave(from,to){
+ if(deviceState.rest||['DEV-STATE-05','DEV-STATE-06','DEV-ALARM-06'].includes(to)){if(from.startsWith('DEV-REC-'))stopRecordingDraft();if(from==='DEV-ART-04'){clearTimeout(aiTimer);if(deviceState.artPending?.phase==='generating')deviceState.artPending.phase='ready';}if(deviceState.rest&&!['DEV-STATE-05','DEV-STATE-06','DEV-SET-03'].includes(to))return 'DEV-STATE-06';return;}
+ const recordingPages=['DEV-REC-02','DEV-REC-03'];
+ if(recordingPages.includes(from)&&from!==to){
+  stopRecordingDraft();
+  if(!['DEV-REC-03','DEV-REC-05'].includes(to)&&(deviceState.recordSeconds>0||deviceState.recordDraftAt))return 'DEV-REC-05';
+ }
+ if(from==='DEV-REC-04'&&from!==to)stopSound();
+ if(from==='DEV-ART-04'&&from!==to){clearTimeout(aiTimer);if(deviceState.artPending?.phase==='generating')deviceState.artPending.phase='ready';}
+ if(['DEV-ART-02','DEV-ART-04','DEV-ART-05','DEV-ART-07'].includes(from)&&from!==to&&!to.startsWith('DEV-ART-')){
+  if(deviceState.artDraft||deviceState.artPending)return 'DEV-ART-08';
+ }
+ if(deviceState.rest&&!['DEV-STATE-05','DEV-STATE-06','DEV-SET-03'].includes(to))return 'DEV-STATE-06';
+}
+function photoStepIndexes(t){
+ if(!t)return [];
+ if(Array.isArray(t.photoSteps))return [...new Set(t.photoSteps)].filter(i=>Number.isInteger(i)&&i>=0&&i<t.steps.length);
+ if(t.parentCreated)return [];
+ return t.key==='shadow'?[0,t.steps.length-1]:t.photo?[t.steps.length-1]:[];
+}
+needsTaskPhoto=(t,i)=>photoStepIndexes(t).includes(i);
+stepRoute=()=>{const t=dTask();return !t?'DEV-TASK-01':t.step>=t.steps.length?'DEV-TASK-09':t.parentCreated||t.steps.length>4?'DEV-TASK-15':t.key==='shadow'?'DEV-SHADOW-0'+(t.step+1):'DEV-TASK-0'+(t.step+3)};
+function customTaskExample(){return {key:'parent-colors',taskId:'PARENT-COLORS-DEMO',parentCreated:true,title:'寻找身边的三种颜色',topic:'生活物品',minutes:5,goal:'说说身边物品的颜色',materials:'无需额外材料',safety:'只观察安全、容易拿到的物品。',steps:[['找一件红色的物品','看一看，说出它的名字。'],['找一件蓝色的物品','和刚才的颜色比一比。'],['说说你最喜欢哪种颜色','告诉家长你的发现。']],photo:'',photoSteps:[],status:'received',step:0,evidence:[],completionMethod:'child_confirmed',completedAt:null,expiresAt:'2026-09-28'};}
+const reviewDeviceSeed=deviceSeed;
+deviceSeed=()=>{const s=reviewDeviceSeed();s.tasks.push(customTaskExample());s.recordingReloadFailure=false;return s;};
+if(!deviceState.tasks.some(t=>t.key==='parent-colors'))deviceState.tasks.push(customTaskExample());
+function taskRecapHTML(t){
+ if(!t)return empty('没有这份任务','返回列表看看。');
+ if(!t.evidence?.length)return `<div class="list task-recap-list">${t.steps.map(([a],i)=>`<div class="item"><span class="copy"><b>${i+1}. ${H(a)}</b><small>已确认完成</small></span></div>`).join('')}</div>`;
+ return `<div class="album-grid">${t.evidence.map(id=>deviceState.media.some(m=>m.id===id&&!m.deletedAt)?go('DEV-ALBUM-02',dImage(id),'album-item',id):'<div class="empty-media">照片已移除</div>').join('')}</div>`;
+}
+dp('DEV-TASK-15','自定义任务 · 当前步骤','探索任务',()=>taskStepHTML(),'已接收的家长自定义任务进入；支持 1 至 5 步。','按步骤确认；仅任务明确要求照片时出现相机，最后进入完成确认。','无照片要求可以直接完成；离线与重启保留当前步骤。',()=>{deviceState.taskKey='parent-colors';});
+Object.assign(dPages.find(p=>p.id==='DEV-TASK-09'),{html:()=>{const t=dTask(),need=photoStepIndexes(t).length;return dScreen('你的探索做好了吗？',need?taskRecapHTML(t):empty('每一步都做好了吗？','这份任务不需要拍照，完成后告诉家长吧。','','circle-check'),`${act('review-task','回顾这次探索')}${primary('finish-task','我完成了')}`,'DEV-TASK-12');},entry:'全部步骤完成后进入；照片只对任务声明的拍照步骤校验。',result:'儿童确认后完成一次任务；无照片任务不强制拍摄。',edge:'缺少必需照片则回到对应步骤；普通照片不会自动当作证据。'});
+Object.assign(dPages.find(p=>p.id==='DEV-TASK-10'),{html:()=>dSuccess('完成这次探索！','这次探索已经记好了。',`${go('DEV-TASK-11','回顾这次探索')}${go('DEV-TASK-01','其他任务','primary')}`,'DEV-TASK-01')});
+Object.assign(dPages.find(p=>p.id==='DEV-TASK-11'),{title:'探索完成回顾',html:preview=>{const t=preview?dTask():deviceState.tasks.find(t=>t.key==='bridge');return dScreen('我的探索发现',taskRecapHTML(t),go('DEV-TASK-01','返回任务列表','primary'),'DEV-TASK-01');},result:'照片任务展示实际照片，无照片任务展示完成步骤；返回保留来源。'});
+function artworkListHTML(){
+ const works=deviceState.media.filter(m=>m.kind==='art'&&!m.deletedAt).sort((a,b)=>(b.createdAt||b.capturedAt||'').localeCompare(a.createdAt||a.capturedAt||''));
+ const last=Math.max(0,Math.ceil(works.length/3)-1),page=Math.max(0,Math.min(deviceState.artPage||0,last));
+ const pager=last?`${act('art-page','上一页','',`data-page="${page-1}" ${page===0?'disabled':''}`)}<span>${page+1}/${last+1}</span>${act('art-page','下一页','',`data-page="${page+1}" ${page===last?'disabled':''}`)}`:'';
+ return dScreen('我的作品',works.length?`<div class="album-grid">${works.slice(page*3,page*3+3).map(m=>go('DEV-ART-09',`${dImage(m.id)}<span>${H(m.createdAt||m.capturedAt)}</span>`,'album-item',m.id)).join('')}</div>`:empty('还没有保存的作品','画一画或选择照片，完成后保存作品。','','palette'),pager,'DEV-ART-01');
+}
+Object.assign(dPages.find(p=>p.id==='DEV-ART-01'),{html:()=>dScreen('AI绘图',`<div class="menu-grid" style="grid-template-columns:repeat(3,1fr)">${act('art-draw',`${ico('pencil')}<b>画一画</b>`,'menu-tile tone3')}${act('art-photo',`${ico('camera')}<b>照片变画</b>`,'menu-tile tone4')}${go('DEV-ART-10',`${ico('images')}<b>我的作品</b>`,'menu-tile tone2')}</div>`,'','DEV-MENU-02'),result:'画一画或照片变画；已保存作品始终从我的作品进入。草稿与生成阶段可继续。'});
+Object.assign(dPages.find(p=>p.id==='DEV-ART-03'),{html:()=>{const photos=deviceState.media.filter(m=>!m.deletedAt&&m.kind==='photo'&&m.captureSource==='camera');const last=Math.max(0,Math.ceil(photos.length/3)-1),page=Math.max(0,Math.min(deviceState.artPhotoPage||0,last));return dScreen('选择一张照片',photos.length?`<div class="album-grid">${photos.slice(page*3,page*3+3).map(m=>act('choose-art-photo',`${dImage(m.id)}<span>${H(m.capturedAt)}</span>`,'album-item',`data-id="${m.id}"`)).join('')}</div>`:empty('还没有拍摄照片','可以先去拍一张，或画出你的想法。',`${go('DEV-CAP-01','去拍照')}${act('art-draw','画一画')}`,'images'),last?`${act('art-photo-page','上一页','',`data-page="${page-1}" ${page===0?'disabled':''}`)}<span>${page+1}/${last+1}</span>${act('art-photo-page','下一页','',`data-page="${page+1}" ${page===last?'disabled':''}`)}`:'','DEV-ART-01');}});
+Object.assign(dPages.find(p=>p.id==='DEV-ART-06'),{html:()=>dSuccess('作品已保存','以后可以在“我的作品”里找到它。',`${go('DEV-ART-09','查看作品','primary',deviceState.mediaId)}${go('DEV-ART-01','回到创作')}`,'DEV-ART-01'),entry:'作品在本地保存成功后显示。',result:'查看当前作品；退出后可从 AI 绘图的我的作品再次进入。',edge:'同一次生成重复保存只保留一份；作品不进入照片相册、不受照片备份开关控制。'});
+Object.assign(dPages.find(p=>p.id==='DEV-ART-08'),{html:()=>dScreen('要先离开吗？',empty('你的想法可以留着','画稿和未保存的生成结果会留在创作里。','','notebook-pen'),`${act('leave-art','保留并离开')}${act('continue-art','继续创作','primary')}`,'DEV-ART-02'),result:'保留草稿和当前阶段再回菜单；继续回原素材、失败页或已生成结果。',edge:'只有明确保存才进入我的作品，取消生成不伪造成功结果。'});
+Object.assign(dPages.find(p=>p.id==='DEV-ART-09'),{html:()=>{const m=dMedia();return m?.kind==='art'&&!m.deletedAt?dScreen('查看作品',`${dImage(m.id,'photo large')}<small>${H(m.createdAt||m.capturedAt)}</small>`,go('DEV-ART-11',`${ico('trash-2')} 删除作品`),'DEV-ART-10'):dScreen('查看作品',empty('这幅作品已不存在','可以回到我的作品看看。','','image-off'),go('DEV-ART-10','我的作品','primary'),'DEV-ART-10');},entry:'保存成功页或我的作品列表进入，携带对应作品。',result:'返回我的作品；删除当前作品需确认，原照片不变。',edge:'作品只在设备创作模块管理；文件缺失时不展示其他照片。'});
+dp('DEV-ART-10','我的作品','AI 创作与对讲',artworkListHTML,'AI 绘图中的固定入口，按保存时间倒序显示。','每页 3 幅，选择后查看同一作品，返回保留分页。','没有作品显示空状态；不会把作品混进照片相册。');
+dp('DEV-ART-11','删除作品确认','AI 创作与对讲',()=>dScreen('删除这幅作品？',empty('删除后不能找回','只删除这幅作品，原照片和其他作品还在。','','trash-2'),`${act('keep-art','保留作品')}${primary('delete-art','确认删除')}`,'DEV-ART-09'),'作品详情点击删除进入。','取消回同一作品；确认后回我的作品。','永久删除作品不进入照片最近删除，也不删除原素材。');
+dp('DEV-ART-12','清空画稿确认','AI 创作与对讲',()=>dScreen('清空这张画？',empty('当前笔迹会被清空','已经保存的作品不会改变。','','eraser'),`${act('keep-drawing','继续画')}${primary('confirm-clear-art','清空画稿')}`,'DEV-ART-02'),'非空画稿点击橡皮工具进入。','取消保留笔迹；确认清空当前画稿。','不改变已保存作品，不把确认返回当成清空。');
+function beginArtGeneration(ui){
+ if(!deviceState.artPending||deviceState.artPending.savedId)deviceState.artPending={id:'art-'+Date.now(),phase:'ready',savedId:null};
+ const result=deviceState.artPending;
+ clearTimeout(aiTimer);
+ if(deviceState.network==='offline'||!deviceState.cloud){result.phase='failed';ui.open('DEV-ART-07');return;}
+ result.phase='generating';ui.open('DEV-ART-04');
+ aiTimer=setTimeout(()=>{if(ui.current()!=='DEV-ART-04'||deviceState.artPending!==result)return;result.phase=deviceState.network==='failure'?'failed':'generated';ui.open(result.phase==='generated'?'DEV-ART-05':'DEV-ART-07');},700);
+}
+if(deviceState.recording&&deviceState.recordDraftAt){deviceState.recording=false;}
+if(deviceState.artPending?.phase==='generating')deviceState.artPending.phase='ready';
+addEventListener('pagehide',()=>{if(deviceState.recordDraftAt)stopRecordingDraft();clearTimeout(aiTimer);if(deviceState.artPending?.phase==='generating')deviceState.artPending.phase='ready';persistDevice();});
+const repairedDeviceHandle=dHandle;
+dHandle=function(action,b,ui){
+ const t=dTask();
+ if(action==='start-recording'&&(deviceState.recordDraftAt||deviceState.recordSeconds>0)){ui.open('DEV-REC-03');announce('上次录音还没保存，请先处理这段录音');return;}
+ if(action==='stop-recording'&&ui.current()==='DEV-REC-05')action='save-recording';
+ if(action==='stop-recording'){stopRecordingDraft();ui.returnTo('DEV-REC-03');return;}
+ if(action==='save-recording'&&!deviceState.recordSeconds){announce('还没有有效录音，请重新录一段');return;}
+ 
+ if(action==='save-recording'){ if(!deviceState.recordSeconds){announce('还没有有效录音，请重新录一段');return;} stopSound(); const sequence=(deviceState.recordingSequence||0)+1; deviceState.recordingSequence=sequence; deviceState.recordings.push({id:`record-${Date.now()}-${sequence}`,name:'录音 '+String(sequence).padStart(3,'0'),recordedAt:deviceState.recordDraftAt||recordingDate(),seconds:deviceState.recordSeconds,unavailable:false}); deviceState.recordIndex=deviceState.recordings.length-1; deviceState.recordPage=0; deviceState.recordSeconds=0; deviceState.recordDraftAt=null; deviceState.recording=false; persistDevice(); ui.finish('DEV-REC-04','',['DEV-REC-02','DEV-REC-03','DEV-REC-05']); return; }
+ if(action==='discard-recording'){deviceState.recording=false;deviceState.recordSeconds=0;deviceState.recordDraftAt=null;stopSound();persistDevice();ui.finish('DEV-REC-01','',['DEV-REC-02','DEV-REC-03','DEV-REC-05']);return;}
+ if(action==='delete-recording'){deviceState.recordings.splice(deviceState.recordIndex,1);deviceState.recordIndex=Math.max(0,deviceState.recordings.length-1);stopSound();persistDevice();ui.finish('DEV-REC-01','',['DEV-REC-04','DEV-REC-06']);return;}
+ if(action==='retry-recording'){
+  const r=deviceState.recordings[deviceState.recordIndex];if(!r)return;
+  if(deviceState.recordingReloadFailure){announce('仍然无法播放，可以稍后重试或删除这段录音');return;}
+  r.unavailable=false;persistDevice();ui.refresh();announce('录音已重新加载，点播放试听');return;
+ }
+ if(action==='play-recording'&&ui.current()==='DEV-REC-04'&&deviceState.recordings[deviceState.recordIndex]?.unavailable){announce('录音暂时无法播放，请重新加载');return;}
+ if(['demo-rest','demo-alarm'].includes(action))stopRecordingDraft();
+ if(action==='task-page'){deviceState.taskPage=((deviceState.taskPage||0)+1)%Math.max(1,Math.ceil(deviceState.tasks.filter(x=>!['draft','cancelled'].includes(x.status)).length/2));ui.refresh();return;}
+ if(action==='finish-task'){
+  const required=photoStepIndexes(t).length;
+  if(!t){ui.open('DEV-TASK-01');return;}if(t.step<t.steps.length||(t.evidence||[]).length<required){if(t.step>=t.steps.length)t.step=photoStepIndexes(t)[Math.min((t.evidence||[]).length,required-1)];announce('先完成剩下的步骤');moveTask(ui);return;}
+  if(t.status!=='completed'){t.status='completed';t.completedAt=recordingDate();}t.photoAccess=deviceState.backup?'available':'withheld';persistDevice();ui.finish('DEV-TASK-10','',['DEV-TASK-02','DEV-TASK-03','DEV-TASK-04','DEV-TASK-05','DEV-TASK-06','DEV-TASK-07','DEV-TASK-08','DEV-TASK-09','DEV-TASK-12','DEV-TASK-15','DEV-SHADOW-01','DEV-SHADOW-02','DEV-SHADOW-03']);return;
+ }
+ if(action==='pause-task'||action==='skip-task'){if(t&&action==='pause-task'&&t.status==='active')t.status='paused';if(t&&action==='skip-task')t.status='skipped';persistDevice();ui.finish('DEV-TASK-01','',['DEV-TASK-02','DEV-TASK-03','DEV-TASK-04','DEV-TASK-05','DEV-TASK-06','DEV-TASK-07','DEV-TASK-08','DEV-TASK-09','DEV-TASK-12','DEV-TASK-13','DEV-TASK-15','DEV-SHADOW-01','DEV-SHADOW-02','DEV-SHADOW-03']);return;}
+ if(action==='review-task'){ui.open('DEV-TASK-11');return;}
+ if(action==='clear-art'){if(deviceState.artDraft)ui.open('DEV-ART-12');else announce('画布还是空的');return;}
+ if(action==='keep-drawing'){ui.returnTo('DEV-ART-02');return;}
+ if(action==='confirm-clear-art'){deviceState.artDraft=null;deviceState.artPending=null;ui.returnTo('DEV-ART-02');return;}
+ if(action==='art-draw'||action==='art-photo'){
+  if(deviceState.artPending&&!deviceState.artPending.savedId){ui.open(artResumePage());return;}
+  deviceState.artPending=null;deviceState.artSource=action==='art-draw'?'draw':'photo';ui.open(action==='art-draw'?'DEV-ART-02':'DEV-ART-03');return;
+ }
+ if(action==='choose-art-photo'){deviceState.mediaId=b.dataset.id;deviceState.artSource='photo';deviceState.artPending=null;beginArtGeneration(ui);return;}
+ if(action==='generate-art'){beginArtGeneration(ui);return;}
+ if(action==='cancel-art'){clearTimeout(aiTimer);deviceState.artPending=null;ui.open(deviceState.artSource==='draw'?'DEV-ART-02':'DEV-ART-03');return;}
+ if(action==='save-art'){
+  const p=deviceState.artPending;if(!p||(!p.savedId&&p.phase!=='generated')){announce('请先完成作品生成');return;}
+  const old=deviceState.media.find(m=>m.id===(p.savedId||p.id)&&m.kind==='art');
+  if(!old)deviceState.media.push({id:p.id,asset:'art',kind:'art',captureSource:'generated',createdAt:recordingDate(),capturedAt:recordingDate(),deletedAt:null});
+  p.savedId=old?.id||p.id;deviceState.mediaId=p.savedId;persistDevice();ui.finish('DEV-ART-06','',['DEV-ART-02','DEV-ART-03','DEV-ART-04','DEV-ART-05','DEV-ART-07','DEV-ART-08']);return;
+ }
+ if(action==='continue-art'){ui.returnTo(artResumePage());return;}
+ if(action==='leave-art'){clearTimeout(aiTimer);persistDevice();ui.finish('DEV-MENU-02','',['DEV-ART-02','DEV-ART-03','DEV-ART-04','DEV-ART-05','DEV-ART-07','DEV-ART-08']);return;}
+ if(action==='art-page'||action==='art-photo-page'){deviceState[action==='art-page'?'artPage':'artPhotoPage']=Math.max(0,Number(b.dataset.page)||0);ui.refresh();return;}
+ if(action==='keep-art'){ui.returnTo('DEV-ART-09',deviceState.mediaId);return;}
+ if(action==='delete-art'){const m=dMedia();if(m?.kind!=='art')return;deviceState.media=deviceState.media.filter(x=>x.id!==m.id);if(deviceState.artPending?.savedId===m.id)deviceState.artPending=null;persistDevice();ui.finish('DEV-ART-10','',['DEV-ART-06','DEV-ART-09','DEV-ART-11']);return;}
+ return repairedDeviceHandle(action,b,ui);
+};
+
+
+const reviewedDeviceSelect=dSelect;
+dSelect=function(value,screen='',from=''){
+ if(value==='parent-colors')deviceState.taskKey=value;
+ if(['DEV-ART-09','DEV-ART-11'].includes(screen)&&value){deviceState.mediaId=value;}
+ return reviewedDeviceSelect(value,screen,from);
+};
+const reviewedDeviceChange=dChange;
+dChange=function(el,ui){if(el.id==='recordingReloadFailure'){deviceState.recordingReloadFailure=el.checked;persistDevice();ui.refresh();return;}return reviewedDeviceChange(el,ui);};
+
+const deviceUI=createReview(dPages,{kind:'device',initial:'DEV-MENU-01',beforeOpen:protectDeviceLeave,title:'AI 拍学机 Device UX',version:'V16.3 交互闭环复核版',select:dSelect,selected:id=>id.includes('TASK')||id.includes('SHADOW')?deviceState.taskKey:id.includes('ALBUM')||['DEV-ART-09','DEV-ART-11'].includes(id)?deviceState.mediaId:'',controls:`<label>网络情景 <select id="deviceNetwork"><option value="online">在线</option><option value="offline">离线</option><option value="failure">服务失败</option></select></label><label>拍摄物品 <select id="deviceScene"><option value="roll">滚动物品</option><option value="cloud">天空</option><option value="bridge">积木桥</option><option value="book">图画书</option></select></label><label class="inline"><input type="checkbox" id="deviceCloud" checked> 家长允许联网 AI</label><label class="inline"><input type="checkbox" id="deviceBackup" checked> 家长允许照片备份</label><label class="inline"><input type="checkbox" id="devicePhotoError"> 拍摄失败</label><label class="inline"><input type="checkbox" id="recordingReloadFailure"> 录音重试仍失败</label>${act('demo-rest','切换休息规则')}${act('demo-alarm','模拟闹钟响铃')}`,handle:dHandle,change:dChange,input:(el,ui)=>{if(el.dataset.setting)dChange(el,ui)},reset:()=>{clearTimeout(aiTimer);clearInterval(recordTimer);stopSound();deviceState=deviceSeed();deviceState.alarmDraft=structuredClone(deviceState.alarm)},getState:()=>deviceState,persist:persistDevice,afterRender:(id,view)=>{document.getElementById('deviceNetwork').value=deviceState.network;document.getElementById('deviceScene').value=deviceState.scene;document.getElementById('deviceCloud').checked=deviceState.cloud;document.getElementById('deviceBackup').checked=deviceState.backup;document.getElementById('devicePhotoError').checked=deviceState.photoFailure;document.getElementById('recordingReloadFailure').checked=Boolean(deviceState.recordingReloadFailure);mountCanvas();clearInterval(recordTimer);if(id==='DEV-REC-02'&&view==='preview'&&deviceState.recording)recordTimer=setInterval(()=>{deviceState.recordSeconds=Math.floor((Date.now()-deviceState.recordStarted)/1000);const clock=document.getElementById('recordClock');if(clock)clock.textContent=String(Math.floor(deviceState.recordSeconds/60)).padStart(2,'0')+':'+String(deviceState.recordSeconds%60).padStart(2,'0');persistDevice()},1000)},footer:'儿童横屏设备 · V16.3 交互闭环复核版 · AI 作品独立于历史照片；返回按实际来源恢复；画面外控件只模拟设备、服务和家长回执。'});
+deviceUI.setBeforeOpen(protectDeviceLeave);
 document.addEventListener('click',event=>{const b=event.target.closest('[data-go]');if(!b)return;const id=b.dataset.go;if(!['DEV-MUSIC-02','DEV-REC-04','DEV-STORY-02','DEV-STORY-03'].includes(id))stopSound();if(deviceState.recording&&!['DEV-REC-02','DEV-TALK-02'].includes(id))deviceState.recording=false;persistDevice()});
 let menuStart=null;
 const basePaintIcons=paintIcons;
@@ -1267,7 +1472,7 @@ const v11AlbumOption=document.querySelector('.review-nav option[value="DEV-ALBUM
 if(v11AlbumOption) v11AlbumOption.textContent='DEV-ALBUM-01 历史照片';
 const v11HubPage=dPages.find(page=>page.id==='DEV-GAME-H01');
 if(v11HubPage) v11HubPage.entry=v11HubPage.entry.replace('第 1 页主菜单','第 3 页主菜单');
-document.title='AI 拍学机 Device UX · V16.1 默认权限修正版';
+document.title='AI 拍学机 Device UX · V16.3 交互闭环复核版';
 const v8HeaderNote=document.querySelector('.review-top p');
-if(v8HeaderNote) v8HeaderNote.textContent=`V16.1 小游戏默认权限与返回路径修正 · 简体中文评审版 · ${dPages.length} 个页面与状态`;
+if(v8HeaderNote) v8HeaderNote.textContent=`V16.3 录音保护、作品历史与任务流程复核 · 简体中文评审版 · ${dPages.length} 个页面与状态`;
 </script></body></html>
